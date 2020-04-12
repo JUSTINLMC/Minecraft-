@@ -29,6 +29,7 @@ table {
 }
 .smallfont {
 	font-size: small;
+	font-family: "黑体";
 }
 </style>
 </head>
@@ -36,7 +37,7 @@ table {
 <body id="concept">
 <div id="index">
   <p>欢迎来到附加包的世界！</p>
-  <p>本教程将带你了解附加包，并一步步带你理解附加包的全部内容。</p>
+  <p>本教程将带你了解附加包，并一步步带你理解附加包的主要内容。</p>
   <p>本教程将不定期更新。</p>
 </div>
 <h5>说明：</h5>
@@ -46,7 +47,7 @@ table {
 <h5>4.禁止将本教程中使用的附加包用于商业用途。<br>
   <br>
 5.教程作者：JUSTIN_LMC【QQ：371055087】。</h5>
-<h5>6.更新信息：Update in 20200405/Version 0.0.9</h5>
+<h5>6.更新信息：Version 0.0.1-beta20200411</h5>
 <h5>7.本教程版本号遵循以下规则：当官方做出重大更新时，主版本号更新；当官方做出较小更新时，次版本号更新；每一次教程更新都将更新修订号。</h5>
 <h5>8.本文参考链接：</h5>
 <h5>
@@ -88,8 +89,8 @@ https://www.uuidgenerator.net/ </textarea>
 
 附加包（Add-ons）是朝向Minecraft全版本自定义的坚实一步，它受Mojang官方支持。目前，还只有基岩版平台支持附加包，包括Windows 10、Gear VR和Fire TV。这些版本现在允许玩家更改他们世界的样貌并修改生物的行为，这些通过行为包来实现。此处提供的文档受官方支持与核实，是由Minecraft开发团队提供籍以协助社区发布的。</textarea>
 </p>
-<h5>[1]<a href="https://www.minecraft.net/zh-hans/addons" target="new">Mojang附加包官方页面</a></h5>
-<h5>[2]如果想了解更多信息，欢迎来<a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new">wiki原文</a>看一看。</h5>
+<p class="smallfont">[1]<a href="https://www.minecraft.net/zh-hans/addons" target="new">Mojang附加包官方页面</a></p>
+<p class="smallfont">[2]如果想了解更多信息，欢迎来<a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new">wiki原文</a>看一看。</p>
 <p>&nbsp;</p>
 <p><strong>2.附加包的类型？</strong></p>
 <p>附加包，主要有以下几个类型：</p>
@@ -125,17 +126,18 @@ https://www.uuidgenerator.net/ </textarea>
     <td>决定了世界的模板</td>
   </tr>
 </table>
-<h5>[1]接口包(interface)在网络上没有资料，暂空。</h5>
+<p class="smallfont">[1]接口包(interface)在网络上没有资料，暂空。</p>
+<p class="smallfont">[2]*内容为重点内容。</p>
 <p>以上<em>每一个类型的包</em>或者<em>多个不同类型的包整合在一起</em>统称为附加包。</p>
-<p>【严格来说，<strong>只有</strong>行为包、资源包或脚本包以及将以上三者任意整合在一起才能被叫做附加包——这也是本教程中定义的附加包与官方定义的附加包的区别】</p>
-<p>【混搭包：常包括资源包、皮肤包、世界模板包】【其实个人觉得这个教程应该被叫做“包教程”才比较好】</p>
+<p class="smallfont">[1]严格来说，<strong>只有</strong>行为包、资源包或脚本包以及将以上三者任意整合在一起才能被叫做附加包——这也是本教程中定义的附加包与官方定义的附加包的区别【其实个人觉得这个教程应该被叫做“包教程”才比较好】</p>
+<p class="smallfont">[2]混搭包：常包括资源包、皮肤包、世界模板包</p>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <div id="freshman">
   <h1><strong>初学</strong></h1>
 <p><strong>1.附加包需要的基础？</strong></p>
-<p>你只需要掌握这一个：JSON。</p>
+<p>你只需要掌握这一个：<strong>JSON</strong>。</p>
 <p>【WIndows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript；不过脚本引擎只在win10版本支持】</p>
 <p>百度百科上是这么说的：</p>
 <p><textarea name="textarea2" cols="60" rows="6" readonly="readonly" id="textarea2">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。 </textarea>
@@ -145,9 +147,10 @@ https://www.uuidgenerator.net/ </textarea>
 <p class="smallfont">【亦或者是<a href="https://www.json.org/json-zh.html">JSON的官方网站</a>也可】</p>
 <p class="smallfont">【有兴趣的朋友可以了解一下<a href="https://github.com/midnightfreddie/McpeTool" target="new">存档构造</a>（虽然现在可能看不懂）】</p>
 <p>&nbsp;</p>
-<p><strong>2.附加包研究起来会很难吗？</strong></p>
-<p>SPGoding（后文引用时缩写为SPG）曾抱怨Add-ons研究的人太少了——就算在MCBBS，发布这种帖子的人也基本没有几个，可想而知附加包的门槛还是很高的。【本人曾经在MCBBS上搜索与附加包相关的内容，差不多就那么零星的几个是有用的】基本上，要研究附加包都得从教程开始，然后再开始拆包【就像我一开始研究的时候一个教程也没看，然后就啥都看不懂……】；没有教程的研究是非常困难的。</p>
+<p><strong>2.附加包很难吗？</strong></p>
+<p>SPGoding（后文引用时缩写为SPG）曾抱怨Add-ons研究的人太少了——就算在MCBBS，发布这种帖子的人也基本没有几个，可想而知附加包的门槛还是很高的【本人曾经在MCBBS上搜索与附加包相关的内容，差不多就那么零星的几个是有用的】。基本上，要研究附加包都得从教程开始，然后再开始拆包【就像我一开始研究的时候一个教程也没看，然后就啥都看不懂……】；没有教程的研究是非常困难的。</p>
 <p>所以，请各位做好心理准备——如果你想研究附加包，你会非常孤独的。</p>
+<p>&nbsp;</p>
 <p><strong>3.附加包研究时需要的工具？</strong></p>
 <p>经过多方资料的查阅，本人总结出以下工具：【斜体为文本编辑器，黄色为文件管理器，两者都至少需要有一个】</p>
 <table width="520" border="1">
@@ -167,17 +170,20 @@ https://www.uuidgenerator.net/ </textarea>
   <tr>
     <td><strong>IOS</strong></td>
     <td><em>Textcode Viewer</em></td>
-    <td><p>（越狱）<em>iFile</em></p></td>
+    <td>（越狱）<em>iFile</em></td>
     <td>（越狱）<em>Filza</em></td>
     <td class="tbyellow">FileMaster</td>
   </tr>
 </table>
-<p>【IDE：集成开发环境】【画图软件将在后续教程中推荐】</p>
+<p class="smallfont">[1]<em>摘自搜狗百科：</em>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等），因为很多项任务会自动生成。</p>
+<p class="smallfont">[2]画图、建模软件将在后续教程中推荐。</p>
+<p>&nbsp;</p>
 <p><strong>4.客户端和服务端的区别？</strong></p>
 <p>这个问题尽管在网络上也有解答，但我还是在这里给出形象的解释。</p>
 <p>不妨假设A去B店吃东西，A对B店的前台说：“来碗蛋炒饭！”前台将“做一碗蛋炒饭”的信息发送到厨房里的显示屏上。不一会，服务员C端着饭从厨房里出来，把饭交给了A。</p>
 <p>在这个例子里，<em>A</em>就是<strong>客户</strong>，<em>B店前台</em>就是<u>客户端</u>，<em>前台发送A的需求的过程</em>就是<u>客户端把信息上传到服务端的过程</u>，<em>饭交付到A手里的过程</em>就是<u>服务端把信息反馈到客户端的过程</u>，最终<em>A得到的饭</em>就是<u>反馈到服务端的信息</u>。【此外，<em>不一会</em>就是<u>服务端处理信息的速度</u>。如果有许多个客户，厨房（服务端）也就处理不过来啦】</p>
-<p>此外，附加包中有一部分内容是在服务端定义的（如行为包），另一部分内容是在客户端定义的（如资源包）。这个会在后文中体现。</p>
+<p>此外，附加包中有一部分内容是在服务端定义的（如行为包），另一部分内容是在客户端定义的（如资源包）。这个会在后文中讲解。</p>
+<p>&nbsp;</p>
 <p><strong>5.网易版有Add-ons吗？</strong></p>
 <p>有。但是，如果你想开发Add-ons并且上传自己的作品，必须先加入开发者计划。那么有人可能要问了，Add-ons在哪里找呢？其实，“天启之境：混沌”就是一个大型附加包。还有一些大大小小的“组件”，比如幸运方块之类的，在资源中心里能找到。</p>
 </div>
@@ -187,7 +193,7 @@ https://www.uuidgenerator.net/ </textarea>
   <h1><strong>结构</strong></h1>
   <h3><strong>行为包</strong></h3>
 <p>
-  <textarea name="textarea3" cols="60" rows="19" readonly="readonly" id="textarea3">(名称)
+  <textarea name="textarea3" cols="60" rows="20" readonly="readonly" id="textarea3">(名称)
 -(行为包里可能有animation_controllers和animations，这一点会在之后的教程种体现）
 -biomes //生物群系主定义
 -blocks //方块主定义
@@ -244,7 +250,7 @@ https://www.uuidgenerator.net/ </textarea>
 <h3><strong>世界模板包</strong></h3>
 <p>
   <textarea name="textarea6" cols="60" rows="10" readonly="readonly" id="textarea6">（名称）
-db //Mojang的游戏数据储存
+db //Mojang的游戏数据储存区
 contents.json //内容文件
 level.dat //世界规则储存文件
 level.dat_old //旧版本世界规则储存文件
@@ -357,8 +363,8 @@ MC也支持*/
   ]
 }//注意结束的大括号。</textarea>
 </p>
-<p>语义化版本（版本号[ a, b, c ]格式）链接：<a href="https://semver.org/lang/zh-CN/" target="new">https://semver.org/lang/zh-CN/</a></p>
-<p>uuid生成器：<a href="https://www.uuidgenerator.net/" target="new">https://www.uuidgenerator.net/</a></p>
+<p class="smallfont">[1]语义化版本（版本号[ a, b, c ]格式）链接：<a href="https://semver.org/lang/zh-CN/" target="new">https://semver.org/lang/zh-CN/</a></p>
+<p class="smallfont">[2]uuid生成器：<a href="https://www.uuidgenerator.net/" target="new">https://www.uuidgenerator.net/</a></p>
 <p><a href="#start" target="_self">回到编写目录</a></p></div>
 <p>&nbsp;</p>
 <div id="contents"><h2>内容文件</h2>
@@ -370,9 +376,9 @@ MC也支持*/
       "path":"a.json"//根目录处的文件直接写名字加后缀名
     },
     {
-      "path":"textures/b.png"//在根目录里的文件需要如下格式：a/b/.../name.后缀名
+      "path":"textures/b.png"//在根目录里的文件夹里的文件需要如下格式：a/b/.../name.后缀名
     }//...等等
-  ]
+  ]//内容文件不需要包含自己
 }</textarea>
 </p>
 <p>一般来说，这个文件不建立也没有太大问题——如果不建立，游戏会调用原版包里的目录文件，而你的包里的文件依旧会被识别。尤其是对于一个文件很多的包来说，建立这样一个内容文件就如同噩梦一般——如果不用程序自己去处理，头发可能都要掉光了（doge）。所以各位看自己的意愿要不要建立内容文件了。</p>
@@ -387,7 +393,7 @@ MC也支持*/
 <p class="smallfont">2.</p>
 <h5><img src="datres1.png" width="300" height="340" longdesc="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" /></h5>
 <p class="smallfont">3.<em>下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个</em>Document<em>文件夹，里面的内容被叫做</em>官方文档<em>，是</em><strong>非常</strong><em>重要的资料，在后文也会</em>反复多次<em>地引用。</em>（现在各位就可以先看起来了）</p>
-<p class="smallfont">P.S.如果你会拆包，把你的游戏打包出来，找到assets/behavior_packs和resource_packs，这两部分内容是最适合你当前版本的。</p>
+<p class="smallfont">P.S.如果你会拆包，把你的游戏打包出来，找到assets/behavior_packs和resource_packs，这两部分内容是最适合你当前版本的参考资料。</p>
 <p class="bigfont"><strong><a name="datres_recipes" id="datres_recipes"></a>配方</strong></p>
 <table width="530" border="1">
   <tr class="tbbold">
@@ -396,7 +402,7 @@ MC也支持*/
     <td><strong>简述</strong></td>
   </tr>
   <tr>
-    <td colspan="2">熔炉配方</td>
+    <td colspan="2"><a href="#recipes_furnace" target="_self">熔炉配方</a></td>
     <td width="127">Furnace Recipe</td>
     <td width="193">熔炉、高炉、烟熏炉</td>
   </tr>
@@ -423,7 +429,7 @@ MC也支持*/
     <td>兔肉煲、蘑菇煲……</td>
   </tr>
   <tr>
-    <td colspan="2">切石机配方</td>
+    <td colspan="2"><a href="#recipes_stonecutter" target="_self">切石机配方</a></td>
     <td>(Stonecutter Recipe)</td>
     <td>半砖、楼梯、墙……</td>
   </tr>
@@ -433,8 +439,8 @@ MC也支持*/
 <p><em><strong>有序合成</strong></em></p>
 <p>下面是原版acacia_boat.json文件（注释为本人所加）：</p>
 <p>
-  <textarea name="textarea9" cols="60" rows="40" readonly="readonly" id="textarea9">{
-  "format_version": "1.12",//这一项请尽量不要更改
+  <textarea name="textarea9" cols="60" rows="42" readonly="readonly" id="textarea9">{
+  "format_version": "1.12",//这一项请尽量不要更改，除非官方文件中更改了
   "minecraft:recipe_shaped": {
     "description": {
       "identifier": "minecraft:acacia_boat"//identifier格式："命名空间:名称"。除非你想更改原版合成配方，不然请不要和官方的名字冲突或者使用minecraft命名空间；这个原则是广泛运用的 
@@ -461,7 +467,7 @@ MC也支持*/
       }*/
     },
     "result": {//这里是输出结果，当然也可以是自定义物品
-      "item": "minecraft:boat",
+      "item": "minecraft:boat",//有一个非常特殊的特例，cake.json，这个各位可以自己去看看
       "data": 4//P.S.自定义刷怪蛋是有数据值的，这个以后会讲到
     }
   }
@@ -470,15 +476,16 @@ MC也支持*/
   </textarea>
 </p>
 <p><em><strong>无序合成</strong></em></p>
+<p>下面是原版rabbit_stew_from_brown_mushhroom.json文件：</p>
 <p>
-  <textarea name="textarea11" id="textarea11" cols="60" rows="45">{
+  <textarea name="textarea11" cols="60" rows="45" readonly="readonly" id="textarea11">{
   "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
       "identifier": "minecraft:rabbit_stew_from_brown_mushroom"
     },
     "tags": [ "crafting_table" ],
-    "group": "rabbit_stew",//记得吗？兔肉煲可以用两种蘑菇合成，他们属于同一类，因此需要增加一个键groups
+    "group": "rabbit_stew",//官方有的时候用键gruop有的时候用键priority，我也搞不懂
     "ingredients": [//这个无序的配方应该很容易看懂吧。另外如果有几个相同的物品放在无序配方里，这几个物品需要分开来写，具体可以看下面的注释
       {
         "item": "minecraft:bowl"
@@ -494,8 +501,8 @@ MC也支持*/
       },
       {
         "item": "minecraft:cooked_rabbit"
-      }
-/*e.g.{
+      }/*,//注释部分展示了相同物品的写法
+      {
         "item": "minecraft:log",
         "data": 1
       },
@@ -508,6 +515,55 @@ MC也支持*/
       "item": "minecraft:rabbit_stew"
     }
   }
+}
+  </textarea>
+</p>
+<p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
+<h4><strong><a name="recipes_furnace" id="recipes_furnace"></a>熔炉配方</strong></h4>
+<p>下面是原版的furnace_beef.json（建议各位写熔炉配方的时候加上furnace_）文件：</p>
+<p>
+  <textarea name="textarea12" cols="60" rows="18" readonly="readonly" id="textarea12">{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:furnace_beef"
+    },
+
+    
+    "tags": ["furnace", "smoker", "campfire"],//熔炉配方一共有四个标签，还有一个就是"blast_furnace"
+    "input": "minecraft:beef",//放入的物品
+    "output": "minecraft:cooked_beef"//输出的物品
+  }//各位还记得湿海绵变干海绵会把桶填满的特性吗？事实上，这一部分并没有在JSON文件中定义，这也就是我们所说的硬代码，是不可能被编辑的。也蛮可惜的。
+  
+}</textarea>
+</p>
+<p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
+<h4><strong><a name="recipes_stonecutter" id="recipes_stonecutter"></a>切石机配方</strong></h4>
+<p>下面是原版的stonecutter_andesite_slab.json（建议同上）文件：</p>
+<p>
+  <textarea name="textarea13" cols="60" rows="26" readonly="readonly" id="textarea13">{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {//没错，切石机也被归类在了无序配方之中
+    "description": {
+    "identifier": "minecraft:stonecutter_andesite_slab"
+    },
+
+    
+    "tags": [ "stonecutter" ],//这就不必多讲了
+    "priority": 0,//切石机的权重遵循以下规则：同一材质，台阶0，楼梯1，墙2
+    "ingredients": [//方括号不要忘记加，尽管只有一个物品
+      {
+        "item": "minecraft:stone",
+        "data": 5
+      }
+    ],
+    "result": {
+      "item": "minecraft:double_stone_slab3",
+      "data": 3,
+      "count": 2//注意了，只有输出物品的时候才用键count
+    }
+  }
+  
 }
   </textarea>
 </p>
