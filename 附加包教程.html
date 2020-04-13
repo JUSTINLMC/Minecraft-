@@ -46,8 +46,8 @@ table {
 <h5>3.转载本文需取得作者同意，并说明用途。</h5>
 <h5>4.禁止将本教程中使用的附加包用于商业用途。<br>
   <br>
-5.教程作者：JUSTIN_LMC【QQ：371055087】。</h5>
-<h5>6.更新信息：Version 0.0.1-beta20200411</h5>
+5.教程作者：JUSTIN_LMC【QQ：371055087】，本教程有任何不完善之处欢迎来和本人讨论。</h5>
+<h5>6.更新信息：Version 0.0.1-beta20200413</h5>
 <h5>7.本教程版本号遵循以下规则：当官方做出重大更新时，主版本号更新；当官方做出较小更新时，次版本号更新；每一次教程更新都将更新修订号。</h5>
 <h5>8.本文参考链接：</h5>
 <h5>
@@ -212,7 +212,7 @@ https://www.uuidgenerator.net/ </textarea>
 </p>
 <h3><strong>资源包</strong></h3>
 <p>
-  <textarea name="textarea4" cols="60" rows="25" readonly="readonly" id="textarea4">（名称）
+  <textarea name="textarea4" cols="60" rows="26" readonly="readonly" id="textarea4">（名称）
 -animation_controllers //动画触发条件定义
 -animations //动画定义
 -entity //实体客户端定义（请与行为包里的实体服务端定义相区分）
@@ -264,58 +264,58 @@ world_icon.jpeg //世界&世界模板包图标
 <p>&nbsp;</p>
 <div id="start">
   <h1><strong>编写</strong></h1>
-<p>接下来，进入本教程的正题！在正式开始之前，本人想多说几句。因为本人技术和时间有限，难免会出现一些纰漏或者讲解不到位之处，欢迎各位来和我讨论。</p>
-<table width="200" border="1">
-  <caption>
+  <table width="200" border="1">
+    <caption>
     <strong>目 录 </strong>
   </caption>
   <tr>
-    <td><a href="#manifest" target="_self"><em>清单文件</em></a></td>
+    <td colspan="2"><a href="#manifest" target="_self"><em>清单文件</em></a></td>
   </tr>
   <tr>
-    <td><a href="#contents" target="_self"><em>内容文件</em></a></td>
+    <td colspan="2"><a href="#contents" target="_self"><em>内容文件</em></a></td>
   </tr>
   <tr>
-    <td><a href="#datres" target="_self"><strong>行为包、资源包专题</strong></a></td>
+    <td colspan="2"><a href="#datres" target="_self"><strong>行为包、资源包专题</strong></a></td>
     </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td width="86"><a href="#datres_recipes" target="_self">配方</a></td>
+    <td width="94"><a href="#datres_items" target="_self">物品</a></td>
     </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
     </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
     </tr>
   <tr>
-    <td><strong>脚本包专题</strong></td>
+    <td colspan="2"><strong>脚本包专题</strong></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
     </tr>
   <tr>
-    <td><strong>皮肤包专题</strong></td>
+    <td colspan="2"><strong>皮肤包专题</strong></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
     </tr>
   <tr>
-    <td><strong>世界模板包专题</strong></td>
+    <td colspan="2"><strong>世界模板包专题</strong></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td><strong>高级专题</strong></td>
+    <td colspan="2"><strong>高级专题</strong></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">物品升级</td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
   </tr>
 </table>
 <div id="manifest"><h2><strong>清单文件</strong></h2>
@@ -407,7 +407,7 @@ MC也支持*/
     <td width="193">熔炉、高炉、烟熏炉</td>
   </tr>
   <tr>
-    <td width="94" rowspan="2">药水配方Po-tion Brewing ...</td>
+    <td width="94" rowspan="2"><a href="#recipes_brew" target="_self">药水配方</a>Po-tion Brewing ...</td>
     <td width="84">药水类型类</td>
     <td>... Container Recipe</td>
     <td>水瓶→喷溅药水→滞留药水</td>
@@ -443,7 +443,7 @@ MC也支持*/
   "format_version": "1.12",//这一项请尽量不要更改，除非官方文件中更改了
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "minecraft:acacia_boat"//identifier格式："命名空间:名称"。除非你想更改原版合成配方，不然请不要和官方的名字冲突或者使用minecraft命名空间；这个原则是广泛运用的 
+      "identifier": "minecraft:acacia_boat"//identifier格式："命名空间:名称"。除非你想更改原版合成配方，不然请不要和官方的名字冲突或者使用minecraft命名空间；这个原则是广泛适用的 
     },
 
     "tags": [ "crafting_table" ],//合成台配方只能填入crafting_table
@@ -533,7 +533,7 @@ MC也支持*/
     "tags": ["furnace", "smoker", "campfire"],//熔炉配方一共有四个标签，还有一个就是"blast_furnace"
     "input": "minecraft:beef",//放入的物品
     "output": "minecraft:cooked_beef"//输出的物品
-  }//各位还记得湿海绵变干海绵会把桶填满的特性吗？事实上，这一部分并没有在JSON文件中定义，这也就是我们所说的硬代码，是不可能被编辑的。也蛮可惜的。
+  }//各位还记得湿海绵烘干之后会把桶填满水的特性吗？事实上，这一部分并没有在JSON文件中定义，这也就是我们所说的硬代码，是不可能被编辑的。也蛮可惜的。
   
 }</textarea>
 </p>
@@ -569,6 +569,68 @@ MC也支持*/
 </p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a><a href="#start" target="_self"></a></p>
 <h4><strong><a name="recipes_brew" id="recipes_brew"></a>药水配方</strong></h4>
+<p><em><strong>药水类型类</strong></em></p>
+<p>下面是原版的唯二的药水类型类的药水配方：</p>
+<p>
+  <textarea name="textarea14" cols="60" rows="34" readonly="readonly" id="textarea14">{//brew_splash_potion_dragon_breath.json
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "minecraft:brew_splash_potion_dragon_breath"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "minecraft:splash_potion",
+    "reagent": "minecraft:dragon_breath",
+    "output": "minecraft:lingering_potion"
+  }
+
+}
+
+
+{//brew_potion_sulphur.json
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "minecraft:brew_potion_sulphur"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "minecraft:potion",
+    "reagent": "minecraft:gunpowder",
+    "output": "minecraft:splash_potion"
+  }
+
+}//个人觉得没有必要解释了，结构已经很清楚了</textarea>
+</p>
+<p><em><strong>药水效果类</strong></em></p>
+<p>下面是原版brew_awkward_blaze_powder.json文件：</p>
+<p>
+  <textarea name="textarea15" cols="60" rows="18" readonly="readonly" id="textarea15">//经过SPG实验，药水效果类自定义配方不能放入非原版材料，也不能产出非原版药水。所以基本上就是个鸡助
+{
+  "format_version": "1.12",
+  "minecraft:recipe_brewing_mix": {
+    "description": {
+      "identifier": "minecraft:brew_awkward_blaze_powder"
+    },
+
+    "tags": [ "brewing_stand" ],
+
+    "input": "minecraft:potion_type:awkward",
+    "reagent": "minecraft:blaze_powder",
+    "output": "minecraft:potion_type:strength"
+  }
+
+}</textarea>
+</p>
+<p class="smallfont">注：目前不建议各位修改药水配方，因为自定义物品还不够完善，无法与药水配方实现联动。</p>
+<p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
+<p><a name="datres_items" id="datres_items"></a><strong><span class="bigfont">物品</span></strong></p>
+<p>接下来的讲解将会经常运用<strong>纲要</strong>(Schema)的写法来说明JSON格式，望周知。</p>
+<p class="smallfont">注：纲要的写法就是没有引号，没有缩进的写法，有的时候一部分字母会被省略。</p>
+<p>&nbsp;</p>
 </div>
 <p>&nbsp;</p>
 </div>

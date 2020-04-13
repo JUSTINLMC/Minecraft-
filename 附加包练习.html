@@ -37,10 +37,10 @@ table {
     <strong>目录</strong>
   </caption>
   <tr>
-    <td>清单、目录文件练习</td>
+    <td><a href="#mancon" target="_self">清单、目录文件练习</a></td>
   </tr>
   <tr>
-    <td>&nbsp;</td>
+    <td><a href="#recipes" target="_self">配方练习</a></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
@@ -102,7 +102,7 @@ table {
 <p>A.manifest.json  B.manifest.txt C.contents.json D.contents.txt</p>
 <p>2.在下面的代码中有五处错误，请找到并修正它们。</p>
 <p>
-  <textarea name="textarea" id="textarea" cols="60" rows="29">{
+  <textarea name="textarea" cols="60" rows="29" id="textarea">{
     "format_version": 2，
     "header": {
         "description": "resourcePack.vanilla.description",
@@ -173,7 +173,7 @@ table {
     <td>0.2.4</td>
   </tr>
 </table>
-<p>4.根据下列信息，写一份目录文件。（请注意：放在根目录里的文件应当写在在文件夹的里的文件的前面，并且始终遵循字母表顺序）</p>
+<p>4.根据下列信息，写一份目录文件。（请注意：放在根目录里的文件应当写在在文件夹的里的文件的前面，并且排列时始终遵循字母表顺序）</p>
 <table width="425" border="1">
   <tr>
     <td colspan="3">拥有的全部文件（斜杠表示文件夹）</td>
@@ -198,5 +198,16 @@ table {
   </tr>
 </table>
 <p>&nbsp;</p>
+<p><strong><a name="recipes" id="recipes"></a>配方练习</strong></p>
+<p>1.根据下列草稿，写一份配方文件。（读得懂这个就能看得懂官方的纲要了）</p>
+<p>
+  <textarea name="textarea2" id="textarea2" cols="60" rows="8">version 1.12
+descr {id othercraft:boat}
+tags [crafting_table]
+patt [aba,aaa]
+key {a {item othercraft:log1,data 1},b {it othercraft:shovel,da 1}}
+resu {it othercraft:boat1,da 1}</textarea>
+</p>
+<p>2.自己写一个附加包，增加一个切石机配方，使得石头（不是圆石）能被切成圆石墙。</p>
 </body>
 </html>
