@@ -31,6 +31,9 @@ table {
 	font-size: small;
 	font-family: "黑体";
 }
+.textarea {
+	font-family: "宋体";
+}
 </style>
 </head>
 
@@ -44,27 +47,27 @@ table {
 <h5>1.本文采用CC  BY-NC-SA 3.0协议发布。</h5>
 <h5>2在 【】和（）内的内容为本教程注释。</h5>
 <h5>3.转载本文需取得作者同意，并说明用途。</h5>
-<h5>4.禁止将本教程中使用的附加包用于商业用途。<br>
-  <br>
-5.教程作者：JUSTIN_LMC【QQ：371055087】，本教程有任何不完善之处欢迎来和本人讨论。</h5>
-<h5>6.更新信息：Version 0.0.1-beta20200413</h5>
+<h5>4.禁止将本教程中使用的附加包用于商业用途。</h5>
+<h5>5.教程作者：JUSTIN_LMC【QQ：371055087】，本教程有任何不完善之处欢迎来和本人讨论。</h5>
+<h5>6.更新信息：Version 0.1.1-beta20200416/beta1.16.0.57更新</h5>
 <h5>7.本教程版本号遵循以下规则：当官方做出重大更新时，主版本号更新；当官方做出较小更新时，次版本号更新；每一次教程更新都将更新修订号。</h5>
-<h5>8.本文参考链接：</h5>
+<h5>8.本文参考链接：（排行不分先后）</h5>
 <h5>
-  <textarea name="textarea10" cols="65" rows="10" readonly="readonly" id="textarea10">https://www.minecraft.net/zh-hans/addons
+  <textarea name="textarea10" cols="65" rows="10" readonly="readonly" class="textarea" id="textarea10">https://www.minecraft.net/zh-hans/addons
 https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85
 https://www.mcbbs.net/thread-829760-1-1.html
 https://www.json.org/json-zh.html
 https://github.com/midnightfreddie/McpeTool
 https://semver.org/lang/zh-CN/
-https://www.uuidgenerator.net/ </textarea>
+https://www.uuidgenerator.net/
+https://www.bilibili.com/read/mobile-readlist/rl121791</textarea>
 </h5>
 <table width="85" border="1">
   <caption>
     <strong>目 录</strong>
   </caption>
   <tr>
-    <th width="57" scope="col"><a href="#concept" target="_self">概 念</a></th>
+    <th width="57" scope="col"><a href="#content_concept" target="_self">概 念</a></th>
   </tr>
   <tr>
     <td><div align="center"><a href="#freshman" target="_self"><strong>初 学</strong></a></div></td>
@@ -79,12 +82,12 @@ https://www.uuidgenerator.net/ </textarea>
     <td><div align="center"><strong>尾 声</strong></div></td>
   </tr>
 </table>
-<div id="concept">
+<div id="content_concept">
   <h1><strong>概念</strong></h1>
 <p><strong>1.什么是附加包？</strong></p>
 <p>wiki上是这么说的：</p>
 <p>
-  <textarea name="textarea" cols="60" rows="14" readonly="readonly" id="textarea">对一般人来说，附加包基本上就是一捆让你改变Minecraft世界运行规则的文件。想要身长八尺的小鸡？当然可以给你！想招募一支身着褶边短裙、听命于你的僵尸猪人大军？怪是够怪的，但当然也可以有！如果你还想了解更多有关于附加包能赋予你能力的示例，就来看看我们的附加包单独页面【网址在下方，进入时较慢，请耐心等候】。它们可真是太给力了！
+  <textarea name="textarea" cols="60" rows="10" readonly="readonly" class="textarea" id="textarea">对一般人来说，附加包基本上就是一捆让你改变Minecraft世界运行规则的文件。想要身长八尺的小鸡？当然可以给你！想招募一支身着褶边短裙、听命于你的僵尸猪人大军？怪是够怪的，但当然也可以有！如果你还想了解更多有关于附加包能赋予你能力的示例，就来看看我们的附加包单独页面【网址在下方，进入时较慢，请耐心等候】。它们可真是太给力了！
 ——Michael Ott
 
 附加包（Add-ons）是朝向Minecraft全版本自定义的坚实一步，它受Mojang官方支持。目前，还只有基岩版平台支持附加包，包括Windows 10、Gear VR和Fire TV。这些版本现在允许玩家更改他们世界的样貌并修改生物的行为，这些通过行为包来实现。此处提供的文档受官方支持与核实，是由Minecraft开发团队提供籍以协助社区发布的。</textarea>
@@ -140,7 +143,7 @@ https://www.uuidgenerator.net/ </textarea>
 <p>你只需要掌握这一个：<strong>JSON</strong>。</p>
 <p>【WIndows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript；不过脚本引擎只在win10版本支持】</p>
 <p>百度百科上是这么说的：</p>
-<p><textarea name="textarea2" cols="60" rows="6" readonly="readonly" id="textarea2">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。 </textarea>
+<p><textarea name="textarea2" cols="60" rows="5" readonly="readonly" class="textarea" id="textarea2">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。 </textarea>
 </p>
 <p>简单来说，就是一种代码格式，不是专业人士就不用深入研究了。</p>
 <p>关于JSON的格式，我建议各位看看这个大佬写的<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">帖子</a>。只需要看看“准备”部分就够了——别的内容我会穿插在教程里。</p>
@@ -175,7 +178,7 @@ https://www.uuidgenerator.net/ </textarea>
     <td class="tbyellow">FileMaster</td>
   </tr>
 </table>
-<p class="smallfont">[1]<em>摘自搜狗百科：</em>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等），因为很多项任务会自动生成。</p>
+<p class="smallfont">[1]<em>摘自搜狗百科：</em>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等）【比如我】，因为很多项任务会自动生成。</p>
 <p class="smallfont">[2]画图、建模软件将在后续教程中推荐。</p>
 <p>&nbsp;</p>
 <p><strong>4.客户端和服务端的区别？</strong></p>
@@ -193,7 +196,7 @@ https://www.uuidgenerator.net/ </textarea>
   <h1><strong>结构</strong></h1>
   <h3><strong>行为包</strong></h3>
 <p>
-  <textarea name="textarea3" cols="60" rows="20" readonly="readonly" id="textarea3">(名称)
+  <textarea name="textarea3" cols="60" rows="15" readonly="readonly" class="textarea" id="textarea3">(名称)
 -(行为包里可能有animation_controllers和animations，这一点会在之后的教程种体现）
 -biomes //生物群系主定义
 -blocks //方块主定义
@@ -212,7 +215,7 @@ https://www.uuidgenerator.net/ </textarea>
 </p>
 <h3><strong>资源包</strong></h3>
 <p>
-  <textarea name="textarea4" cols="60" rows="26" readonly="readonly" id="textarea4">（名称）
+  <textarea name="textarea4" cols="60" rows="25" readonly="readonly" class="textarea" id="textarea4">（名称）
 -animation_controllers //动画触发条件定义
 -animations //动画定义
 -entity //实体客户端定义（请与行为包里的实体服务端定义相区分）
@@ -241,7 +244,7 @@ https://www.uuidgenerator.net/ </textarea>
 <p>除了行为包的结构，另加一个scripts文件夹（内含client和server文件夹，两个文件夹内各有.js文件）</p>
 <h3><strong>皮肤包</strong></h3>
 <p>
-  <textarea name="textarea5" cols="60" rows="6" readonly="readonly" id="textarea5">（名称）
+  <textarea name="textarea5" cols="60" rows="5" readonly="readonly" class="textarea" id="textarea5">（名称）
 -geometry.json //几何定义
 -manifest.json //清单文件
 -skins.json //皮肤定义
@@ -249,14 +252,14 @@ https://www.uuidgenerator.net/ </textarea>
 </p>
 <h3><strong>世界模板包</strong></h3>
 <p>
-  <textarea name="textarea6" cols="60" rows="10" readonly="readonly" id="textarea6">（名称）
+  <textarea name="textarea6" cols="60" rows="10" readonly="readonly" class="textarea" id="textarea6">（名称）
 db //Mojang的游戏数据储存区
 contents.json //内容文件
 level.dat //世界规则储存文件
 level.dat_old //旧版本世界规则储存文件
 levelname.txt //世界名
 manifest.json //清单文件
-world_icon.jpeg //世界&世界模板包图标
+world_icon.jpeg //世界&amp;世界模板包图标
 （...） //另外一些就是世界内应用的附加包</textarea>
 </p>
 <p>实际上，世界模板包只需要将你的世界打包出来，加上清单文件即可。</p></div>
@@ -319,49 +322,50 @@ world_icon.jpeg //世界&世界模板包图标
   </tr>
 </table>
 <div id="manifest"><h2><strong>清单文件</strong></h2>
+  <p>如果不清楚一个文件应该放在哪里，回去看看结构！特殊情况是一定会说的。</p>
 <p>清单文件（manifest.json）是整个包里<em>最为重要</em>的一个文件，它用于让游戏辨识这个包的基本信息。<em>游戏在读取包时第一个就读取该文件。</em>因此，请<em>一定</em>注意你的清单文件是否有语法错误。【自然，每个包都必须有这个文件】</p>
 <p>下面是一个完整的包文件示例：</p>
 <p>
-  <textarea name="textarea7" cols=60 rows=70 readonly="readonly" id="textarea7">//在开始之前强调一下，请一定要掌握JSON文件的规范！另外，逗号特别容易被遗漏，各位可以着重关注逗号的使用。
+  <textarea name="textarea7" cols=90 rows=30 readonly="readonly" class="textarea" id="textarea7">//在开始之前强调一下：1.请一定要掌握JSON文件的规范！任何中文符号都是不被允许的。2.逗号特别容易被遗漏，各位可以着重关注逗号的使用。3.Mojang用的是美式英语不是英式英语。
 //正经的JSON并不支持注释，但MC里是支持注释的。
 /*包括跨行注释
 MC也支持*/
-//编写时，最好有缩进和换行的习惯，不然阅读会很困难。
-{//每一个JSON必须以大括号开始，以大括号结束。
-  "capabilities": [//可选，能力，用于确定包能修改的内容。
-    "chemistry",//如果你的包里修改了与化学（教育版）相关的内容（材质、实体、合成表等一切），此项必填。
-    "experimental_custom_ui"//如果你的包里包含自定义UI（注意，这里的自定义UI是采用html真正自定义的UI，而并不是游戏本身的UI，这在后文会提及），此项必填。
+//编写时，最好有缩进和换行的习惯，不然阅读会很困难。注释有的时候也会采用缩进的格式。
+{                                    //每一个JSON必须以大括号开始，以大括号结束。
+  "capabilities": [                  //可选，能力，用于确定包能修改的内容。
+    "chemistry",                     //如果你的包里修改了与化学（教育版）相关的内容（材质、实体、合成表等一切），此项必填。
+    "experimental_custom_ui"         //如果你的包里包含自定义UI（注意，这里的自定义UI是采用html真正自定义的UI，而并不是游戏本身的UI，这在后文会提及），此项必填。
   ],
-  "dependencies": [//可选，必备依赖项（即你的包依赖的包），用于确定加载你的包时必须同时加载的包。一般用途为行为包依赖材质包。当你加载你的包时，你的包依赖的包也会自动被加入游戏；如果该被依赖的包不存在，游戏会弹出错误信息。
+  "dependencies": [                  //可选，必备依赖项（即你的包依赖的包），用于确定加载你的包时必须同时加载的包。一般用途为行为包依赖材质包。当你加载你的包时，你的包依赖的包也会自动被加入游戏；如果该被依赖的包不存在，游戏会弹出错误信息。
     {
-      "uuid": (String),//必填，通用唯一识别码，不允许重复，和人的身份证号很相似，作者建议去网站（下方）上生成一个会比较好。
-      "version": [ a, b, c ]//必填，版本号，格式可参考下方链接。
+      "uuid": (String),              //必填，通用唯一识别码，不允许重复，和人的身份证号很相似，作者建议去网站（下方）上生成一个会比较好。
+      "version": [ a, b, c ]         //必填，版本号，格式可参考下方链接。
     }
   ],
-  "format_version": (Number),//必填，清单文件版本，1或2，在对应的教程里将会说明。
-  "header": {//必填，头，包的基本信息。
-    "base_game_version":[ d, e, f ],//世界模板包必填，限制游戏最低版本以使模板版本与游戏版本相匹配。填入模板的游戏版本如[ 1, 14, 2 ]，忽略如1.16.0.51后面的51。
-    "description": (String),//一串对于包的描述，可在语言文件中定义（这在后文会提及）。
+  "format_version": (Number),        //必填，清单文件版本，1或2，在对应的教程里将会说明。
+  "header": {                        //必填，头，包的基本信息。
+    "base_game_version":[ d, e, f ], //世界模板包必填，限制游戏最低版本以使模板版本与游戏版本相匹配。填入模板的游戏版本如[ 1, 14, 2 ]，忽略如1.16.0.51后面的51。
+    "description": (String),         //一串对于包的描述，可在语言文件中定义（这在后文会提及）。
     "lock_template_options": (Boolean),//世界模板包选填，是否锁定世界参数（如是否死亡不掉落等等）设置。
     "min_engine_version": [ d, e, f ],//行为包、资源包必填，限制游戏最低版本以使包能在世界里正常运行。建议填入当前最新版本如[ 1, 16, 0 ]。注意世界模板包和行为包、资源包的限定最低版本的方式不一样（但是世界模板包里用min_engine_version貌似也没有问题）。
-    "name": (String),//必填，包的名称，可在语言文件中定义。
-    "uuid": (String),//必填，同前。不允许与本包和其他包的清单文件里的任何uuid重复（除必备依赖项）（但只要你是随机生成的，重复概率几乎为0）。
-    "version": [ a, b, c ]//必填，版本号，格式可参考下方链接。
+    "name": (String),                //必填，包的名称，可在语言文件中定义。
+    "uuid": (String),                //必填，同前。不允许与本包和其他包的清单文件里的任何uuid重复（除必备依赖项）（但只要你是随机生成的，重复概率几乎为0）。
+    "version": [ a, b, c ]           //必填，版本号，格式可参考下方链接。
   },
-  "metadata": {//选填，作者信息。
-    "authors": (Array),//选填，本包的作者（们），格式如["Steve","ALex"]。
-    "license": (String),//选填，本包规定的法律条文。
-    "url": (String)//选填，本包的作者（们）的主页地址。
+  "metadata": {                      //选填，作者信息。
+    "authors": (Array),              //选填，本包的作者（们），格式如["Steve","ALex"]。
+    "license": (String),             //选填，本包规定的法律条文。
+    "url": (String)                  //选填，本包的作者（们）的主页地址。
   }
-  "modules": [//(Array)必填，包里所含模块信息。
-    {//可以有多个模块，注意逗号的使用即可。但一般来说，行为包、资源包、世界模板包、皮肤包都是分开的，然后利用必备依赖项进行关联。
-      "description": (String),//必填，没什么用，按照官方的说法是提醒你自己这个模块是拿来干嘛的。
-      "type": (String),//必填，模块类型（没错！就是我之前在表格里列出的清单文件模块名称），一般来说只有表格里列出的5种。
-      "uuid": (String),//必填，同前。
-      "version": [ a, b, c ]//必填，版本号，格式可参考下方链接。
+  "modules": [                       //(Array)必填，包里所含模块信息。
+    {                                //可以有多个模块，注意逗号的使用即可。但一般来说，行为包、资源包、世界模板包、皮肤包都是分开的，然后利用必备依赖项进行关联。
+      "description": (String),       //必填，没什么用，按照官方的说法是提醒你自己这个模块是拿来干嘛的。
+      "type": (String),              //必填，模块类型（没错！就是我之前在表格里列出的清单文件模块名称），一般来说只有表格里列出的5种。
+      "uuid": (String),              //必填，同前。
+      "version": [ a, b, c ]         //必填，版本号，格式可参考下方链接。
     }
   ]
-}//注意结束的大括号。</textarea>
+}                                    //注意结束的大括号。</textarea>
 </p>
 <p class="smallfont">[1]语义化版本（版本号[ a, b, c ]格式）链接：<a href="https://semver.org/lang/zh-CN/" target="new">https://semver.org/lang/zh-CN/</a></p>
 <p class="smallfont">[2]uuid生成器：<a href="https://www.uuidgenerator.net/" target="new">https://www.uuidgenerator.net/</a></p>
@@ -370,22 +374,22 @@ MC也支持*/
 <div id="contents"><h2>内容文件</h2>
 <p>内容文件（contents.json）是整个包里<em>仅次于清单文件重要</em>的文件。它真正的相当于一个包的目录。它的格式很简单（其实好像也不简单）：</p>
 <p>
-  <textarea name="textarea8" cols="60" rows="12" readonly="readonly" id="textarea8">{
-  "content": [
+  <textarea name="textarea8" cols="90" rows="10" readonly="readonly" class="textarea" id="textarea8">{
+  "content": [                   //从这里开始句尾就不加句号了，有点烦
     {
-      "path":"a.json"//根目录处的文件直接写名字加后缀名
+      "path":"a.json"            //根目录处的文件直接写名字加后缀名
     },
     {
-      "path":"textures/b.png"//在根目录里的文件夹里的文件需要如下格式：a/b/.../name.后缀名
-    }//...等等
-  ]//内容文件不需要包含自己
+      "path":"textures/b.png"    //在根目录里的文件夹里的文件需要如下格式：a/b/.../name.后缀名
+    }                            //...等等
+  ]                              //内容文件不需要包含自己（禁止套娃）
 }</textarea>
 </p>
 <p>一般来说，这个文件不建立也没有太大问题——如果不建立，游戏会调用原版包里的目录文件，而你的包里的文件依旧会被识别。尤其是对于一个文件很多的包来说，建立这样一个内容文件就如同噩梦一般——如果不用程序自己去处理，头发可能都要掉光了（doge）。所以各位看自己的意愿要不要建立内容文件了。</p>
 <p><a href="#start" target="_self">回到编写目录</a></p></div>
 <p>&nbsp;</p>
 <div id="datres"><h2><strong>行为包、资源包专题</strong></h2>
-<p>接下来的内容将会占据本文的绝大多数笔墨。我将会把这一部分内容分成几个部分：<a href="#datres_recipes" target="_self">配方</a>、物品、方块、战利品表、交易、命令函数、语言文件、生物、渲染、粒子、声音、UI（HUD）。</p>
+<p>接下来的内容将会占据本文的绝大多数笔墨。我将会把这一部分内容分成几个部分：<a href="#datres_recipes" target="_self">配方</a>、<a href="#datres_items" target="_self">物品</a>、方块、战利品表、交易、命令函数、语言文件、生物、渲染、粒子、声音、UI（HUD）。</p>
 <p>接下来的内容难度会急剧增大，请各位做好心理准备。</p>
 <p>在正式开始之前，我建议各位都先下载一下官方示例包。 </p>
 <p class="smallfont"><em>方法在这里：</em></p>
@@ -434,26 +438,29 @@ MC也支持*/
     <td>半砖、楼梯、墙……</td>
   </tr>
 </table>
+<p>配方的内容放在行为包/recipes/内部。</p>
 <p>在开始之前，请确认你已经理解<a href="https://www.json.org/json-zh.html" target="new">JSON格式</a>——接下来将直接使用相关术语并且不加以解释。</p>
+<p class="smallfont">注：配方中所有键值对均为必填。</p>
 <h4><strong><a name="recipes_crafting" id="recipes_crafting"></a>合成台配方</strong></h4>
 <p><em><strong>有序合成</strong></em></p>
 <p>下面是原版acacia_boat.json文件（注释为本人所加）：</p>
 <p>
-  <textarea name="textarea9" cols="60" rows="42" readonly="readonly" id="textarea9">{
-  "format_version": "1.12",//这一项请尽量不要更改，除非官方文件中更改了
+  <textarea name="textarea9" cols="90" rows="30" readonly="readonly" class="textarea" id="textarea9">{
+  "format_version": "1.12",                //这一项请尽量不要更改，除非官方文件中更改了
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "minecraft:acacia_boat"//identifier格式："命名空间:名称"。除非你想更改原版合成配方，不然请不要和官方的名字冲突或者使用minecraft命名空间；这个原则是广泛适用的 
+      "identifier": "minecraft:acacia_boat"//辨识名格式："命名空间:名称"。除非你想更改原版合成配方，不然请不要和官方的名字冲突或者使用minecraft命名空间；这个原则是广泛适用的。此外，在命名空间或名字内只能使用小写字母及下划线，分号是用来分割的。 
     },
 
-    "tags": [ "crafting_table" ],//合成台配方只能填入crafting_table
-    "pattern": [//这个有序图案其实很好理解，任何3*3及以内的图形都可以通过这种方式来展现。下面的注释中给出了一些例子
+    "tags": [ "crafting_table" ],          //合成台配方只能填入crafting_table
+    "pattern": [                           //这个有序图案其实很好理解，任何3*3及以内的图形都可以通过这种方式来展现。下面的注释中给出了一些例子
       "#P#",
       "###"
     ],
 /*"a a",
 "aaa",
-"aaa"//这是一个自定义物品的合成方式，空格可以定义不放东西*/
+"aaa"                                      //这是一个自定义物品的合成方式，空格可以定义不放东西
+*/
     "key": {
       "P": {
         "item": "minecraft:wooden_shovel"
@@ -462,13 +469,13 @@ MC也支持*/
         "item": "minecraft:planks",
         "data": 4
       }/*,
-      "a": {//相对应的，在key里需要说明你的符号的意义
-        "item": "minecraft:green_diamond",//这个物品是我瞎写的，另外目前自定义物品貌似不支持数据值
+      "a": {                               //相对应的，在key里需要说明你的符号的意义
+        "item": "minecraft:green_diamond", //这个物品是我瞎写的
       }*/
     },
-    "result": {//这里是输出结果，当然也可以是自定义物品
-      "item": "minecraft:boat",//有一个非常特殊的特例，cake.json，这个各位可以自己去看看
-      "data": 4//P.S.自定义刷怪蛋是有数据值的，这个以后会讲到
+    "result": {                            //这里是输出结果，当然也可以是自定义物品
+      "item": "minecraft:boat",            //result里有一个特例，cake.json，这个各位可以自己去看看
+      "data": 4                            //P.S.自定义刷怪蛋是有数据值的，这个以后会讲到
     }
   }
   
@@ -478,15 +485,15 @@ MC也支持*/
 <p><em><strong>无序合成</strong></em></p>
 <p>下面是原版rabbit_stew_from_brown_mushhroom.json文件：</p>
 <p>
-  <textarea name="textarea11" cols="60" rows="45" readonly="readonly" id="textarea11">{
+  <textarea name="textarea11" cols="90" rows="30" readonly="readonly" class="textarea" id="textarea11">{
   "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
       "identifier": "minecraft:rabbit_stew_from_brown_mushroom"
     },
     "tags": [ "crafting_table" ],
-    "group": "rabbit_stew",//官方有的时候用键gruop有的时候用键priority，我也搞不懂
-    "ingredients": [//这个无序的配方应该很容易看懂吧。另外如果有几个相同的物品放在无序配方里，这几个物品需要分开来写，具体可以看下面的注释
+    "group": "rabbit_stew",  //官方有的时候用键gruop有的时候用键priority，我也搞不懂
+    "ingredients": [         //这个无序的配方应该很容易看懂吧。另外如果有几个相同的物品放在无序配方里，这几个物品需要分开来写，具体可以看下面的注释
       {
         "item": "minecraft:bowl"
       },
@@ -501,7 +508,7 @@ MC也支持*/
       },
       {
         "item": "minecraft:cooked_rabbit"
-      }/*,//注释部分展示了相同物品的写法
+      }/*,                   //注释部分展示了相同物品的写法
       {
         "item": "minecraft:log",
         "data": 1
@@ -522,7 +529,7 @@ MC也支持*/
 <h4><strong><a name="recipes_furnace" id="recipes_furnace"></a>熔炉配方</strong></h4>
 <p>下面是原版的furnace_beef.json（建议各位写熔炉配方的时候加上furnace_）文件：</p>
 <p>
-  <textarea name="textarea12" cols="60" rows="18" readonly="readonly" id="textarea12">{
+  <textarea name="textarea12" cols="90" rows="15" readonly="readonly" class="textarea" id="textarea12">{
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
@@ -530,10 +537,10 @@ MC也支持*/
     },
 
     
-    "tags": ["furnace", "smoker", "campfire"],//熔炉配方一共有四个标签，还有一个就是"blast_furnace"
-    "input": "minecraft:beef",//放入的物品
-    "output": "minecraft:cooked_beef"//输出的物品
-  }//各位还记得湿海绵烘干之后会把桶填满水的特性吗？事实上，这一部分并没有在JSON文件中定义，这也就是我们所说的硬代码，是不可能被编辑的。也蛮可惜的。
+    "tags": ["furnace", "smoker", "campfire"],//熔炉配方一共有五个标签，还有两个就是"blast_furnace"和"soul_fire"
+    "input": "minecraft:beef",                //放入的物品
+    "output": "minecraft:cooked_beef"         //输出的物品
+  }                                           //各位还记得湿海绵烘干之后会把桶填满水的特性吗？然而，这一部分并没有在JSON文件中定义，这也就是我们所说的硬代码，是不能被编辑的。也蛮可惜的。
   
 }</textarea>
 </p>
@@ -541,17 +548,17 @@ MC也支持*/
 <h4><strong><a name="recipes_stonecutter" id="recipes_stonecutter"></a>切石机配方</strong></h4>
 <p>下面是原版的stonecutter_andesite_slab.json（建议同上）文件：</p>
 <p>
-  <textarea name="textarea13" cols="60" rows="26" readonly="readonly" id="textarea13">{
+  <textarea name="textarea13" cols="90" rows="25" readonly="readonly" class="textarea" id="textarea13">{
   "format_version": "1.12",
-  "minecraft:recipe_shapeless": {//没错，切石机也被归类在了无序配方之中
+  "minecraft:recipe_shapeless": {  //没错，切石机也被归类在了无序配方之中
     "description": {
     "identifier": "minecraft:stonecutter_andesite_slab"
     },
 
     
-    "tags": [ "stonecutter" ],//这就不必多讲了
-    "priority": 0,//切石机的权重遵循以下规则：同一材质，台阶0，楼梯1，墙2
-    "ingredients": [//方括号不要忘记加，尽管只有一个物品
+    "tags": [ "stonecutter" ],     //这就不必多讲了
+    "priority": 0,                 //切石机的权重遵循以下规则：同一材质，台阶0，楼梯1，墙2
+    "ingredients": [               //方括号不要忘记加，尽管只有一个物品
       {
         "item": "minecraft:stone",
         "data": 5
@@ -572,7 +579,7 @@ MC也支持*/
 <p><em><strong>药水类型类</strong></em></p>
 <p>下面是原版的唯二的药水类型类的药水配方：</p>
 <p>
-  <textarea name="textarea14" cols="60" rows="34" readonly="readonly" id="textarea14">{//brew_splash_potion_dragon_breath.json
+  <textarea name="textarea14" cols="90" rows="30" readonly="readonly" class="textarea" id="textarea14">{//brew_splash_potion_dragon_breath.json
   "format_version": "1.12",
   "minecraft:recipe_brewing_container": {
     "description": {
@@ -608,7 +615,8 @@ MC也支持*/
 <p><em><strong>药水效果类</strong></em></p>
 <p>下面是原版brew_awkward_blaze_powder.json文件：</p>
 <p>
-  <textarea name="textarea15" cols="60" rows="18" readonly="readonly" id="textarea15">//经过SPG实验，药水效果类自定义配方不能放入非原版材料，也不能产出非原版药水。所以基本上就是个鸡助
+  <textarea name="textarea15" cols="90" rows="20" readonly="readonly" class="textarea" id="textarea15">//经过SPG实验，药水自定义配方不能放入非原版指定材料，也不能产出非原版药水。所以基本上就是个鸡助
+//补：自基岩版1.16,0,57起，药水自定义配方不能放入非原版指定材料bug已修复。
 {
   "format_version": "1.12",
   "minecraft:recipe_brewing_mix": {
@@ -629,8 +637,53 @@ MC也支持*/
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <p><a name="datres_items" id="datres_items"></a><strong><span class="bigfont">物品</span></strong></p>
 <p>接下来的讲解将会经常运用<strong>纲要</strong>(Schema)的写法来说明JSON格式，望周知。</p>
-<p class="smallfont">注：纲要的写法就是没有引号，没有缩进的写法，有的时候一部分字母会被省略。</p>
-<p>&nbsp;</p>
+<p>行为包内的物品定义放在行为包/items/内部。</p>
+<p class="smallfont">注：</p>
+<p class="smallfont">[1]纲要的写法就是没有引号，没有缩进的写法，有的时候一部分字母和符号会被省略。</p>
+<p class="smallfont">[2]以下内容不说明即为选填。</p>
+<p>
+  <textarea name="textarea16" cols="90" rows="30" readonly="readonly" class="textarea" id="textarea16">{
+format_version 1.10,                 //一般选择这个即可，特殊情况在后面
+minecraft:item {
+description {                        //必填，描述
+identifier 命名空间:名字
+},
+components {                         //选填，组件
+minecraft:max_damage Int,            //耐久值，不设置则无耐久
+minecraft:hand_equipped Boolean,     //是否是工具类物品（展示方式不同，工具类物品会“立”起来），true为是
+minecraft:stacked_by_data Boolean,   //是否由数据值储存，暂未研究作用，true为是
+minecraft:foil Boolean,              //是否带有附魔特效，true为是
+minecraft:block String,              //所对应方块的完整名称，一般的完整方块不需要这一项（对应的物品形式的方块会自动根据贴图组合），但如门、床等需要这一项，仅照相机使用（可参考camera.json和SPG教程）
+minecraft:max_stack_size Int,        //最大堆叠数，不建议超过64（经SPG研究，存在一定的bug），默认64
+minecraft:use_duration Int,          //使用时间（为食物类物品所准备，单位为0.02s）
+minecraft:food {                     //与上一项联动，两项必须同时存在/同时不存在
+nutrition Int,                       //必填，恢复的饥饿值
+saturation_modifier String,          //必填，恢复的饱食度，可选：poor,low,normal,good,max,supernatural
+using_converts_to String,            //使用后，该物品转化成的物品，如蘑菇煲
+on_use_action String,                //使用后动作，可选：chorus_teleport（传送）,suspicious_stew_effect（这个是沉船内的谜之炖菜，会给予随机药水效果），none（无动作），默认none
+on_use_range Int,                    //传送范围（上一个若选择chorus_teleport则一起使用，单位为1个方块），未知默认情况
+cooldown_type String,                //使用后是否需要冷却时间，可选：chorusfruit（冷却）或none（不冷却），默认none
+cooldown_time Int,                   //冷却时间（与上一项联动，两项必须同时存在/同属不存在，单位为0.05s），未知默认情况
+can_always_eat Boolean,              //能否一直吃这个物品，意义不明
+is_meat Boolean,                     //是否是肉类，意义不明
+effects [                            //药水效果，可选
+{
+name String,                         //给予的药水效果的名称
+chance Float,                        //（浮点精确：小数点后1位精度）给予该药水效果的概率，如1.0为100%给予，0.5为50%给予
+duration Int,                        //药水效果的持续时间，单位为1s
+amplifier Int,                       //药水效果的等级，不要超过255
+}                                    //可以继续增加药水效果
+],
+remove_effects Array                 //移除的药水效果，格式：["String","String"...]（使用此项format_version至少为1.14）
+},
+minecraft:seed {
+crop_result String,                  //成熟后对应的方块，目前无法自定义生长阶段
+plant_at Array                       //可以种植于上的固体方块，默认为耕地         
+}     
+}
+}
+}</textarea>
+</p>
 </div>
 <p>&nbsp;</p>
 </div>
