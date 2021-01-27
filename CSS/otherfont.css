@@ -1,0 +1,31 @@
+@charset "utf-8";
+.bigfont {
+	font-size: 20px;
+	font-weight: bold;
+}
+.smallfont {
+	font-size: small;
+	font-family: "黑体";
+}
+.deleteline {
+	text-decoration: line-through;
+}
+.divtitle {
+	font-size: xx-large;
+}
+.tinydivtitle {
+	font-size: medium;
+	font-weight: bold;
+}
+.paraital {
+	font-style: italic;
+}
+
+
+.smalldivtitle {
+	font-size: x-large;
+	font-weight: bold;
+}
+.parabold {
+	font-weight: bold;
+}
