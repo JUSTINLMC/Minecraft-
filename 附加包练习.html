@@ -4,16 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
 <style type="text/css">
-.tbbold {
-	border-top-width: 1px;
-	border-right-width: 3px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-right-style: solid;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-}
 table {
 	border-collapse: collapse;
 	border-top-width: 1px;
@@ -21,16 +11,21 @@ table {
 	border-bottom-width: 1px;
 	border-left-width: 1px;
 }
-.smallfont {
-	font-family: "黑体";
-	font-size: small;
+textarea {
+	font-family: "宋体";
+}
+</style>
+<link href="../CSS/otherfont.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.Instrution {	font-size: small;
+	font-weight: bold;
 }
 </style>
 </head>
 
 <body>
 <p class="smallfont">1.本练习与附加包教程相配套。</p>
-<p class="smallfont">2.本文禁止任何形式的转载。</p>
+<p class="smallfont">2.本文采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/legalcode?__cf_chl_captcha_tk__=e5f7682e816f4a5a7c40dd5e367834da8eeaab18-1597482296-0-AUj4tdX9H51Hd-K8AbQitPkR-14AM59OIIM7YC1r_FM7qepN0g1JQ64gcdRWz_pWDgoiUzS5tDCkwyP4FH5jOZh_0bvfE_RWBlTOQsdZg2zqhsAHEnoErLLLTJe7LSbxcHDfps9YRoWD4ES8C-qpo09X2JiDHzDmsBKH23y12CQqp6Fcsecb71Me9DI26N7LeBOq73OORBobiIA_F7A8sdqlvWZ4zxNbbeAt8yhrpZxDHMEiKDORj0sTTqkjjsffSuV047OIn26yDqtC3vCRJOMWrNKf_lYcJ-Je50eoBfuO2LpnfJD8vBCUwpSNZaU31tlS_h13WG0SibaUrYIPzDpXKXpqY22aCqvhKUY_ywPpixg4CVHEY_OlSl3AOi21BC4dNIxktuoq5NAVnnW8e9ZKxchG4G24AVh4ibB94bofHo0ZbASvWzOuklnxWM-0McdYv-m9uaeyeeHJDRn8WssRSVgbwupJx9IpKXyMWdCJQZtj6WHqPMhSBX67pXKNaHYXEhWroPrnp-lK0H3MHasda9dyqU1BA7Qr-vO2v7AzxQYYB7izBLWOIYMjro1a5Ei26NEafVy7QYxZwfyY-0Q">CC  BY-NC-SA 3.0协议</a>发布。</p>
 <p class="smallfont">3.练习作者：JUSTIN_LMC；QQ：371055087。</p>
 <table width="200" border="1">
   <caption>
@@ -97,12 +92,12 @@ table {
     <td>&nbsp;</td>
   </tr>
 </table>
-<p><strong><a name="mancon" id="mancon"></a>清单、内容文件练习</strong></p>
+<p class="tinydivtitle"><a name="mancon" id="mancon"></a>清单、内容文件练习</p>
 <p>1.在附加包中，清单文件叫？</p>
 <p>A.manifest.json  B.manifest.txt C.contents.json D.contents.txt</p>
-<p>2.在下面的代码中有五处错误，请找到并修正它们。</p>
+<p>2.在下面的JSON文件中有五处错误，请找到并改正它们。</p>
 <p>
-  <textarea name="textarea" cols="60" rows="29" id="textarea">{
+  <textarea name="textarea" cols="60" rows="29" class="textarea" id="textarea">{
     "format_version": 2，
     "header": {
         "description": "resourcePack.vanilla.description",
@@ -119,7 +114,7 @@ table {
             0
         ]
     },
-    "modules": {
+    "modules":
         "description": "resourcePack.vanilla.description",
         "type": "resource",
         "uuid": "53644ac-a276-42e5-843f-a3c6f169a9ab",
@@ -176,7 +171,7 @@ table {
 <p>4.根据下列信息，写一份目录文件。（请注意：放在根目录里的文件应当写在在文件夹的里的文件的前面，并且排列时始终遵循字母表顺序）</p>
 <table width="425" border="1">
   <tr>
-    <td colspan="3">拥有的全部文件（斜杠表示文件夹）</td>
+    <td colspan="3">拥有的全部文件（斜杠表示文件夹，文件均为空）</td>
   </tr>
   <tr>
     <td width="139">manifest.json</td>
@@ -198,16 +193,22 @@ table {
   </tr>
 </table>
 <p>&nbsp;</p>
-<p><strong><a name="recipes" id="recipes"></a>配方练习</strong></p>
-<p>1.根据下列草稿，写一份配方文件。（读得懂这个就能看得懂官方的纲要了）</p>
+<p class="tinydivtitle"><a name="recipes" id="recipes"></a>配方练习</p>
+<p>1.根据下列草稿，写一份配方文件。</p>
 <p>
-  <textarea name="textarea2" id="textarea2" cols="60" rows="8">version 1.12
-descr {id othercraft:boat}
+  <textarea name="textarea2" cols="60" rows="8" class="textarea" id="textarea2">version 1.12
+description {id othercraft:boat}
 tags [crafting_table]
-patt [aba,aaa]
+pattern [aba,aaa]
 key {a {item othercraft:log1,data 1},b {it othercraft:shovel,da 1}}
-resu {it othercraft:boat1,da 1}</textarea>
+result {item othercraft:boat1,data 1}</textarea>
 </p>
-<p>2.自己写一个附加包，增加一个切石机配方，使得石头（不是圆石）能被切成圆石墙。</p>
+<p>2.BUGJUMP在MinecraftBE版Beta 1.16.0.57版本中犯了一个错误，你能找出来吗？（见图）</p>
+<p><img src="Pic1.png" width="432" height="384" /></p>
+<p>3.自己写一个附加包，增加一个切石机配方，使得石头（不是圆石）能被切成圆石墙。</p>
+<p>4.自己写一个附加包，增加一个药水效果类配方（提示：比如将草和泥土变为草方块）。</p>
+<p>&nbsp;</p>
+<p class="tinydivtitle">物品练习</p>
+<p>&nbsp;</p>
 </body>
 </html>
