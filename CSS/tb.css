@@ -1,0 +1,14 @@
+@charset "utf-8";
+.tbbold {
+	border-bottom-width: 2px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	font-weight: bold;
+	text-align: center;
+	width: auto;
+}
+.tbyellow {
+	color: #DFDF00;
+}
