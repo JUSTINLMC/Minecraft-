@@ -12,12 +12,13 @@
 }
 .divtitle {
 	font-size: xx-large;
+	font-weight: bold;
 }
 .tinydivtitle {
 	font-size: medium;
 	font-weight: bold;
 }
-.paraital {
+.ital {
 	font-style: italic;
 }
 
@@ -26,6 +27,6 @@
 	font-size: x-large;
 	font-weight: bold;
 }
-.parabold {
+.bold {
 	font-weight: bold;
 }
