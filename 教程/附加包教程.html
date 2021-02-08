@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
@@ -29,7 +30,7 @@ body table {
 	border-bottom-width: 3px;
 	border-left-width: 3px;
 }
-.Text {
+.AutoAdapt {
 	width: 80%;
 	_height: 120px;
 	max-height: 240px;
@@ -41,7 +42,7 @@ body table {
 	overflow-y: auto;
 	_overflow-y: visible;
 	font-family: "宋体";
-	font-size: 13px;
+	font-size: 14px;
 }
 .Instrution {
 	font-size: small;
@@ -54,30 +55,32 @@ body table {
 
 <body id="concept">
 <div id="index">
-  <p>欢迎来到附加包的世界！</p>
+  <p>欢迎学习附加包！</p>
   <p>本教程将带你大致了解附加包，并一步步带你理解附加包的主要内容。</p>
   <p>本教程将不定期更新。</p>
 </div>
 <div>
 <p class="Instrution">说明：<br />
-    1.本文采用<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">CC  BY-NC-SA 3.0协议</a>发布。<br />
-    2.注释符号为 【】、（）。<br />
+    1.本文发布遵循<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">CC  BY-NC-SA 3.0协议</a>。<br />
+    2.注释符号：【】、（）。<br />
     3.教程作者：JUSTIN_LMC【QQ：371055087】，本教程有任何不完善之处欢迎和本人讨论。<br />
     4.更新信息：Version 1.0.0-beta20210122/1.16.200<br />
-  本文参考链接：（排名不分先后）</p>
-<div class="Text">
-      https://www.minecraft.net/zh-hans/addons<br>
-      https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85<br>
-      https://www.mcbbs.net/thread-829760-1-1.html<br>
-      https://www.json.org/json-zh.html<br>
-      https://github.com/midnightfreddie/McpeTool<br>
-      https://semver.org/lang/zh-CN/<br>
-      https://www.uuidgenerator.net/<br>
-      https://www.bilibili.com/read/mobile-readlist/rl121791<br>
+  本文参考/涉及链接：（排名不分先后）</p>
+<div class="AutoAdapt">
+      https://www.minecraft.net/zh-hans/addons<br />
+      https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85<br />
+      https://www.mcbbs.net/thread-829760-1-1.html<br />
+      https://www.json.org/json-zh.html<br />
+      https://github.com/midnightfreddie/McpeTool<br />
+      https://semver.org/lang/zh-CN/<br />
+      https://www.uuidgenerator.net/<br />
+      https://www.bilibili.com/read/mobile-readlist/rl121791<br />
       https://www.bilibili.com/read/cv6806196
 </div>
-<p><span class="Instrution">感谢 @蛋黄小饼干 给予的巨大帮助。<br />
-在这里向前人们表示敬意。</span></p>
+<p><span class="Instrution">感谢 @蛋黄小饼干 给予的主要技术指导。<br />
+在这里向前人们表示敬意。<br />
+本文可能涉及侵权内容，如有请立即联系本人删除。<br />
+</span></p>
 </div>
 <table width="85" border="1">
   <caption class="tinydivtitle">
@@ -102,19 +105,19 @@ body table {
 <div id="content_concept">
 <p class="divtitle">概念</p>
 <p class="tinydivtitle">1.什么是附加包？</p>
-<p>wiki这样说道：</p><div class="Text">
+<p>wiki<span class="smallfont">[2]</span>这样说道：</p><div class="AutoAdapt">
 对一般人来说，附加包基本上就是一捆让你改变Minecraft世界运行规则的文件。想要身长八尺的小鸡？当然可以给你！想招募一支身着褶边短裙、听命于你的僵尸猪人大军？怪是够怪的，但当然也可以有！如果你还想了解更多有关于附加包能赋予你能力的示例，就来看看我们的附加包单独页面【网址在下方，进入时较慢，请耐心等候】。它们可真是太给力了！
 ——Michael Ott
 
 附加包（Add-ons）是朝向Minecraft全版本自定义的坚实一步，它受Mojang官方支持。目前，还只有基岩版平台支持附加包，包括Windows 10、Gear VR和Fire TV。这些版本现在允许玩家更改他们世界的样貌并修改生物的行为，这些通过行为包来实现。
 </div>
-<p>在我个人看来，附加包的功能相当强大，尤其是这几个版本的飞速发展，附加包已经成了大佬云集的地区。</p>
+<p>这是一个很难回答的问题。总的来说，它是一种通过Mojang给定的途径（JSON）修改整个游戏各种设定的工具。目前可以修改的内容大约有十几二十项，但几乎每一项都包含大量要学习的内容。</p>
 <p class="smallfont">[1]<a href="https://www.minecraft.net/zh-hans/addons" target="new">Mojang附加包官方页面<br />
 </a>[2]如果想了解更多信息，欢迎来<a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new">原文</a>看一看。</p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">2.附加包的类型？</p>
 <p>附加包主要有以下几个类型：</p>
-<table width="480" border="1">
+<table width="100%" border="1">
   <tr class="tbbold">
     <td width="80">类型</td>
     <td width="98">名称<span class="smallfont">[1]</span></td>
@@ -133,7 +136,7 @@ body table {
   <tr>
     <td>脚本包</td>
     <td>client_data</td>
-    <td><span class="paraital">(ONLY IN Windows 10)</span>控制了世界与玩家的交互</td>
+    <td><span class="tbyellow">(ONLY IN Windows 10)</span>控制了世界与玩家的交互</td>
   </tr>
   <tr>
     <td>皮肤包</td>
@@ -149,66 +152,66 @@ body table {
 <p class="smallfont">[1]名称此处均指清单文件模块内名称。<br />
   [2]接口包(interface)无资料，暂空。<br />
   [3]*内容为重点讲解内容。</p>
-<p>以上<span class="paraital">每一个类型的包</span>或者<span class="paraital">多个不同类型的包整合在一起</span>均可称为<span class="parabold">附加包</span><span class="smallfont">[1]</span>。</p>
-<p class="smallfont">[1]严格来说，<span class="smallfont parabold">只有</span>行为包、资源包或脚本包以及将以上三者任意整合在一起才能被叫做附加包。<br />
-  [2]混搭包：常包括资源包、皮肤包、世界模板包。</p>
+<p>以上<span class="tbyellow">每一个类型的包</span>或者<span class="tbyellow">多个不同类型的包整合在一起</span>均可称为<span class="bold">附加包</span><span class="smallfont">[1]</span>。</p>
+<p class="smallfont">[1]严格来说，<span class="smallfont bold">只有</span>行为包、资源包或脚本包以及将以上三者任意整合在一起才能被叫做附加包。另一个常见名词混搭包，常包括资源包、皮肤包、世界模板包。</p>
 </div>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <div id="freshman"><span class="divtitle">初学</span>
 <p class="tinydivtitle">1.附加包需要的基础？</p>
-<p><span class="parabold">JSON</span>。<br />
-  【Windows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript，不过脚本引擎只在win10版本支持】<br />
+<p><span class="bold">JSON</span>。<br />
+  【Windows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript，不过脚本引擎目前只在win10版本支持<span class="smallfont">（有小道消息称手机版本会采用JSON，姑且当个笑话）</span>】<br />
   引用自百度百科：
-</p><div class="Text">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
+</p><div class="AutoAdapt">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
 </div>
 <p>简单来说，就是一种{A:b,C:d}的格式，不是专业人士可以不用深入研究。<br />
-  关于JSON的格式，我建议各位看看SPGoding写的<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">帖子</a>。目前这位大佬的附加包教程比我要详细。<br />
+  关于JSON的格式，我建议各位看看SPGoding写的<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">帖子</a>，目前是国内全网研究最详细的讲解之一（虽然只是行为包）。<br />
   <span class="smallfont">[1]<a href="https://www.json.org/json-zh.html">JSON的官方网站</a></span><br />
-  <span class="smallfont">[2]有兴趣的朋友可以了解一下<a href="https://github.com/midnightfreddie/McpeTool" target="new">存档构造</a>，虽然现在可能看不懂</span></p>
+  <span class="smallfont">[2]这是有关<a href="https://github.com/midnightfreddie/McpeTool" target="new">存档构造</a>的内容，后续略有涉及。</span></p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">2.附加包很难吗？</p>
-<p>SPGoding（后文引用时缩写为SPG）曾认为Add-ons研究的人太少了——即使在MCBBS，附加包开发者仍然几近为被忽略的群体。<br />
+<p>SPGoding（后文引用时缩写为SPG）曾认为Add-ons研究的人太少了——即使在MCBBS，附加包开发者仍然几近为被忽略的群体。由此应该能窥见附加包开发的冷门。<br />
   推荐新手去找一位师傅学习（不是我，学业太忙没空）。<br />
 </p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">3.附加包研究时需要的工具？</p>
-<p>以下工具均值得信赖：【<span class="paraital">斜体</span>为文本编辑器，<span class="tbyellow">黄色</span>为文件管理器，两者均至少需要一个】</p>
-<table width="535" border="1">
+<p>以下工具均值得信赖（大多数是IDE<span class="smallfont">[1]</span>）：【<span class="ital">斜体</span>为文本编辑器，<span class="tbyellow">黄色</span>为文件管理器，两者均至少需要一个<span class="smallfont">[2]</span>】</p>
+<table width="100%" border="1">
   <tr>
-    <td width="82" class="tbbold">Windows 10</td>
-    <td width="111"><em>VSCode</em>或<em>VSCommunity</em></td>
-    <td width="86"><em>Notepad++</em></td>
-    <td width="86"><em>Eclipse</em></td>
-    <td width="132"><p><span class="tbyellow">Windows自带</span>（请自备压缩软件）</p></td>
+    <td width="135" class="tbbold">Windows 10</td>
+    <td width="220"><span class="ital">VSCode</span>或<span class="ital">VSCommunity</span></td>
+    <td width="147" class="ital">Notepad++</td>
+    <td width="142" class="ital">Eclipse</td>
+    <td width="305"><p><span class="tbyellow">Windows自带</span>（请自备压缩软件）</p></td>
   </tr>
   <tr>
     <td class="tbbold">Android</td>
     <td class="tbyellow">ES文件管理器</td>
-    <td class="tbyellow"><em>MT管理器</em></td>
-    <td colspan="2"><em>QuickEdit</em></td>
+    <td class="tbyellow ital">MT管理器</td>
+    <td class="ital">QuickEdit</td>
+    <td><span class="tbyellow">部分手机自带</span>（仍然建议不用）</td>
   </tr>
   <tr>
-    <td height="41" class="tbbold">IOS</td>
-    <td><em>Textcode Viewer</em></td>
-    <td><p>（越狱）<em>iFile</em></p></td>
-    <td><p>（越狱）<em>Filza</em></p></td>
+    <td height="25" class="tbbold">IOS</td>
+    <td class="ital">Textcode Viewer</td>
+    <td><p>（越狱）<span class="ital">iFile</span></p></td>
+    <td><p>（越狱）<span class="ital">Filza</span></p></td>
     <td class="tbyellow">FileMaster</td>
   </tr>
 </table>
-<p>当然，如果你自己有上手的工具也可以使用。</p>
-<p class="smallfont">[1]<span class="smallfont paraital">摘自搜狗百科：</span>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等），因为很多项任务会自动生成。<br />
+<p>当然，如果你自己有上手的工具也可以使用<span class="smallfont">（不要用什么备忘录、记事本！）</span>。<span class="smallfont">[3]</span></p>
+<p class="smallfont">[1]<span class="smallfont ital">摘自搜狗百科：</span>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等），因为很多项任务会自动生成。<br />
   [2]画图、建模软件将在后续教程中推荐。<br />
   [3]表格中列出的软件，其用途均不仅限于附加包制作，如果感兴趣可以自行搜索。</p>
 <p class="smallfont"><br />
 </p>
 <p><span class="tinydivtitle">4.客户端和服务端的区别？</span><br />
 </p>
-<p>客户端，指的是某种终端，比如手机、电脑；服务端，指的是某种数据处理中心，比如服务器。具体内容可去网络上搜索。<br />
+<p><span class="bold">客户端</span>，指的是某种数据接收终端，比如手机、电脑；<span class="bold">服务端</span>，指的是某种数据处理中心，比如服务器。具体内容可去网络上搜索。<br />
   附加包中有一部分内容是在服务端定义的（如行为包），另一部分内容是在客户端定义的（如资源包），后文中将会讲解。</p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">5.网易版有Add-ons吗？</p>
-<p>有，而且比原版更加全面，但是与原版Add-ons<span class="parabold">并不适配</span>。如果你想开发网易版Add-ons并且上传自己的作品，必须先加入<span class="parabold">开发者计划</span>。由于网易设计了自己的接口（ModSDK），请点击该链接获取更多帮助：<a href="http://mc.163.com/mcstudio/index.html" target="new">我的世界开发者工具</a>。<br />
+<p>有，而且比原版更加全面，但是与原版Add-ons<span class="bold">并不适配</span>。如果你想开发网易版Add-ons并且上传自己的作品，必须先加入<span class="bold">开发者计划</span>。由于网易设计了自己的接口（ModSDK），请点击该链接获取更多帮助：<a href="http://mc.163.com/mcstudio/index.html" target="new">我的世界开发者工具</a>。<br />
   在网易的资源中心里能找到丰富的网易版Add-ons。  </p>
 </div>
 <p>&nbsp;</p>
@@ -218,66 +221,71 @@ body table {
 </p>
   <p>“|-”表示文件的储存结构，即一个文件夹的内部。 </p>
   <p class="bigfont">行为包</p>
-<div class="Text">(名称)
-  <br>
-  |-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）<br>
-  |-biomes //生物群系主定义<br>
-  |-blocks //方块主定义<br>
-  |-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）<br>
-  |-feature_rules //特性规则定义<br>
-  |-features //特性定义<br>
-  |-functions //（命令）函数定义<br>
-  |-items //物品特性定义<br>
-  |-loot_tables //掉落物定义<br>
-  |-recipes //合成表定义<br>
-  |-spawn_rules //实体生成规则定义<br>
-  |-trading //交易定义<br>
-  |-contents.json //内容文件<br>
-  |-manifest.json //清单文件<br>
-  |-pack_icon.png //附加包图标</div>
-<p class="bigfont">资源包</p>
-<div class="Text">（名称）<br>
-  |-animation_controllers //动画触发条件定义<br>
-  |-animations //动画定义<br>
-  |-entity //实体客户端定义（请与行为包里的实体服务端定义相区分）<br>
-  |-font //字体定义，不建议修改<br>
-  |-fogs //雾定义（1.16.200新增内容）<br>
-  |-items //物品外观定义<br>
-  |-materials //光照算法及纹理定义<br>
-  |-models //实体几何及基本图元定义<br>
-  |-particles //颗粒定义<br>
-  |-render_controllers //渲染定义<br>
-  |-sounds //声音定义<br>
-  |-texts //语言定义<br>
-  |-textures //材质定义<br>
-  |-ui //内置UI（HUD）定义<br>
-  |-biomes_client.json //生物群系与水相关定义<br>
-  |-blocks.json //方块材质总定义文件<br>
-  |-bug_pack_icon.png //出错包图标，无必要修改<br>
-  |-contents.json //内容文件<br>
-  |-items_offsets_client.json //VR偏移定义<br>
-  |-loading_messages.json //游戏加载定义文件<br>
-  |-manifest.json //清单文件<br>
-  |-pack_icon.png //附加包运动<br>
-  |-sounds.json //声音定义文件<br>
-  |-splashes.json //闪烁标语定义，不建议修改</div>
-<p class="bigfont">脚本包</p>
+  <p>
+    <label for="textarea"></label>
+    <textarea name="textarea" cols="90" rows="16" readonly class="AutoAdapt" id="textarea">(名称) 
+|-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）
+|-biomes //生物群系主定义
+|-blocks //方块主定义
+|-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）
+|-feature_rules //特性规则定义
+|-features //特性定义
+|-functions //（命令）函数定义
+|-items //物品特性定义
+|-loot_tables //掉落物定义
+|-recipes //合成表定义
+|-spawn_rules //实体生成规则定义
+|-trading //交易定义
+|-contents.json //内容文件
+|-manifest.json //清单文件
+|-pack_icon.png //附加包图标</textarea>
+  </p>
+  <p class="bigfont">资源包</p>
+  <p class="bigfont">
+    <label for="textarea2"></label>
+    <textarea name="textarea2" cols="90" rows="25" readonly class="AutoAdapt" id="textarea2">（名称）
+  |-animation_controllers //动画触发条件定义
+  |-animations //动画定义
+  |-entity //实体客户端定义（请与行为包里的实体服务端定义相区分）
+  |-font //字体定义，不建议修改
+  |-fogs //雾定义（1.16.200新增内容）
+  |-items //物品外观定义
+  |-materials //光照算法及纹理定义
+  |-models //实体几何及基本图元定义
+  |-particles //颗粒定义
+  |-render_controllers //渲染定义
+  |-sounds //声音定义
+  |-texts //语言定义
+  |-textures //材质定义
+  |-ui //内置UI（HUD）定义
+  |-biomes_client.json //生物群系与水相关定义
+  |-blocks.json //方块材质总定义文件
+  |-bug_pack_icon.png //出错包图标，无必要修改
+  |-contents.json //内容文件
+  |-items_offsets_client.json //VR偏移定义
+  |-loading_messages.json //游戏加载定义文件
+  |-manifest.json //清单文件
+  |-pack_icon.png //附加包运动
+  |-sounds.json //声音定义文件
+  |-splashes.json //闪烁标语定义，不建议修改</textarea>
+  </p>
+  <p class="bigfont">脚本包</p>
 <p>除了行为包的结构，另加一个scripts文件夹（内含client和server文件夹，两个文件夹内各有.js文件）</p>
 <p class="bigfont">皮肤包</p>
-<div class="Text">（名称）<br>
-  |-geometry.json //几何定义<br>
-  |-manifest.json //清单文件<br>
-  |-skins.json //皮肤定义<br>
+<div class="AutoAdapt">（名称）<br />
+  |-geometry.json //几何定义<br />
+  |-manifest.json //清单文件<br />
+  |-skins.json //皮肤定义<br />
   |-(名称）.png //皮肤展开图</div>
 <p class="bigfont">世界模板包</p>
-<div class="Text">（名称）<br>
-  |-db //Mojang的游戏数据储存区<br>
-  |-contents.json //内容文件<br>
-  |-level.dat //世界规则储存文件<br>
-  |-level.dat_old //旧版本世界规则储存文件<br>
-  |-levelname.txt //世界名<br>
-  |-manifest.json //清单文件<br>
-  |-world_icon.jpeg //世界&amp;世界模板包图标<br>
+<div class="AutoAdapt">（名称）<br />
+  |-db //Mojang的游戏数据储存区<br />
+  |-contents.json //内容文件<br />
+  |-level.dat //世界规则储存文件<br />
+  |-level.dat_old //旧版本世界规则储存文件<br />
+  |-levelname.txt //世界名<br />
+  |-manifest.json //清单文件<br />
+  |-world_icon.jpeg //世界&amp;世界模板包图标<br />
   |-（...） //另外一些就是世界内应用的附加包</div>
 </p>
 <p>实际上，世界模板包只需要将你的世界提取出来，加上清单文件即可。</p>
@@ -337,25 +345,25 @@ body table {
   <div>
     <p class="smalldivtitle">附加包的基本常识</p>
     <p class="tinydivtitle">1.如何创建一个附加包？</p>
-    <p>（以下仅限手机）<br />
-    如果存储方式为“外部”，那么游戏的数据储存于&quot;存储/games/com.mojang/&quot;；如果存储方式为&quot;内部存储&quot;，那么游戏的数据储存于&quot;存储/内部存储/com.mojang/&quot;。<br>
-    &quot;../com.mojang/behavior_packs&quot;为所有行为包的储存路径（资源包则在&quot;../com.mojang/resouce_packs&quot;，皮肤包则在&quot;../com.mojang/skin_packs&quot;，世界模板包则在&quot;../com.mojang/world_templates&quot;）。<br>
-    &quot;../com.mojang/development_.._packs&quot;储存着正在开发的包。为了便于日后查找，一般选择在外部建立一个文件夹，等全部编写完成等待调试时再将对应的包放入&quot;../com.mojang/development_.._packs&quot;中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br>
-    之所以在&quot;development_behavior_packs&quot;内建立我们的行为包，而不是在“behavior_packs”，是因为游戏会在加载行为包时自动把外部的行为包在存档内做一个缓存。这会导致对行为包的改动不能实时反应到游戏里，造成调试困难。当你把行为包建立在”development_behavior_packs“里面以后，游戏不会进行缓存，想要重载行为包只需要在世界内使用/reload命令(需要验证)或者退出世界重进即可。<span class="smallfont">[1]
+    <p>（以下仅限手机，win10用户请看<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>）<br />
+    如果存储方式为“<span class="bold">外部</span>”，那么游戏的数据储存于&quot;存储/games/com.mojang/&quot;；如果存储方式为&quot;<span class="bold">内部存储</span>&quot;，那么游戏的数据储存于&quot;存储/内部存储/com.mojang/&quot;。<br />
+    &quot;../com.mojang/behavior_packs&quot;为所有行为包的储存路径（资源包则在&quot;../com.mojang/resouce_packs&quot;，皮肤包则在&quot;../com.mojang/skin_packs&quot;，世界模板包则在&quot;../com.mojang/world_templates&quot;）。<br />
+    &quot;../com.mojang/development_.._packs&quot;储存着正在开发的包。为了便于日后查找，一般选择在外部建立一个文件夹，等全部编写完成等待调试时再将对应的包放入&quot;../com.mojang/development_.._packs&quot;中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br />
+    之所以在&quot;development_behavior_packs&quot;内建立行为包，而不是在“behavior_packs”，是因为游戏会在加载行为包时自动把外部的行为包在存档内做一个缓存。这会导致对行为包的改动不能实时反应到游戏里，造成调试困难。当你把行为包建立在”development_behavior_packs“里面以后，游戏不会进行缓存，想要重载行为包只需要在世界内使用/reload命令(需要验证)或者退出世界重进即可。<span class="smallfont">[1]
     </span>    </p>
     <p class="smallfont">[1]以上引用自<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>，略有改动。</p>
     <p>&nbsp;</p>
     <p class="tinydivtitle">2.如何导入一个附加包？</p>
-    <p>对于后缀为.mcpack(单个行为/资源/脚本/世界模板/皮肤包)或.mcaddon(可能包含单个或多个行为/资源/脚本/世界模板/皮肤包)的文件，选择用Minecraft打开即可导入附加包。<br>
-      对于文件夹形式的附加包，将对应的包放在没有development_前缀的对应的文件夹内即可。<br>
+    <p>对于后缀为.mcpack(单个行为/资源/脚本/世界模板/皮肤包)或.mcaddon(可能包含单个或多个行为/资源/脚本/世界模板/皮肤包)的文件，选择用Minecraft打开即可导入附加包。<br />
+      对于文件夹形式的附加包，将对应的包放在没有development_前缀的对应的文件夹内即可。<br />
     </p>
   </div>
   <div id="manifest"><span class="smalldivtitle">清单文件</span><span class="smalldivtitle"></span>
   <p>在开始之前，希望各位回顾一下<a href="#structure">结构</a>。<br />
-    清单文件（manifest.json）是整个包里<span class="parabold">最为重要</span>的一个文件，它用于让游戏辨识这个包的基本信息。游戏在读取包时<span class="parabold">第一个</span>就读取<em>该文件。</em>因此，请<span class="parabold">一定</span>注意你的清单文件是否有语法错误。自然，<span class="parabold">每个包都必须有这个文件</span>。<br />
+    清单文件（manifest.json）是整个包里<span class="bold">最为重要</span>的一个文件，它用于让游戏辨识这个包的基本信息。游戏在读取包时<span class="bold">第一个</span>就读取<em>该文件。</em>因此，请<span class="bold">一定</span>注意你的清单文件是否有语法错误。自然，<span class="bold">每个包都必须有这个文件</span>。<br />
     下面是一个完整的包文件示例：</p>
 <p>
-  <textarea name="textarea7" cols=90 rows=16 readonly class="Text" id="textarea7">//强调：1.请一定要掌握JSON文件的规范！任何中文符号都是不被允许的。2.逗号特别容易被遗漏，各位可以着重关注逗号的使用。（用的IDE有自动纠错那就当我没说）3.Mojang用的是美式英语不是英式英语。
+  <textarea name="textarea7" cols=90 rows=16 readonly class="AutoAdapt" id="textarea7">//强调：1.请一定要掌握JSON文件的规范！任何中文符号都是不被允许的。2.逗号特别容易被遗漏，各位可以着重关注逗号的使用。（用的IDE有自动纠错那就当我没说）3.Mojang用的是美式英语不是英式英语。
 /*正经的JSON并不应该有注释，但MC里是支持注释的，
 包括跨行注释
 MC也支持。*/
@@ -404,7 +412,7 @@ MC也支持。*/
 <div id="contents"><span class="smalldivtitle">内容文件</span>
 <p>内容文件（contents.json）是整个包里<em>仅次于清单文件重要</em>的文件。它相当于一个包的目录。格式：</p>
 <p>
-  <textarea name="textarea8" readonly class="Text" id="textarea8">{
+  <textarea name="textarea8" cols="90" rows="10" readonly class="AutoAdapt" id="textarea8">{
   "content": [
     {
       "path":"a.json"            //根目录处的文件直接写名字加后缀名
@@ -422,17 +430,17 @@ MC也支持。*/
 <p>接下来的内容将会占据本文的绝大多数内容。这一部分内容分为几个部分：<a href="#datres_recipes" target="_self">配方</a>、<a href="#datres_items" target="_self">物品</a>、方块、战利品表、交易、命令函数、语言文件、生物、生物群系、渲染、字体、粒子、声音、UI（HUD）。<br />
   接下来的内容难度会急剧增大，请各位做好心理准备。<br />
   在正式开始之前，我建议各位都先下载一下官方示例包。 </p>
-<p class="smallfont"><span class="smallfont paraital">方法在这里：</span><em><br />
-</em>1.点击<span class="smallfont paraital"><em><a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new">链接</a></em></span><em><a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new"><br />
+<p class="smallfont"><span class="smallfont ital">方法在这里：</span><em><br />
+</em>1.点击<span class="smallfont ital"><em><a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new">链接</a></em></span><em><a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new"><br />
 </a></em>2.见图（图已经老得不行了，将就着看吧）<br />
 <img src="Pic/CourseData.png" width="300" height="340" longdesc="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" /><br />
-  <span class="smallfont">3.下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个Document文件夹，里面的内容被叫做</span><span class="smallfont parabold">官方文档</span><span class="smallfont">，</span>是非常重要的资料<span class="smallfont">，在后文也会反复多次地引用。</span></p>
+  <span class="smallfont">3.下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个Document文件夹，里面的内容被叫做</span><span class="smallfont bold">官方文档</span><span class="smallfont">，</span>是非常重要的资料<span class="smallfont">，在后文也会反复多次地引用。</span></p>
 <p class="smallfont"><span class="smallfont">P.S.<br />
   </span><span class="smallfont">1.如果你对安装包这方面略懂，请提取出游戏的apk，找到assets/behavior_packs和resource_packs并解压。这两部分内容是最适合你当前版本的参考资料，大部分示例都从这里抽取。</span><br />
   <span class="smallfont">2.不建议各位用测试版写附加包……鬼知道麻将未来怎么改（</span><br />
 </p>
 <p class="bigfont"><a name="datres_recipes" id="datres_recipes"></a>配方</p>
-<table width="530" border="1">
+<table width="100%" border="1">
   <tr class="tbbold">
     <td colspan="2">类型</td>
     <td>英文</td>
@@ -444,7 +452,7 @@ MC也支持。*/
     <td width="193">熔炉、高炉、烟熏炉</td>
   </tr>
   <tr>
-    <td width="94" rowspan="2"><a href="#recipes_brew" target="_self">药水配方</a>Po-tion Brewing ...</td>
+    <td width="94" rowspan="2"><a href="#recipes_brew" target="_self">药水配方</a>Potion Brewing ...</td>
     <td width="84">药水类型类</td>
     <td>... Container Recipe</td>
     <td>水瓶→喷溅药水→滞留药水</td>
@@ -472,12 +480,12 @@ MC也支持。*/
   </tr>
 </table>
 <p>配方的内容放在&quot;行为包/recipes&quot;内部。<br />
-  在开始之前，请确认你<span class="parabold">已经理解<a href="https://www.json.org/json-zh.html" target="new">JSON格式</a></span>——接下来将直接使用相关术语并且不加以解释。</p>
+  在开始之前，请确认你<span class="bold">已经理解<a href="https://www.json.org/json-zh.html" target="new">JSON格式</a></span>——接下来将直接使用相关术语并且不加以解释。</p>
 <p> <span class="tinydivtitle"><a name="recipes_crafting" id="recipes_crafting"></a></span><span class="bigfont">合成台配方</span></p>
-<p class="parabold paraital">有序合成</p>
+<p class="bold ital">有序合成</p>
 <p>下面是acacia_boat.json文件：</p>
 <p>
-  <textarea name="textarea9" cols="90" rows="30" readonly class="Text" id="textarea9">{
+  <textarea name="textarea9" cols="90" rows="16" readonly class="AutoAdapt" id="textarea9">{
   "format_version": "1.12",                //这一项请尽量不要更改，除非官方文件中更改了
   "minecraft:recipe_shaped": {
     "description": {
@@ -514,11 +522,11 @@ MC也支持。*/
 }
   </textarea>
 </p>
-<p><span class="smallfont">[1]</span><span class="smallfont parabold">所有</span><span class="smallfont">类型配方中所有键值对均为必填。</span></p>
-<p class="parabold paraital">无序合成</p>
+<p><span class="smallfont">[1]</span><span class="smallfont bold">所有</span><span class="smallfont">类型配方中所有键值对均为必填。</span></p>
+<p class="bold ital">无序合成</p>
 <p>下面是原版rabbit_stew_from_brown_mushroom.json文件：</p>
 <p>
-  <textarea name="textarea11" cols="90" rows="30" readonly class="Text" id="textarea11">{
+  <textarea name="textarea11" cols="90" rows="16" readonly class="AutoAdapt" id="textarea11">{
   "format_version": "1.12",
   "minecraft:recipe_shapeless": {
     "description": {
@@ -562,7 +570,7 @@ MC也支持。*/
 <a name="recipes_furnace" id="recipes_furnace"></a><span class="bigfont">熔炉配方</span>
 <p>下面是原版的furnace_beef.json文件：</p>
 <p>
-  <textarea name="textarea12" cols="90" rows="15" readonly class="Text" id="textarea12">{
+  <textarea name="textarea12" cols="90" rows="16" readonly class="AutoAdapt" id="textarea12">{
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
@@ -582,7 +590,7 @@ MC也支持。*/
 <a name="recipes_stonecutter" id="recipes_stonecutter"></a><span class="bigfont">切石机配方</span>
 <p>下面是原版的stonecutter_andesite_slab.json文件：</p>
 <p>
-  <textarea name="textarea13" cols="90" rows="25" readonly class="Text" id="textarea13">{
+  <textarea name="textarea13" cols="90" rows="16" readonly class="AutoAdapt" id="textarea13">{
   "format_version": "1.12",
   "minecraft:recipe_shapeless": {  //没错，切石机也被归类在了无序配方之中
     "description": {
@@ -610,10 +618,10 @@ MC也支持。*/
 </p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a><a href="#start" target="_self"></a></p>
 <a name="recipes_brew" id="recipes_brew"></a><span class="bigfont">药水配方</span>
-<p class="paraital parabold">药水类型类</p>
+<p class="ital bold">药水类型类</p>
 <p>下面是原版的唯二的药水类型类的药水配方：</p>
 <p>
-  <textarea name="textarea14" cols="90" rows="30" readonly class="Text" id="textarea14">{//brew_splash_potion_dragon_breath.json
+  <textarea name="textarea14" cols="90" rows="16" readonly class="AutoAdapt" id="textarea14">{//brew_splash_potion_dragon_breath.json
   "format_version": "1.12",
   "minecraft:recipe_brewing_container": {
     "description": {
@@ -644,10 +652,10 @@ MC也支持。*/
 
 }</textarea>
 </p>
-<p class="paraital parabold">药水效果类</p>
+<p class="ital bold">药水效果类</p>
 <p>下面是原版brew_awkward_blaze_powder.json文件：</p>
 <p>
-  <textarea name="textarea15" cols="90" rows="20" readonly class="Text" id="textarea15">//经过SPG实验，药水自定义配方不能放入非原版指定材料，也不能产出非原版药水。所以基本上就是个鸡助
+  <textarea name="textarea15" cols="90" rows="16" readonly class="AutoAdapt" id="textarea15">//经过SPG实验，药水自定义配方不能放入非原版指定材料，也不能产出非原版药水。所以基本上就是个鸡助
 //补：自基岩版1.16.0.57起，上述bug已修复。
 {
   "format_version": "1.12",
@@ -666,11 +674,11 @@ MC也支持。*/
 }</textarea>
 </p>
 <p class="smallfont">[1]目前不建议各位修改药水配方，因为自定义物品还不够完善，无法与药水配方实现联动。</p>
-<p class="parabold">EXAMPLE</p>
+<p class="bold">EXAMPLE</p>
 <p>附加crafting_T1展示了自定义配方的几个示例。</p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <p><a name="datres_items" id="datres_items"></a><span class="bigfont">物品</span></p>
-<p>接下来的讲解将会经常运用<span class="parabold">纲要</span>(Schema)的写法来说明JSON格式。纲要就是没有引号，没有缩进的非正式JSON写法，有的时候一部分字母和符号会被省略。<br />
+<p>接下来的讲解将会经常运用<span class="bold">纲要</span>(Schema)的写法来说明JSON格式。纲要就是没有引号，没有缩进的非正式JSON写法，有的时候一部分字母和符号会被省略。<br />
   行为包内的物品定义放在&quot;&lt;行为包&gt;/items&quot;内部。</p>
 <p class="smallfont">[1]纲要的概念为MOJANG特色（不一定是原创）。<br />
   [2]以下内容默认为可选。</p>
@@ -685,7 +693,7 @@ MC也支持。*/
 <br />
 </p>
 <p>
-  <textarea name="textarea16" cols="90" rows="30" readonly class="Text" id="textarea16">{
+  <textarea name="textarea16" cols="90" rows="16" readonly class="AutoAdapt" id="textarea16">{
 format_version 1.10,                 //一般选择这个即可，特殊情况在后面
 minecraft:item {
 description {                        //必填，描述
@@ -727,7 +735,7 @@ plant_at Array                       //可以种植于上的固体方块，默�
 }</textarea>
 </p>
 <p>
-  <textarea name="textarea17" cols="90" rows="30" readonly class="Text" id="textarea17"></textarea>
+  <textarea name="textarea17" cols="90" rows="16" readonly class="AutoAdapt" id="textarea17"></textarea>
 </p>
 <p class="smallfont">[1]Inofficial版本参见<a href="ItemBehaviourExtra.html">链接</a>（Inofficial版本指未经验证是否能使用的内容）<br />
   [2]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。<br />
@@ -735,7 +743,7 @@ plant_at Array                       //可以种植于上的固体方块，默�
 <p>资源包的物品定义放在&lt;资源包&gt;/items里，材质定义放在&lt;资源包&gt;/textures/items里面。<br />
   资源包里其实没有什么需要操作的难点；基本上都很容易懂。</p>
 <p>
-  <textarea name="textarea18" cols="90" rows="10" readonly class="Text" id="textarea18">{//以下内容均放在资源包/items内部，未说明均为必填
+  <textarea name="textarea18" cols="90" rows="16" readonly class="AutoAdapt" id="textarea18">{//以下内容均放在资源包/items内部，未说明均为必填
 format_version 1.10            //目前就是这个版本
 minecraft:item {
 description {
@@ -752,8 +760,8 @@ minecraft:render_offsets String//可选，vr游玩时物品展示的偏移量，
 </p>
 <p>物品的材质其主要问题还是画图软件。推荐软件：像素小画家、Isopix Pro（手机）；Adobe Photoshop、Blender（电脑）（Blender的功能非常强大，绝不仅仅是画图）<br />
   关于软件的具体操作就不说明了，留给各位自己去探索。<br />
-  另外，官方的材质一般是16*16大小的；超过16*16也可以，游戏会自动缩放材质以与正常大小相匹配。这也就是高（zha）清（ji）材质包的原理。</p>
-<p class="parabold">EXAMPLE</p>
+  另外，官方的材质一般是16*16大小的；超过16*16也可以，游戏会自动缩放材质以与正常大小相匹配，一般取2^N,N&gt;=4。这也就是高（zha）清（ji）材质包的原理。</p>
+<p class="bold">EXAMPLE</p>
 <p>附件item_T1展示了自定义物品的几个示例。<br />
 </p>
 </div>
