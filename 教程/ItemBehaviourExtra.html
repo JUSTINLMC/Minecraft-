@@ -2,8 +2,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#textarea").hide();
+  $("#textarea2").show();
+  $("#bitem_0").click(function(){
+    $("#textarea2").hide();
+	$("#textarea").show();
+  });
+  $("#bitem_1").click(function(){
+    $("#textarea").hide();
+	$("#textarea2").show();
+  });  
+});
+</script>
 <style type="text/css">
-.Text {
+.AutoAdapt {
 	width: 80%;
 	_height: 120px;
 	max-height: 240px;
@@ -15,18 +30,198 @@
 	overflow-y: auto;
 	_overflow-y: visible;
 	font-family: "宋体";
-	font-size: 13px;
+	font-size: 14px;
+}
+.Note {	font-size: small;
+	font-family: "黑体";
 }
 </style>
 <title>无标题文档</title>
 </head>
 
 <body>
-<p>
-  <textarea name="textarea" cols="60" rows="30" class="Text" id="textarea"></textarea>
+<p>以下整理来自于 @蛋黄小饼干。</p>
+<p>选择版本：<br />
+  <label>
+    <input type="radio" name="bitem" value="单选" id="bitem_0"/>
+    format 1.10~1.14(Inofficial)</label>
+  <br />
+  <label>
+    <input type="radio" name="bitem" value="单选" id="bitem_1"/>
+    format 1.16.0(inofficial)</label>
 </p>
 <p>
-  <textarea name="textarea2" cols="60" rows="30" class="Text" id="textarea2"></textarea>
+  <textarea name="textarea" cols="60" rows="16" class="AutoAdapt" id="textarea">{
+	"format_version": "1.10 ~ 1.14",
+	"minecraft:item": {
+		"description": {
+			"identifier": "minecraft:beta"               //标识符
+		},
+		"components": {
+			"minecraft:max_damage": 10,                  //最大伤害
+			"minecraft:stacked_by_data": false,          //数量堆叠
+			"minecraft:max_stack_size": 64,              //最大堆叠数量
+			"minecraft:foil": false,                     //附魔光泽
+			"minecraft:explodable": false,               //爆炸破坏
+			"minecraft:should_despawn": false,           //能被清除
+			"minecraft:use_duration": 32,                //使用时间
+			"minecraft:block": "minecraft:camera",       //方块
+			"minecraft:camera": {                        //相机数值
+				"black_bars_duration": 0.2,
+				"black_bars_screen_ratio": 0.08,
+				"shutter_duration": 0.2,
+				"picture_duration": 1.0,
+				"slide_away_duration": 0.2
+			},
+			"minecraft:icon": {                          //图标
+                "texture": "armor_stand"                 //材质
+            },
+			"minecraft:hand_equipped": false,            //手持装备
+			"minecraft:allow_off_hand": true,            //副手手持
+			"minecraft:food": {                          //食物
+				"nutrition": 4,                          //饱腹值
+				"saturation_modifier": "supernatural/poor/low/normal/good/max", 
+                                                         //饱食度
+				"using_converts_to": "bowl",             //转换物品
+				"on_use_action": "suspicious_stew_effect/chorus_teleport", 
+                                                         //触发行为
+				"on_use_range": [                        //传送范围
+					8,
+					8,
+					8
+				],
+				"cooldown_type": "chorusfruit",          //冷却类型
+				"cooldown_time": 20,                     //冷却时间(刻)
+				"can_always_eat": true,                  //饱腹时也能食用
+				"is_meat": false,                        //肉类
+				"effects": [                             //附加效果
+					{
+						"name": "regeneration/absorption/poison/nausea/hunger/regeneration/resistance/fire_resistance", 
+                                                         //效果名称
+						"chance": 1.0,                   //触发概率
+						"duration": 30,                  //持续时间
+						"amplifier": 4                   //效果级别
+					}
+				],
+				"remove_effects": [                      //移除效果
+					"poison"
+				]
+			},
+			"minecraft:seed": {
+				"crop_result": "sweet_berry_bush/nether_wart/potatoes/pumpkin_stem/wheat/beetroot/carrots/melon_stem", 
+                                                         //种出作物
+				"plant_at": [                            //种植方块
+					"grass",
+					"dirt",
+					"podzol",
+					"soul_sand"
+				]
+			},
+			"minecraft:block_placer": {                  //放置方块
+				"block": "minecraft:beetroot/minecraft:carrots/brewing_stand/cake/campfire/cauldron/hopper/frame/minecraft:pumpkin_stem/redstone_wire/unpowered_repeater/reeds/tripWire/wheat"        //方块(甜菜根/胡萝卜/酿造台/蛋糕/篝火/炼药锅/漏斗/框架/南瓜头/红石线/中继器/芦苇/绊线/小麦)
+			},
+			"minecraft:fuel": {                          //燃料
+				"duration": 120.0                        //燃烧时长
+			},
+			"minecraft:frame_count": 3,                  //帧数
+			"minecraft:animates_in_toolbar": false,      //工具栏动画
+			"minecraft:shooter": {                       //发射器
+				"ammunition": [                          //装填物
+					{
+						"item": "minecraft:arrow",       //物品
+						"use_offhand": true,             //使用副手
+						"search_inventory": true,        //搜索库存
+						"use_in_creative": true          //创造使用
+					}
+				],
+				"scale_power_by_draw_duration": true,    //长按时间蓄力
+				"max_draw_duration": 1.0,                //最长动画时间
+				"charge_on_draw": true                   //改变图案
+			},
+			"minecraft:projectile": {                    //投掷器
+                "projectile_entity": "minecraft:arrow",  //实体
+                "minimum_critical_power": 1.0            //最小投射力度
+            },
+			"minecraft:throwable": {                     //可抛出
+				"do_swing_animation": true,              //抛出动画
+				"min_draw_duration": 0.5,                //最短动画时间
+				"max_draw_duration": 1.0,                //最长动画时间
+				"scale_power_by_draw_duration": true     //长按时间蓄力
+			},
+			"minecraft:enchantable": {                   //附魔(书/装备)
+				"slot": "all/bow/carrot_stick/armor_feet/armor_torso/armor_head/armor_legs/shovel/sword/elytra/axe/hoe/pickaxe/shears", 
+                                                         //槽位(全部/弓/胡萝卜钓竿/鞋/胸甲/头/腿//铲/剑/鞘翅/斧头/锄/镐/剪刀)
+				"value": 1                               //数值
+			},
+			"minecraft:can_destroy_in_creative": false,  //在创造模式中损毁
+			"minecraft:durability": {                    //耐久性
+				"max_damage": 384,                       //最大伤害值
+				"damage_chance": {                       //伤害浮值
+					"min": 60,
+					"max": 100
+				},
+				"repair_items": [                        //修理材料
+					"minecraft:planks",                  //木板
+					"minecraft:shield"                   //盾牌
+				]
+			},
+			"minecraft:armor": {                         //装备
+				"protection": 1                          //保护值
+			},
+			"minecraft:knockback_resistance": {          //击退抗性
+				"protection": 0.1                        //保护值
+			},
+			"minecraft:mining_speed": 1,                 //挖掘速率
+			"minecraft:wearable": {                      //可穿戴
+				"slot": "slot.armor.feet/slot.armor.chest/slot.armor.head/slot.armor.legs/slot.weapon.offhand" 
+                                                         //槽位
+			},
+			"minecraft:dyeable": {                       //可染色
+				"default_color": "FFA06540"              //默认颜色
+			},
+			"minecraft:digger": {                        //挖掘工具
+				"use_efficiency": true,                  //效率倍率
+				"destroy_speeds": [                      //摧毁速度
+					{
+						"block": {
+							"tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+						},
+						"speed": 12
+					},
+					{
+						"block": "minecraft:chest",
+						"speed": 12
+					},
+					{
+						"block": "minecraft:melon_block",
+						"speed": 12
+					},
+					{
+						"block": {
+							"tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+						},
+						"speed": 12
+					}
+				]
+			},
+			"tag:minecraft:is_axe": {},                  //标签(斧头)
+			"tag:minecraft:is_shovel": {},               //标签(铲子)
+			"tag:minecraft:is_hoe": {},                  //标签(锄头)
+			"minecraft:bucket": {},                      //水桶
+			"saddle": {},                                //鞍
+			"minecraft:shears": {},                      //剪刀
+			"minecraft:mirrored_art": true,              //?
+			"minecraft:requires_interact": true,         //需要交互
+			"minecraft:carrot_on_a_stick": {},           //胡萝卜装在钓竿上
+			"minecraft:map": {                           //地图
+			    "empty": true                            //空白
+			}
+		}
+	}
+}</textarea>
+</p>
+<p>
+  <textarea name="textarea2" cols="60" rows="16" class="AutoAdapt" id="textarea2"></textarea>
 </p>
 </body>
 </html>
