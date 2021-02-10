@@ -1,0 +1,10 @@
+@charset "utf-8";
+.ital {
+	font-style: italic;
+}
+.bold {
+	font-weight: bold;
+}
+.deleteline {
+	text-decoration: line-through;
+}
