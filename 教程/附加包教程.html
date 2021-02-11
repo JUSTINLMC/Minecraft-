@@ -52,6 +52,10 @@ body table {
 	font-size: small;
 	font-family: "黑体";
 }
+.Background {
+	background-color: #D4D4D4;
+}
+
 </style>
 <link href="../CSS/otherfont.css" rel="stylesheet" type="text/css">
 <link href="../CSS/basic.css" rel="stylesheet" type="text/css">
@@ -80,7 +84,9 @@ body table {
       https://semver.org/lang/zh-CN/<br />
       https://www.uuidgenerator.net/<br />
       https://www.bilibili.com/read/mobile-readlist/rl121791<br />
-      https://www.bilibili.com/read/cv6806196
+      https://www.bilibili.com/read/cv6806196<br>
+      https://silvigarabis.github.io/Minecraft-Addon-Tutorial/add-on<br>
+      https://c.runoob.com/front-end/53 <br>
 </div>
 <p><span class="Instrution">感谢 @蛋黄小饼干 给予的主要技术指导。<br />
 在这里向前人们表示敬意。<br />
@@ -166,12 +172,12 @@ body table {
 <p class="tinydivtitle">1.附加包需要的基础？</p>
 <p><span class="bold">JSON</span>。<br />
   【Windows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript，不过脚本引擎目前只在win10版本支持<span class="Note">（有小道消息称手机版本会采用JSON作为脚本“语言”，姑且当个笑话听）</span>】<br />
-  引用自百度百科：
-</p><div class="AutoAdapt">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
+  引用自百度百科：</p><div class="AutoAdapt">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
 </div>
-<p>简单来说，就是一种{A:b,C:d}的格式，非专业人士不必深入研究。<br />
-  JSON的格式可以参考<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">SPG帖子</a>或者<a href="https://www.json.org/json-zh.html">JSON的官方网站</a>的介绍，前者目前是国内最详细的行为包讲解教程之一。<br />
-此外，<span class="bold">命令</span>也是必须掌握的基础。<a href="https://github.com/midnightfreddie/McpeTool" target="new" class="bold">存档构造</a>后续略有涉及，可不必深究。</p>
+<p>简单来说，就是一种<code class="Background">{A:c,B:d}</code>的格式，非专业人士不必深入研究。<br />
+  JSON的格式可以参考<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">SPG帖子</a>或者<a href="https://www.json.org/json-zh.html">JSON的官方网站</a>的介绍，前者目前是国内最详细的行为包讲解教程之一。<br>
+  将<a href="https://c.runoob.com/front-end/53">JSON格式化</a>的网站。<br />
+  此外，<span class="bold">命令</span>也是必须掌握的基础。<a href="https://github.com/midnightfreddie/McpeTool" target="new" class="bold">存档构造</a>后续略有涉及，可不必深究。</p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">2.附加包很难吗？</p>
 <p>确实。<br>
@@ -353,9 +359,7 @@ body table {
     <p class="mediumdivtitle">附加包的基本知识</p>
     <p class="tinydivtitle">1.如何创建一个附加包？</p>
     <p>（以下仅限手机，win10用户请看<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>）<br />
-    如果存储方式为“<span class="bold">外部</span>”，那么游戏的数据储存于&quot;存储/games/com.mojang/&quot;；如果存储方式为&quot;<span class="bold">内部存储</span>&quot;，那么游戏的数据储存于&quot;存储/内部存储/com.mojang/&quot;。各类包的存储路径见下表。<br />
-    &quot;../com.mojang/behavior_packs&quot;为所有行为包的储存路径（资源包则在&quot;../com.mojang/resouce_packs&quot;，皮肤包则在&quot;../com.mojang/skin_packs&quot;，世界模板包则在&quot;../com.mojang/world_templates&quot;）。<br>
-    </p>
+    如果存储方式为“<span class="bold">外部</span>”，那么游戏的数据储存于<code class="Background">/sdcard/games/com.mojang/</code>；如果存储方式为&quot;<span class="bold">内部存储</span>&quot;，那么游戏的数据储存于<code class="Background">/私有储存/com.mojang/&quot;</code>。各类包的存储路径见下表。</p>
     <table width="100%" border="1">
       <tr class="tbbold">
         <td width="25%" class="tbbold">行为包/脚本包</td>
@@ -370,20 +374,20 @@ body table {
         <td>../com.mojang/world_templates</td>
       </tr>
     </table>
-    <p>&quot;../com.mojang/development_(name)_packs&quot;储存着正在开发的(name)包。为了便于日后查找，一般选择在外部建立一个文件夹，待调试时再将对应的(name)包放入&quot;../com.mojang/development_(name)_packs&quot;中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br />
-      之所以在&quot;development_behavior_packs&quot;内建立行为包，而不是在“behavior_packs”，是因为游戏会在加载行为包时自动把外部的行为包在存档内做一个缓存。这会导致对行为包的改动不能实时反应到游戏里，造成调试困难。当你把行为包建立在”development_behavior_packs“里面以后，游戏不会进行缓存，想要重载行为包只需要在世界内使用/reload命令(需要验证)或者退出世界重进即可。<span class="Note">[1]
+    <p><code class="Background">../com.mojang/development_(name)_packs</code>储存着正在开发的(name)包。为了便于日后查找，一般选择在外部建立一个文件夹，待调试时再将对应的(name)包放入<code class="Background">../com.mojang/development_(name)_packs</code>中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br />
+      之所以在<code class="Background">../com.mojang/development_(name)_packs</code>内建立包，而不是在<code class="Background">(name)_packs</code>，是因为游戏会在加载行为包时自动把外部的行为包在存档内做一个缓存。这会导致对行为包的改动不能实时反应到游戏里，造成调试困难。当你把行为包建立在<code class="Background">development_behavior_pack</code>s里面以后，游戏不会进行缓存，想要重载行为包只需要退出世界重进即可。<span class="Note">[1]
       </span> </p>
     <p class="Note">[1]以上参考<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>，有改动。</p>
     <p>&nbsp;</p>
     <p class="tinydivtitle">2.如何导入一个附加包？</p>
-    <p>对于后缀为.mcpack(单个行为/资源/脚本/世界模板/皮肤包)或.mcaddon(可能包含单个或多个行为/资源/脚本/世界模板/皮肤包)的文件，选择用Minecraft打开即可导入附加包。<br />
+    <p>对于后缀为<code class="Background">.mcpack</code>(单个行为/资源/脚本/世界模板/皮肤包)或<code class="Background">.mcaddon</code>(可能包含单个或多个行为/资源/脚本/世界模板/皮肤包)的文件，选择用Minecraft打开即可导入附加包。<br />
       对于文件夹形式的附加包，将对应的包放在没有development_前缀的对应的文件夹内即可。<br />
     </p>
   </div>
   <div id="manifest"><span class="mediumdivtitle">清单文件</span><span class="mediumdivtitle"></span>
   <p>在开始之前，希望各位回顾一下<a href="#structure">结构</a>。<br />
-    清单文件（manifest.json）是整个包里<span class="wathet">最为重要</span>的一个文件，它用于让游戏辨识这个包的基本信息。游戏在读取包时<span class="wathet">第一个</span>就读取该文件<em>。</em>因此，请<span class="wathet">一定</span>注意你的清单文件是否有语法错误。自然，<span class="bold">每个包都必须有这个文件</span>。<br />
-    下面是一个完整的包文件示例：</p>
+    清单文件（<code class="Background">manifest.json</code>）是整个包里<span class="wathet">最为重要</span>的一个文件，它用于让游戏辨识这个包的基本信息。游戏在读取包时<span class="wathet">第一个</span>就读取该文件<em>。</em>因此，请<span class="wathet">一定</span>注意你的清单文件是否有语法错误。自然，<span class="bold">每个包都必须有这个文件</span>。<br />
+    下面是一个完整的包文件示例：（通用规则：如果没有注释，默认为“可选”，即可以填入，也可以不填入；“可选”内部有“必填”，表示如果填入则“必填”必须填入）</p>
 <p>
   <textarea name="textarea3" cols=90 rows=16 readonly class="AutoAdapt" id="textarea3">//强调：1.请一定要掌握JSON文件的规范！任何中文符号都是不被允许的。2.逗号特别容易被遗漏，各位可以着重关注逗号的使用。（用的IDE有自动纠错那就当我没说）3.Mojang用的是美式英语不是英式英语。
 /*正经的JSON并不应该有注释，但MC里是支持注释的，
@@ -391,12 +395,12 @@ body table {
 MC也支持。*/
 //编写时，最好有缩进和换行的习惯，不然阅读会很困难。注释有的时候也会采用缩进的格式。
 {                                      //每一个JSON必须以大括号开始，以大括号结束。
-  "capabilities": [                    //可选，能力，用于确定包能修改的内容。
+  "capabilities": [                    //能力，用于确定包能修改的内容。
     "chemistry",                       //如果你的包里修改了与化学（教育版）相关的内容（材质、实体、合成表等一切），此项必填。
     "experimental_custom_ui",          //如果你的包里包含自定义UI（注意，这里的自定义UI是采用html真正自定义的UI，而并不是游戏本身的UI，这在后文会提及），此项必填。
     "raytraced"                        //直译为光线追踪，似乎于1.16.200的测试版中可用。
   ],
-  "dependencies": [                    //可选，必备依赖项（即你的包依赖的包），用于确定加载你的包时必须同时加载的包。一般用途为行为包依赖材质包。当你加载你的包时，你的包依赖的包也会自动被加入游戏；如果该被依赖的包不存在，游戏会弹出错误信息。
+  "dependencies": [                    //必备依赖项（即你的包依赖的包），用于确定加载你的包时必须同时加载的包。一般用途为行为包依赖材质包。当你加载你的包时，你的包依赖的包也会自动被加入游戏；如果该被依赖的包不存在，游戏会弹出错误信息。
     {
       "uuid": (String),                //必填，通用唯一识别码，必须是你的包依赖的包的"header"部分的uuid，不允许重复，类似于人的身份证号，生成网站见[2]。
       "version": [ a, b, c ]           //必填，版本号，格式见[1]。
@@ -412,10 +416,10 @@ MC也支持。*/
     "uuid": (String),                  //必填，同前。不允许重复。
     "version": [ a, b, c ]             //必填，版本号。
   },
-  "metadata": {                        //选填，作者信息。
-    "authors": (Array),                //选填，本包的作者（们），格式如["Steve","ALex"]。
-    "license": (String),               //选填，本包应用的法律条文。
-    "url": (String)                    //选填，本包的作者（们）的主页地址。
+  "metadata": {                        //作者信息。
+    "authors": (Array),                //本包的作者（们），格式如["Steve","ALex"]。
+    "license": (String),               //本包应用的法律条文。
+    "url": (String)                    //本包的作者（们）的主页地址。
   }
   "modules": [                         //(Array)必填，包里所含模块信息。
     {                                  //可以有多个模块，注意逗号的使用即可。但一般来说，行为包、资源包、世界模板包、皮肤包都是分开的，然后利用必备依赖项进行关联。
@@ -432,7 +436,7 @@ MC也支持。*/
 <p><a href="#start" target="_self">回到编写目录</a></p></div>
 <p>&nbsp;</p>
 <div id="contents"><span class="mediumdivtitle">内容文件</span>
-<p>内容文件（contents.json）是整个包里<span class="wathet">仅次于清单文件重要</span>的文件。它相当于一个包的目录。格式：</p>
+<p>内容文件（<code class="Background">contents.json</code>）是整个包里<span class="wathet">仅次于清单文件重要</span>的文件。它相当于一个包的目录。格式：</p>
 <p>
   <textarea name="textarea4" cols="90" rows="10" readonly class="AutoAdapt" id="textarea4">{
   "content": [
@@ -445,7 +449,8 @@ MC也支持。*/
   ]                              //内容文件不需要包含自己（禁止套娃）
 }                                //内容文件并不需要按照顺序排列文件</textarea>
 </p>
-<p>一般来说，这个文件不建立也没有太大问题——如果不建立，游戏会调用原版包里的目录文件，而你的包里的文件依旧会被识别<span class="Note">（参考@Bilibili方法放寒假）</span>。用程序生成内容文件最为方便，但如果没有相关能力则不必逞强。</p>
+<p>一般来说，这个文件不建立也没有太大问题——如果不建立，游戏会调用原版包里的目录文件，而你的包里的文件依旧会被识别<span class="Note">[1]</span>。用程序生成内容文件最为方便，但如果没有相关能力则不必逞强。</p>
+<p><span class="Note">[1]以上参考@Bilibili方法放寒假，有改动。</span></p>
 <p><a href="#start" target="_self">回到编写目录</a></p></div>
 <p>&nbsp;</p>
 <div id="datres"><span class="mediumdivtitle">行为包、资源包专题</span>
@@ -455,9 +460,9 @@ MC也支持。*/
 1.点击<a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new" class="Note">链接</a><a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new"><br />
 </a>2.见图（图已经老得不行了，将就着看吧）<br />
 <img src="Pic/CourseData.png" width="300" height="340" longdesc="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" /><br />
-  <span class="Note">3.下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个Document文件夹，里面的内容被叫做</span><span class="Note bold">官方文档</span><span class="Note">，</span>是非常重要的资料<span class="Note">，在后文也会反复多次地引用。</span></p>
+  <span class="Note">3.下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个<code class="Background">Document</code>文件夹，里面的内容被叫做</span><span class="Note bold">官方文档</span><span class="Note">，</span>是非常重要的资料<span class="Note">，在后文也会反复多次地引用。</span></p>
 <p class="Note"><span class="Note">P.S.<br />
-  </span><span class="Note">1.如果你对安装包这方面略懂，请提取出游戏的apk，找到assets/behavior_packs和resource_packs并解压。这两部分内容是最适合你当前版本的参考资料，大部分示例都从这里抽取。</span><br />
+  </span><span class="Note">1.如果你对安装包这方面略懂，请提取出游戏的apk，找到<code class="Background">assets/behavior_packs</code>和<code class="Background">assets/resource_packs</code>并解压。这两部分内容是最适合你当前版本的参考资料，大部分示例都从这里抽取。</span><br />
   <span class="Note">2.不建议各位用测试版写附加包……鬼知道麻将未来怎么改（</span><br />
 </p>
 <p class="bigfont"><a name="datres_recipes" id="datres_recipes"></a><span class="smalldivtitle">配方</span></p>
@@ -500,11 +505,11 @@ MC也支持。*/
     <td>半砖、楼梯、墙……</td>
   </tr>
 </table>
-<p>配方的内容放在&quot;行为包/recipes&quot;内部。<br />
+<p>配方的内容放在<code class="Background">&lt;行为包&gt;/recipes</code>内部。<br />
   在开始之前，请确认你<span class="bold">已经理解<a href="https://www.json.org/json-zh.html" target="new">JSON格式</a></span>——接下来将直接使用相关术语并且不加以解释。</p>
 <p> <span class="tinydivtitle"><a name="recipes_crafting" id="recipes_crafting"></a></span><span class="tinydivtitle">合成台配方</span></p>
 <p class="bold wathet">有序合成</p>
-<p>下面是acacia_boat.json文件：</p>
+<p>下面是<code class="Background">acacia_boat.json</code>文件：</p>
 <p>
   <textarea name="textarea5" cols="90" rows="16" readonly class="AutoAdapt" id="textarea5">{
   "format_version": "1.12",                //这一项请参考官方文件中的版本
@@ -545,7 +550,7 @@ MC也支持。*/
 </p>
 <p><span class="Note">[1]</span><span class="Note bold">所有</span><span class="Note">类型配方中所有键值对均为必填。</span></p>
 <p class="bold wathet">无序合成</p>
-<p>下面是原版rabbit_stew_from_brown_mushroom.json文件：</p>
+<p>下面是<code class="Background">rabbit_stew_from_brown_mushroom.json</code>文件：</p>
 <p>
   <textarea name="textarea6" cols="90" rows="16" readonly class="AutoAdapt" id="textarea6">{
   "format_version": "1.12",
@@ -589,7 +594,7 @@ MC也支持。*/
 </p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <span class="tinydivtitle"><a name="recipes_furnace" id="recipes_furnace"></a>熔炉配方</span>
-<p>下面是原版的furnace_beef.json文件：</p>
+<p>下面是<code class="Background">furnace_beef.json</code>文件：</p>
 <p>
   <textarea name="textarea7" cols="90" rows="16" readonly class="AutoAdapt" id="textarea7">{
   "format_version": "1.12",
@@ -609,7 +614,7 @@ MC也支持。*/
 <p class="Note">[1]建议各位命名文件时将文件名<span class="Note wathet">语义化</span>，如熔炉配方的文件名为furnace_...</p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <span class="tinydivtitle"><a name="recipes_stonecutter" id="recipes_stonecutter"></a>切石机配方</span>
-<p>下面是原版的stonecutter_andesite_slab.json文件：</p>
+<p>下面是<code class="Background">stonecutter_andesite_slab.json</code>文件：</p>
 <p>
   <textarea name="textarea8" cols="90" rows="16" readonly class="AutoAdapt" id="textarea8">{
   "format_version": "1.12",
@@ -640,7 +645,7 @@ MC也支持。*/
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a><a href="#start" target="_self"></a></p>
 <a name="recipes_brew" id="recipes_brew"></a><span class="tinydivtitle">药水配方</span>
 <p class="bold wathet">药水类型类</p>
-<p>下面是原版的唯二的药水类型类的药水配方：</p>
+<p>下面是原版唯二的药水类型类的药水配方：</p>
 <p>
   <textarea name="textarea9" cols="90" rows="16" readonly class="AutoAdapt" id="textarea9">{//brew_splash_potion_dragon_breath.json
   "format_version": "1.12",
@@ -674,7 +679,7 @@ MC也支持。*/
 }</textarea>
 </p>
 <p class="bold wathet">药水效果类</p>
-<p>下面是原版brew_awkward_blaze_powder.json文件：</p>
+<p>下面是<code class="Background">brew_awkward_blaze_powder.json</code>文件：</p>
 <p>
   <textarea name="textarea10" cols="90" rows="16" readonly class="AutoAdapt" id="textarea10">//经过SPG实验，药水自定义配方不能放入非原版指定材料，也不能产出非原版药水。所以基本上就是个鸡助
 //补：自基岩版1.16.0.57起，上述bug已修复。
@@ -699,76 +704,177 @@ MC也支持。*/
 <p>附加crafting_T1展示了自定义配方的几个示例。</p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <p><a name="datres_items" id="datres_items"></a><span class="tinydivtitle">物品</span></p>
-<p>接下来的讲解将会经常运用<span class="bold">纲要</span>(Schema)的写法来说明JSON格式。纲要就是没有引号，没有缩进的非正式JSON写法，有的时候一部分字母和符号会被省略。<br />
-  行为包内的物品定义放在&quot;&lt;行为包&gt;/items&quot;内部。</p>
-<p class="Note">[1]纲要的概念为MOJANG特色（不一定是原创）。<br />
-  [2]以下内容默认为可选。</p>
+<p>接下来的讲解将会经常运用<span class="bold">纲要</span>(Schema)<span class="Note">[1]</span>的写法来说明JSON格式。纲要就是没有引号，没有缩进的非正式JSON写法，有的时候一部分字母和符号会被省略。<br />
+  行为包内的物品定义放在<code class="Background">&lt;行为包&gt;/items</code>内部。</p>
 <p>选择版本：<br />
 <label>
   <input type="radio" name="bitem" value="单选" id="bitem_0"/>
   format 1.10~1.14(Official)</label>
-<span class="Note">[1]</span><br />
+<span class="Note">[2]</span><br />
 <label>
   <input type="radio" name="bitem" value="单选" id="bitem_1"/>
-  format 1.16.0(Official)</label>
+  format 1.16.100(Official)</label>
 <br />
 </p>
 <p>
   <textarea name="textarea11" cols="90" rows="16" readonly class="AutoAdapt" id="textarea11">{
 format_version 1.10,
 minecraft:item {
-description {                        //必填，描述
-identifier 命名空间:名字
+description {                             //必填，描述
+identifier String                         //命名空间:名字
 },
-components {                         //组件
-minecraft:max_damage Int,            //耐久值，不设置则无耐久消耗
-minecraft:hand_equipped Boolean,     //是否是工具类物品（展示方式不同，工具类物品会“立”起来），true为是
-minecraft:stacked_by_data Boolean,   //是否由数据值储存，暂未研究作用，true为是
-minecraft:foil Boolean,              //是否带有附魔特效，true为是
-minecraft:block String,              //所对应方块的完整名称，1*1*1的方块不需要这一项（对应的物品形式的方块会自动根据贴图组合），但如门、床等需要这一项，原版暂时仅照相机使用（可参考camera.json和SPG教程）
-minecraft:max_stack_size Int,        //最大堆叠数，不建议超过64（存在一定的bug），默认64
-minecraft:use_duration Int,          //使用时间（为食物类物品所准备，单位为0.05s）
-minecraft:food {                     //与上一项联动，两项必须同时存在/同时不存在
-nutrition Int,                       //必填，恢复的饥饿值
-saturation_modifier String,          //必填，营养值，可选：poor,low,normal,good,max,supernatural[2]
-using_converts_to String,            //使用后，该物品转化成的物品，如蘑菇煲
-on_use_action String,                //使用后动作，可选：chorus_teleport（传送）,suspicious_stew_effect（这个是沉船内的谜之炖菜，会给予随机药水效果），none（无动作），默认none
-on_use_range Int,                    //传送范围（上一个若选择chorus_teleport则一起使用，单位为1个方块），未知默认情况
-cooldown_type String,                //使用后是否需要冷却时间，可选：chorusfruit（冷却）或none（不冷却），默认none
-cooldown_time Int,                   //冷却时间（与上一项联动，两项必须同时存在/同属不存在，单位为0.05s），未知默认情况
-can_always_eat Boolean,              //能否一直吃这个物品，即使是在不饿的时候
-effects [                            //药水效果
+components {                              //组件
+minecraft:max_damage Int,                 //耐久值，不设置则无耐久消耗
+minecraft:hand_equipped Boolean,          //是否是工具类物品（展示方式不同，工具类物品会“立”起来），true为是
+minecraft:stacked_by_data Boolean,        //是否由数据值储存，暂未研究作用，true为是
+minecraft:foil Boolean,                   //是否带有附魔特效，true为是
+minecraft:block String,                   //所对应方块的完整名称，1*1*1的方块不需要这一项（对应的物品形式的方块会自动根据贴图组合），但如门、床等需要这一项，原版暂时仅照相机使用（可参考camera.json和SPG教程）
+minecraft:max_stack_size Int,             //最大堆叠数，不建议超过64（存在一定的bug），默认64
+minecraft:use_duration Int,               //使用时间（单位为帧，一帧为0.05s）
+minecraft:allow_off_hand Boolean,         //是否允许放置在副手槽位，true为是
+minecraft:food {                          //食物类物品
+nutrition Int,                            //必填，恢复的饥饿值
+saturation_modifier String,               //必填，含义未知，可选：poor,low,normal,good,max,supernatural[3]
+using_converts_to String,                 //使用后，该物品转化成的物品（名称必须为行为包内identifier定义的名称），例子见蘑菇煲
+on_use_action String,                     //使用后动作，可选：chorus_teleport（传送）,suspicious_stew_effect（沉船内的谜之炖菜，会给予随机药水效果），none（无动作），默认none
+on_use_range Int,                         //传送范围（上一个若选择chorus_teleport则一起使用，单位为1个方块），格式为[Int,Int,Int]，改变第一个Int会改变传送的最大范围，但如果设置为0等同于8，改变后两个Int观测无效果，默认[8,8,8]
+cooldown_type String,                     //使用后是否需要冷却时间，可选：chorusfruit（冷却）或none（不冷却），默认none
+cooldown_time Int,                        //冷却时间（与上一项联动，两项必须同时存在/同属不存在，单位为帧），未知默认情况
+can_always_eat Boolean,                   //是否能在不饿的时候，true为是
+is_meat Boolean,                          //是否是肉类，true为是，未知含义
+effects [                                 //药水效果
 {
-name String,                         //给予的药水效果的名称
-chance Float,                        //（浮点精确：小数点后1位精度）给予该药水效果的概率，如1.0为100%给予，0.5为50%给予
-duration Int,                        //药水效果的持续时间，单位为1s
-amplifier Int,                       //药水效果的等级，不要超过255
-}                                    //可以继续增加药水效果
+name String,                              //给予的药水效果的名称，观测值可选：regeneration,absorption,poison,nausea,hunger,regeneration,resistance,fire_resistance
+chance Float,                             //（浮点精确：小数点后1位精度）给予该药水效果的概率，如1.0为100%给予，0.5为50%给予
+duration Int,                             //药水效果的持续时间，单位为1s
+amplifier Int,                            //药水效果的等级，level<=255
+}                                         //可以继续增加其他药水效果
 ],
-remove_effects Array                 //移除的药水效果，格式：["String","String"...]（使用此项format_version至少为1.14）
+remove_effects Array                      //移除的药水效果（使用此项format_version至少为1.14）
+},                                        //食物类物品定义结束    
+minecraft:icon {                          //物品图标
+texture String                            //物品在<资源包>/textures/中的名称（此项一般在资源包）
 },
-minecraft:seed {
-crop_result String,                  //成熟后对应的方块
-plant_at Array                       //可以种植于上的固体方块，默认为耕地         
+minecraft:seed {                          //种子类物品
+crop_result String,                       //成熟后对应的方块，观测值可选：sweet_berry_bush,nether_wart,potatoes,pumpkin_stem,wheat,beetroot,carrots,melon_stem
+plant_at Array                            //可以种植于上的固体方块，观测值可选：grass,dirt,podzol（灰化土）,soul_sand，默认为耕地         
 },
-minecraft:camera {                   //不清楚，参考SPG教程
+minecraft:block_placer {                  //放下后对应的方块
+block String                              //观测值可选：minecraft:beetroot,minecraft:carrots,brewing_stand,cake,campfire,cauldron,hopper（漏斗）,frame（展示框）,minecraft:pumpkin_stem,redstone_wire,unpowered_repeater,reeds（甘蔗）,tripWire（线）,wheat 
+},
+minecraft:camera {                        //相机物品，参考SPG教程
 black_bars_duration Int,
 black_bars_screen_ratio Int,
 shutter_duration Int,
 picture_duration Int,
 slide_away_duration Int
+},
+minecraft:fuel {                          //可作燃料类物品
+duration Float                            //（浮点精确：小数点后1位精度）可烧炼时长，单位为1.0s，如6.5为6.5秒
+},
+minecraft:frame_count String,             //未知含义，可能为动画完成需要的总帧数
+minecraft:animates_in_toolbar Boolean,    //未知含义，可能为快捷栏是否展示动画，true为是
+minecraft:shooter": {                     //可发射物品类物品，如弓
+ammunition": [                            //装填物
+{
+item String,                              //可被发射类物品，如minecraft:arrow
+use_offhand Boolean,                      //可能为是否允许放置在副手槽位，true为是
+search_inventory Boolean,                 //可能为是否在背包中寻找该可发射物品，true为是
+use_in_creative Boolean                   //可能为是否能在创造模式下使用，true为是
+}                                         //可以继续增加其他可发射物品
+],
+scale_power_by_draw_duration Boolean,     //威力是否由使用（长按）时间决定，true为是，默认为False
+max_draw_duration Float,                  //（浮点精确：小数点后1位精度）物品使用最长时间，单位为1.0s，默认为0
+charge_on_draw Boolean                    //可能为是否长按蓄力，true为是，默认为False
+},                                        //可发射实体类物品定义结束
+minecraft:projectile: {                   //可被发射类物品，如箭
+projectile_entity String,                 //发射时产生的实体
+minimum_critical_power Float              //（浮点精确：小数点后1位精度）最小达到暴击伤害的使用时间，单位为1.0s
+},
+minecraft:throwable {                     //可被抛出类物品，如雪球
+do_swing_animation Boolean,               //被抛出时是否使用挥动动画，默认为False
+min_draw_duration Int,                    //被扔出所需最短使用时间，默认为0，单位为1.0s
+max_draw_duration Int,                    //被扔出所需最短使用时间，默认为0，单位为1.0s
+scale_power_by_draw_duration Boolean      //威力是否由使用（长按）时间决定，true为是，默认为False
+},
+minecraft:enchantable {                   //可附魔类物品
+slot String,                              //可被附魔的附魔类型，可选： all,bow,carrot_stick,armor_feet,armor_torso（胸甲类）,armor_head,armor_legs,shovel,sword,elytra（鞘翅）,axe,hoe,pickaxe,shears 
+value Int                                 //附魔能力，数值越高得到高等级附魔的概率越低
+},
+minecraft:can_destroy_in_creative Boolean,//是否能在创造模式中破坏方块
+minecraft:durability {                    //耐久类物品
+max_damage Int,                           //最大耐久值
+damage_chance {                           //损耗耐久几率，如60为60%几率损耗1点耐久
+min Int,
+max Int
+},
+repair_items String                       //可用于修理的材料，格式["String","String"]
+},                                        //耐久类物品定义结束
+minecraft:armor {                         //装备类物品
+protection Int                            //提供的保护值
+},
+minecraft:knockback_resistance {          //击退抗性类物品
+protection Float                          //（浮点精确：小数点后1位精度）击退抗性数值，最大为1.0
+},
+minecraft:mining_speed Int,               //挖掘速率
+minecraft:wearable {                      //可穿戴类物品
+slot String                               //可被穿戴的槽位，可选：slot.armor.feet,slot.armor.chest,slot.armor.head,slot.armor.legs,slot.weapon.offhand
+},
+minecraft:dyeable {                       //可被染色类物品
+default_color String                      //物品未染色时的默认颜色，用不带"#"的16进制RGB颜色表示
+},
+minecraft:digger {                        //挖掘类物品
+use_efficiency Boolean,                   //未知，默认为False
+destroy_speeds [                          //摧毁速度，以下为格式
+/*{
+"block": {
+"tags": "q.any_tag('wood', 'pumpkin', 'plant')"
+},                                        //多个方块采用Molang（后续有详细的讲解）
+"speed": 12                              
+},
+{
+"block": "minecraft:chest",               //单个方块用block String
+"speed": 12
+},
+{
+"block": "minecraft:melon_block",
+"speed": 12
+},
+{
+"block": {
+"tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+},
+"speed": 12
+}*/
+]
+},                                        //挖掘类物品定义结束
+tag:minecraft:is_axe {},                  //标签(是否是斧头)，未知作用
+tag:minecraft:is_shove {},                //标签(是否是铲子)，未知作用
+tag:minecraft:is_hoe {},                  //标签(是否是锄头)，未知作用
+minecraft:bucket {},                      //水桶组件，未知用法
+saddle {},                                //鞍组件，未知用法
+minecraft:shears {},                      //剪刀组件，未知用法
+minecraft:mirrored_art Boolean,           //未知，默认为False
+minecraft:requires_interact Boolean,      //是否需要交互使用，未知含义，默认为False
+minecraft:carrot_on_a_stick {},           //胡萝卜装在钓竿上组件，未知用法
+minecraft:map {                           //地图类物品
+empty Boolean                             //可能为是否默认为空白地图，默认为False
 }
 }
 }
 }</textarea>
 </p>
 <p>
-  <textarea name="textarea12" cols="90" rows="16" readonly class="AutoAdapt" id="textarea12"></textarea>
+<textarea name="textarea12" cols="90" rows="16" readonly class="AutoAdapt" id="textarea12">{
+format_version 1.16.100,
+minecraft:armor
+</textarea>
 </p>
-<p class="Note">[1]Inofficial版本参见<a href="ItemBehaviourExtra.html">链接</a>（Inofficial版本指未经验证是否能使用的内容）<br />
-  [2]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。<br />
+<p><span class="Note">[1]纲要的概念为MOJANG特色（不一定是原创）。<br>
+  [2]Inofficial版本参见<a href="ItemBehaviourExtra.html">链接</a>（Inofficial版本指未经验证是否能使用的内容）<br />
+  [3]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。</span><br />
 </p>
-<p>资源包的物品定义放在&lt;资源包&gt;/items里，材质定义放在&lt;资源包&gt;/textures/items里。</p>
+<p>资源包的物品定义放在<code class="Background">&lt;资源包&gt;/items</code>里，材质定义放在<code class="Background">&lt;资源包&gt;/textures/items</code>里。</p>
 <p>
   <textarea name="textarea13" cols="90" rows="16" readonly class="AutoAdapt" id="textarea13">{//以下内容均放在资源包/items内部，未说明均为必填
 format_version 1.10            //目前就是这个版本
