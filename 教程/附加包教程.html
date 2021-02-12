@@ -709,8 +709,8 @@ MC也支持。*/
 <p>选择版本：<br />
 <label>
   <input type="radio" name="bitem" value="单选" id="bitem_0"/>
-  format 1.10~1.14(Official)</label>
-<span class="Note">[2]</span><br />
+  format 1.10~1.14</label>
+<br />
 <label>
   <input type="radio" name="bitem" value="单选" id="bitem_1"/>
   format 1.16.100(Official)</label>
@@ -721,7 +721,7 @@ MC也支持。*/
 format_version 1.10,
 minecraft:item {
 description {                             //必填，描述
-identifier String                         //命名空间:名字
+identifier String                         //必填，命名空间:名字
 },
 components {                              //组件
 minecraft:max_damage Int,                 //耐久值，不设置则无耐久消耗
@@ -734,14 +734,14 @@ minecraft:use_duration Int,               //使用时间（单位为帧，一帧
 minecraft:allow_off_hand Boolean,         //是否允许放置在副手槽位，true为是
 minecraft:food {                          //食物类物品
 nutrition Int,                            //必填，恢复的饥饿值
-saturation_modifier String,               //必填，含义未知，可选：poor,low,normal,good,max,supernatural[3]
+saturation_modifier String,               //必填，含义未知，可选：poor,low,normal,good,max,supernatural[2]
 using_converts_to String,                 //使用后，该物品转化成的物品（名称必须为行为包内identifier定义的名称），例子见蘑菇煲
 on_use_action String,                     //使用后动作，可选：chorus_teleport（传送）,suspicious_stew_effect（沉船内的谜之炖菜，会给予随机药水效果），none（无动作），默认none
 on_use_range Int,                         //传送范围（上一个若选择chorus_teleport则一起使用，单位为1个方块），格式为[Int,Int,Int]，改变第一个Int会改变传送的最大范围，但如果设置为0等同于8，改变后两个Int观测无效果，默认[8,8,8]
 cooldown_type String,                     //使用后是否需要冷却时间，可选：chorusfruit（冷却）或none（不冷却），默认none
 cooldown_time Int,                        //冷却时间（与上一项联动，两项必须同时存在/同属不存在，单位为帧），未知默认情况
 can_always_eat Boolean,                   //是否能在不饿的时候，true为是
-is_meat Boolean,                          //是否是肉类，true为是，未知含义
+is_meat Boolean,                          //是否是肉类，true为是，未知意义
 effects [                                 //药水效果
 {
 name String,                              //给予的药水效果的名称，观测值可选：regeneration,absorption,poison,nausea,hunger,regeneration,resistance,fire_resistance
@@ -799,10 +799,10 @@ scale_power_by_draw_duration Boolean      //威力是否由使用（长按）时
 },
 minecraft:enchantable {                   //可附魔类物品
 slot String,                              //可被附魔的附魔类型，可选： all,bow,carrot_stick,armor_feet,armor_torso（胸甲类）,armor_head,armor_legs,shovel,sword,elytra（鞘翅）,axe,hoe,pickaxe,shears 
-value Int                                 //附魔能力，数值越高得到高等级附魔的概率越低
+value Int                                 //附魔能力[3]
 },
 minecraft:can_destroy_in_creative Boolean,//是否能在创造模式中破坏方块
-minecraft:durability {                    //耐久类物品
+minecraft:durability {                    //耐久
 max_damage Int,                           //最大耐久值
 damage_chance {                           //损耗耐久几率，如60为60%几率损耗1点耐久
 min Int,
@@ -813,7 +813,7 @@ repair_items String                       //可用于修理的材料，格式["S
 minecraft:armor {                         //装备类物品
 protection Int                            //提供的保护值
 },
-minecraft:knockback_resistance {          //击退抗性类物品
+minecraft:knockback_resistance {          //击退抗性
 protection Float                          //（浮点精确：小数点后1位精度）击退抗性数值，最大为1.0
 },
 minecraft:mining_speed Int,               //挖掘速率
@@ -824,12 +824,12 @@ minecraft:dyeable {                       //可被染色类物品
 default_color String                      //物品未染色时的默认颜色，用不带"#"的16进制RGB颜色表示
 },
 minecraft:digger {                        //挖掘类物品
-use_efficiency Boolean,                   //未知，默认为False
+use_efficiency Boolean,                   //未知，观测原版五件套使用该项，默认为False
 destroy_speeds [                          //摧毁速度，以下为格式
 /*{
 "block": {
 "tags": "q.any_tag('wood', 'pumpkin', 'plant')"
-},                                        //多个方块采用Molang（后续有详细的讲解）
+},                                        //多个方块用Molang的q.any_tag()（后续有详细的讲解）
 "speed": 12                              
 },
 {
@@ -870,23 +870,23 @@ format_version 1.16.100,
 minecraft:armor
 </textarea>
 </p>
-<p><span class="Note">[1]纲要的概念为MOJANG特色（不一定是原创）。<br>
-  [2]Inofficial版本参见<a href="ItemBehaviourExtra.html">链接</a>（Inofficial版本指未经验证是否能使用的内容）<br />
-  [3]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。</span><br />
+<p><span class="Note">[1]纲要的概念为MOJANG特色（不一定是原创）。<br />
+  [2]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。</span><br>
+  <span class="Note">[3]数值越高得到高等级附魔的概率越低，参见<a href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E9%99%84%E9%AD%94%E6%9C%BA%E5%88%B6">wiki</a>获取更多信息。</span><br />
 </p>
 <p>资源包的物品定义放在<code class="Background">&lt;资源包&gt;/items</code>里，材质定义放在<code class="Background">&lt;资源包&gt;/textures/items</code>里。</p>
 <p>
-  <textarea name="textarea13" cols="90" rows="16" readonly class="AutoAdapt" id="textarea13">{//以下内容均放在资源包/items内部，未说明均为必填
-format_version 1.10            //目前就是这个版本
+  <textarea name="textarea13" cols="90" rows="16" readonly class="AutoAdapt" id="textarea13">{//以下内容均放在资源包/items内部
+format_version 1.10            //必填，目前就是这个版本
 minecraft:item {
 description {
-identifier 命名空间：名字,
-category String                //物品类别，可选：Nature（自然）,Items（物品），Equipment（装备）（另一类原版没有）
+identifier String              //必填，命名空间：名字
+category String                //必填，物品类别，可选：Nature（自然）,Items（物品），Equipment（装备）（另一类原版没有）
 },
 components {
-minecraft:icon String,         //和资源包/textures/items/中的物品图标相匹配
-minecraft:use_animation String,//可选，只有eat和camera可以作为值，一般建议eat
-minecraft:render_offsets String//可选，vr游玩时物品展示的偏移量，在资源包/items_offsets_client.json中定义（内容简单但是没法调试）
+minecraft:icon String,         //必填，和资源包/textures/items/中的物品图标相匹配
+minecraft:use_animation String,//使用时的动画，可选：eat,camera
+minecraft:render_offsets String//vr游玩时物品展示的偏移量，在资源包/items_offsets_client.json中定义（没法调试）
 }
 }
 }</textarea>
