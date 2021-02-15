@@ -20,6 +20,17 @@ $(document).ready(function(){
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Add-ons教程</title>
 <style type="text/css">
+code {
+	font-size: 85%;
+	border-radius: 3px;
+	font-family: monospace, monospace;
+	color: #666666;
+	background-color: #F6F6F6;
+	padding-top: 0.2em;
+	padding-right: 0.3em;
+	padding-bottom: 0.2em;
+	padding-left: 0.3em;
+}
 body p {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -51,9 +62,6 @@ body table {
 .Note {
 	font-size: small;
 	font-family: "黑体";
-}
-.Background {
-	background-color: #D4D4D4;
 }
 
 </style>
@@ -175,7 +183,7 @@ body table {
   【Windows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript，不过脚本引擎目前只在win10版本支持<span class="Note">（有小道消息称手机版本会采用JSON作为脚本“语言”，姑且当个笑话听）</span>】<br />
   引用自百度百科：</p><div class="AutoAdapt">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。
 </div>
-<p>简单来说，就是一种<code class="Background">{A:c,B:d}</code>的格式，非专业人士不必深入研究。<br />
+<p>简单来说，就是一种<code>{A:c,B:d}</code>的格式，非专业人士不必深入研究。<br />
   JSON的格式可以参考<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">SPG帖子</a>或者<a href="https://www.json.org/json-zh.html">JSON的官方网站</a>的介绍，前者目前是国内最详细的行为包讲解教程之一。<br />
   将<a href="https://c.runoob.com/front-end/53">JSON格式化</a>的网站。<br />
   此外，<span class="bold">命令</span>也是必须掌握的基础。<a href="https://github.com/midnightfreddie/McpeTool" target="new" class="bold">存档构造</a>后续略有涉及，可不必深究。</p>
@@ -362,7 +370,7 @@ body table {
     <p class="mediumdivtitle">附加包的基本知识</p>
     <p class="tinydivtitle">1.如何创建一个附加包？</p>
     <p>（以下仅限手机，windows 10用户请看<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>）<br />
-    如果存储方式为“<span class="bold">外部</span>”，那么游戏的数据储存于<code class="Background">/sdcard/games/com.mojang/</code>；如果存储方式为&quot;<span class="bold">内部存储</span>&quot;，那么游戏的数据储存于<code class="Background">/私有储存/com.mojang/&quot;</code>。各类包的存储路径见下表。</p>
+    如果存储方式为“<span class="bold">外部</span>”，那么游戏的数据储存于<code>/sdcard/games/com.mojang/</code>；如果存储方式为&quot;<span class="bold">内部存储</span>&quot;，那么游戏的数据储存于<code>/私有储存/com.mojang/&quot;</code>。各类包的存储路径见下表。</p>
     <table width="100%" border="1">
       <tr class="tbbold">
         <td width="25%" class="tbbold">行为包/脚本包</td>
@@ -377,19 +385,19 @@ body table {
         <td>../com.mojang/world_templates</td>
       </tr>
     </table>
-    <p><code class="Background">../com.mojang/development_(name)_packs</code>储存着正在开发的(name)包。为了便于日后查找，一般选择在外部建立一个文件夹，待调试时再将对应的(name)包放入<code class="Background">../com.mojang/development_(name)_packs</code>中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br />
-      之所以在<code class="Background">../com.mojang/development_(name)_packs</code>内建立包，而不是在<code class="Background">(name)_packs</code>，是因为游戏会在加载行为包时自动把外部的行为包在存档内做一个缓存。这会导致对行为包的改动不能实时反应到游戏里，造成调试困难。当你把行为包建立在<code class="Background">development_behavior_pack</code>s里面以后，游戏不会进行缓存，想要重载行为包只需要退出世界重进即可。<span class="Note">[1]
+    <p><code>../com.mojang/development_(name)_packs</code>储存着正在开发的(name)包。为了便于日后查找，一般选择在外部建立一个文件夹，待调试时再将对应的(name)包放入<code>../com.mojang/development_(name)_packs</code>中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br />
+      之所以在<code>../com.mojang/development_(name)_packs</code>内建立包，而不是在<code>(name)_packs</code>，是因为游戏会在加载行为包时自动把外部的行为包在存档内做一个缓存。这会导致对行为包的改动不能实时反应到游戏里，造成调试困难。当你把行为包建立在<code>development_behavior_pack</code>s里面以后，游戏不会进行缓存，想要重载行为包只需要退出世界重进即可。<span class="Note">[1]
       </span> </p>
     <p class="Note">[1]以上参考<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>，有改动。</p>
     <p>&nbsp;</p>
     <p class="tinydivtitle">2.如何导入一个附加包？</p>
-    <p>对于后缀为<code class="Background">.mcpack</code>（单个行为/资源/脚本/世界模板/皮肤包）或<code class="Background">.mcaddon</code>（可能包含单个或多个行为/资源/脚本/世界模板/皮肤包）的文件，选择用Minecraft打开即可导入附加包。<br />
+    <p>对于后缀为<code>.mcpack</code>（单个行为/资源/脚本/世界模板/皮肤包）或<code>.mcaddon</code>（可能包含单个或多个行为/资源/脚本/世界模板/皮肤包）的文件，选择用Minecraft打开即可导入附加包。<br />
       对于文件夹形式的附加包，将对应的包放在没有development_前缀的对应的文件夹内即可。<br />
     </p>
   </div>
   <div id="manifest"><span class="mediumdivtitle">清单文件</span><span class="mediumdivtitle"></span>
   <p>在开始之前，希望各位回顾一下<a href="#structure">结构</a>。<br />
-    清单文件（<code class="Background">manifest.json</code>）是整个包里<span class="wathet">最为重要</span>的一个文件，它用于让游戏辨识这个包的基本信息。游戏在读取包时<span class="wathet">第一个</span>就读取该文件。因此，请<span class="wathet">一定</span>注意你的清单文件是否有语法错误。自然，<span class="bold">每个包都必须有这个文件</span>。<br />
+    清单文件（<code>manifest.json</code>）是整个包里<span class="wathet">最为重要</span>的一个文件，它用于让游戏辨识这个包的基本信息。游戏在读取包时<span class="wathet">第一个</span>就读取该文件。因此，请<span class="wathet">一定</span>注意你的清单文件是否有语法错误。自然，<span class="bold">每个包都必须有这个文件</span>。<br />
     下面是一个完整的包文件示例：<br />
     <span class="Note">（通用规则：如果没有注释，默认为“可选”，即可以填入，也可以不填入；“可选”内部有“必填”，表示如果&quot;可选&quot;内容填入则“必填”必须填入；重复内容不再注释。）</span></p>
 <p>
@@ -441,7 +449,7 @@ MC也支持。*/
 <p><a href="#start" target="_self">回到编写目录</a></p></div>
 <p>&nbsp;</p>
 <div id="contents"><span class="mediumdivtitle">内容文件</span>
-<p>内容文件（<code class="Background">contents.json</code>）是整个包里<span class="wathet">仅次于清单文件重要</span>的文件。它相当于一个包的目录。格式：</p>
+<p>内容文件（<code>contents.json</code>）是整个包里<span class="wathet">仅次于清单文件重要</span>的文件。它相当于一个包的目录。格式：</p>
 <p>
   <textarea name="textarea4" cols="90" rows="10" readonly class="AutoAdapt" id="textarea4">{
   "content": [
@@ -465,9 +473,9 @@ MC也支持。*/
 1.点击<a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new" class="Note">链接</a><a href="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" target="new"><br />
 </a>2.见图（图已经老得不行了，将就着看吧）<br />
 <img src="Pic/CourseData.png" width="300" height="340" longdesc="https://minecraft-zh.gamepedia.com/%E9%99%84%E5%8A%A0%E5%8C%85" /><br />
-  <span class="Note">3.下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个<code class="Background">Document</code>文件夹，里面的内容被叫做</span><span class="Note bold">官方文档</span><span class="Note">，</span>是非常重要的资料<span class="Note">，在后文也会反复多次地引用。</span></p>
+  <span class="Note">3.下载下来后，建议各位自己创建一个文件夹，用于保存你所制作的包以及各种参考资料等等。在你下载下来的行为包里会有一个<code>Document</code>文件夹，里面的内容被叫做</span><span class="Note bold">官方文档</span><span class="Note">，</span>是非常重要的资料<span class="Note">，在后文也会反复多次地引用。</span></p>
 <p class="Note"><span class="Note">P.S.<br />
-  </span><span class="Note">1.如果你对安装包这方面略懂，请提取出游戏的apk，找到<code class="Background">assets/behavior_packs</code>和<code class="Background">assets/resource_packs</code>并解压。这两部分内容是最适合你当前版本的参考资料，大部分示例都从这里抽取。</span><br />
+  </span><span class="Note">1.如果你对安装包这方面略懂，请提取出游戏的apk，找到<code>assets/behavior_packs</code>和<code>assets/resource_packs</code>并解压。这两部分内容是最适合你当前版本的参考资料，大部分示例都从这里抽取。</span><br />
   <span class="Note">2.不建议各位用测试版写附加包……到时候不适配正式版就等着哭吧（</span><br />
 </p>
 <p class="bigfont"><a name="datres_recipes" id="datres_recipes"></a><span class="smalldivtitle">配方</span></p>
@@ -511,11 +519,11 @@ MC也支持。*/
   </tr>
 </table>
 <p class="Note">[1]()表示非官方名称，即实际并无此分类，为方便描述给予英文名称。</p>
-<p>配方的内容放在<code class="Background">&lt;行为包&gt;/recipes</code>内部。<br />
+<p>配方的内容放在<code>&lt;行为包&gt;/recipes</code>内部。<br />
   在开始之前，请确认你<span class="bold">已经理解<a href="https://www.json.org/json-zh.html" target="new">JSON格式</a></span>——接下来将直接使用相关术语并且不加以解释。</p>
 <p> <span class="tinydivtitle"><a name="recipes_crafting" id="recipes_crafting"></a></span><span class="tinydivtitle">合成台配方</span></p>
 <p class="bold wathet">有序合成</p>
-<p>下面是<code class="Background">acacia_boat.json</code>文件：</p>
+<p>下面是<code>acacia_boat.json</code>文件：</p>
 <p>
   <textarea name="textarea5" cols="90" rows="16" readonly class="AutoAdapt" id="textarea5">{
   "format_version": "1.12",                //这一项请参考官方文件中的版本
@@ -556,7 +564,7 @@ MC也支持。*/
 </p>
 <p><span class="Note">[1]</span><span class="Note bold">所有</span><span class="Note">类型配方中所有键值对均为必填。</span></p>
 <p class="bold wathet">无序合成</p>
-<p>下面是<code class="Background">rabbit_stew_from_brown_mushroom.json</code>文件：</p>
+<p>下面是<code>rabbit_stew_from_brown_mushroom.json</code>文件：</p>
 <p>
   <textarea name="textarea6" cols="90" rows="16" readonly class="AutoAdapt" id="textarea6">{
   "format_version": "1.12",
@@ -600,7 +608,7 @@ MC也支持。*/
 </p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <span class="tinydivtitle"><a name="recipes_furnace" id="recipes_furnace"></a>熔炉配方</span>
-<p>下面是<code class="Background">furnace_beef.json</code>文件：</p>
+<p>下面是<code>furnace_beef.json</code>文件：</p>
 <p>
   <textarea name="textarea7" cols="90" rows="16" readonly class="AutoAdapt" id="textarea7">{
   "format_version": "1.12",
@@ -620,7 +628,7 @@ MC也支持。*/
 <p class="Note">[1]建议各位命名文件时将文件名<span class="Note wathet">语义化</span>，如熔炉配方的文件名为furnace_...</p>
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <span class="tinydivtitle"><a name="recipes_stonecutter" id="recipes_stonecutter"></a>切石机配方</span>
-<p>下面是<code class="Background">stonecutter_andesite_slab.json</code>文件：</p>
+<p>下面是<code>stonecutter_andesite_slab.json</code>文件：</p>
 <p>
   <textarea name="textarea8" cols="90" rows="16" readonly class="AutoAdapt" id="textarea8">{
   "format_version": "1.12",
@@ -685,7 +693,7 @@ MC也支持。*/
 }</textarea>
 </p>
 <p class="bold wathet">药水效果类</p>
-<p>下面是<code class="Background">brew_awkward_blaze_powder.json</code>文件：</p>
+<p>下面是<code>brew_awkward_blaze_powder.json</code>文件：</p>
 <p>
   <textarea name="textarea10" cols="90" rows="16" readonly class="AutoAdapt" id="textarea10">//经过SPG实验，药水自定义配方不能放入非原版指定材料，也不能产出非原版药水。所以没什么用处
 //补：自基岩版1.16.0.57起，上述bug已修复。
@@ -711,7 +719,7 @@ MC也支持。*/
 <p><a href="#datres_recipes" target="_self">回到配方目录</a> <a href="#start" target="_self">回到编写目录</a></p>
 <p><a name="datres_items" id="datres_items"></a><span class="tinydivtitle">物品</span></p>
 <p>接下来的讲解将会经常运用<span class="bold">纲要</span>(Schema)<span class="Note">[1]</span>的写法来说明JSON格式。纲要就是没有引号，没有缩进的非正式JSON写法，有的时候一部分字母和符号会被省略。<br />
-  行为包内的物品定义放在<code class="Background">&lt;行为包&gt;/items</code>内部。</p>
+  行为包内的物品定义放在<code>&lt;行为包&gt;/items</code>内部。</p>
 <p>选择版本：<br />
 <label>
   <input type="radio" name="bitem" value="单选" id="bitem_0"/>
@@ -880,7 +888,7 @@ minecraft:armor
   [2]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。</span><br />
   <span class="Note">[3]数值越高得到高等级附魔的概率越低，参见<a href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E9%99%84%E9%AD%94%E6%9C%BA%E5%88%B6">wiki</a>获取更多信息。</span><br />
 </p>
-<p>资源包的物品定义放在<code class="Background">&lt;资源包&gt;/items</code>里，材质定义放在<code class="Background">&lt;资源包&gt;/textures/items</code>里。</p>
+<p>资源包的物品定义放在<code>&lt;资源包&gt;/items</code>里，材质定义放在<code>&lt;资源包&gt;/textures/items</code>里。</p>
 <p>
   <textarea name="textarea13" cols="90" rows="16" readonly class="AutoAdapt" id="textarea13">{//以下内容均放在资源包/items内部
 format_version 1.10            //必填，目前就是这个版本
