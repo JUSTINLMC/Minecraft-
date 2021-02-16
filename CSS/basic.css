@@ -7,4 +7,24 @@
 }
 .deleteline {
 	text-decoration: line-through;
+}.AutoAdapt {
+	width: 80%;
+	_height: 120px;
+	padding: 3px;
+	outline: 0;
+	border: 1px solid #000000;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: auto;
+	_overflow-y: visible;
+	font-family: monospace, monospace;
+	font-size: 14px;
+}
+.Note {
+	font-size: small;
+	font-family: "黑体";
+}
+
+.wathet {
+	color: #09F;
 }

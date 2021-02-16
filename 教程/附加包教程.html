@@ -41,33 +41,21 @@ body table {
 	border-bottom-width: 3px;
 	border-left-width: 3px;
 }
-.AutoAdapt {
-	width: 80%;
-	_height: 120px;
-	max-height: 240px;
-	padding: 3px;
-	outline: 0;
-	border: 1px solid #000000;
-	word-wrap: break-word;
-	overflow-x: hidden;
-	overflow-y: auto;
-	_overflow-y: visible;
-	font-family: "宋体";
-	font-size: 14px;
+table.bold {
+	font-weight: bold;
+	text-align: center;
+	width: auto;
+}
+table.wathet {
+	color: #0099FF;
 }
 .Instrution {
 	font-size: small;
 	font-weight: bold;
 }
-.Note {
-	font-size: small;
-	font-family: "黑体";
-}
-
 </style>
-<link href="../CSS/otherfont.css" rel="stylesheet" type="text/css">
+<link href="../CSS/divtitle.css" rel="stylesheet" type="text/css">
 <link href="../CSS/basic.css" rel="stylesheet" type="text/css">
-<link href="../CSS/tb.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="concept">
@@ -81,7 +69,7 @@ body table {
     1.本文发布遵循<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/">CC  BY-NC-SA 3.0协议</a>。<br />
     2.注释符号：【】、（）。<br />
     3.教程作者：JUSTIN_LMC【QQ：371055087】，欢迎反馈。<br />
-    4.更新信息：Version 1.0.0-beta20210122/1.16.200<br>
+    4.更新信息：Version 1.0.0-beta20210122/1.16.200<br />
     5.请点击“允许阻止的内容”/关闭“只查看安全的内容”以更好地显示页面内容。放心，页面里没有不安全的内容。<br />
   本文参考/涉及链接：（排名不分先后）</p>
 <div class="AutoAdapt">
@@ -107,19 +95,19 @@ body table {
     目 录
   </caption>
   <tr>
-    <th width="57" scope="col"><a href="#content_concept" target="_self" class="tbbold">概 念</a></th>
+    <th width="57" scope="col"><a href="#content_concept" target="_self" class="bold">概 念</a></th>
   </tr>
   <tr>
-    <th><a href="#freshman" target="_self" class="tbbold">初 学</a></th>
+    <th><a href="#freshman" target="_self" class="bold">初 学</a></th>
   </tr>
   <tr>
-    <th><a href="#structure" target="_self" class="tbbold">结 构</a></th>
+    <th><a href="#structure" target="_self" class="bold">结 构</a></th>
   </tr>
   <tr>
-    <th><a href="#start" target="_self" class="tbbold">编 写</a></th>
+    <th><a href="#start" target="_self" class="bold">编 写</a></th>
   </tr>
   <tr>
-    <td><div class="tbbold">尾 声</div></td>
+    <th class="bold">尾 声</th>
   </tr>
 </table>
 <div id="content_concept">
@@ -138,10 +126,10 @@ body table {
 <p class="tinydivtitle">2.附加包的类型？</p>
 <p>附加包主要有以下几个类型：</p>
 <table width="100%" border="1">
-  <tr class="tbbold">
+  <tr class="bold">
     <td width="80">类型</td>
     <td width="98">名称<span class="Note">[1]</span></td>
-    <td width="276" class="tbbold">介绍（各部分后续将会详细介绍）</td>
+    <td width="276" class="bold">介绍（各部分后续将会详细介绍）</td>
   </tr>
   <tr>
     <td>*<span class="Note">[2]</span>行为包</td>
@@ -156,7 +144,7 @@ body table {
   <tr>
     <td>脚本包</td>
     <td>client_data</td>
-    <td><span class="tbwathet">(ONLY IN Windows 10)</span>控制了世界与玩家的交互</td>
+    <td><span class="wathet">(ONLY in Windows 10)</span>控制了世界与玩家的交互</td>
   </tr>
   <tr>
     <td>皮肤包</td>
@@ -189,7 +177,7 @@ body table {
   此外，<span class="bold">命令</span>也是必须掌握的基础。<a href="https://github.com/midnightfreddie/McpeTool" target="new" class="bold">存档构造</a>后续略有涉及，可不必深究。</p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">2.附加包很难吗？</p>
-<p>确实。<br />
+<p><span class="wathet">确实</span>。<br />
   附加包每一项内容几乎都非常丰富，比如实体就是一个重头戏。学习前应当做好心理准备。<br />
   推荐新手去找一位师傅学习（不是我，学业太忙没空）。<br />
 </p>
@@ -198,27 +186,27 @@ body table {
 <p>以下工具均值得信赖（大多数是IDE<span class="Note">[1]</span>）：【<span class="ital">斜体</span>为文本编辑器，<span class="wathet">蓝色</span>为文件管理器，两者均至少需要一个<span class="Note">[2]</span>】</p>
 <table width="100%" border="1">
   <tr>
-    <td width="89" class="tbbold">Windows 10</td>
+    <td width="9%" class="bold">Windows 10</td>
     <td colspan="2"><span class="ital">VSCode</span>（轻量级）</td>
     <td colspan="3"><span class="ital">VSCommunity</span>（重量级，功能丰富）</td>
     <td class="ital">Eclipse</td>
-    <td><span class="tbwathet">Windows自带</span></td>
+    <td><span class="wathet">Windows自带</span></td>
     </tr>
   <tr>
-    <td class="tbbold">Android</td>
-    <td colspan="2"><span class="tbwathet">ES文件管理器</span>（低配慎用）</td>
-    <td width="86"><span class="tbwathet ital">MT管理器</span></td>
-    <td width="80" class="ital">QuickEdit</td>
-    <td width="196">Acode（JSON不支持注释）</td>
-    <td width="102"><span class="tbwathet">部分手机自带</span><br /></td>
-    <td width="189">VHEditer（安卓版VScode）</td>
+    <td width="9%" class="bold">Android</td>
+    <td colspan="2"><span class="wathet">ES文件管理器</span>（低配慎用）</td>
+    <td width="9%"><span class="wathet ital">MT管理器</span></td>
+    <td width="8%" class="ital">QuickEdit</td>
+    <td width="21%">Acode（JSON不支持注释）</td>
+    <td width="12%"><span class="wathet">部分手机自带</span></td>
+    <td width="20%">VHEditer（安卓版VScode）</td>
   </tr>
   <tr>
-    <td height="25" class="tbbold">IOS</td>
-    <td width="134" class="ital">TextcodeViewer</td>
+    <td width="9%" height="25" class="bold">IOS</td>
+    <td width="12%" class="ital">TextcodeViewer</td>
     <td colspan="2"><span class="ital">iFile</span>（需要越狱） </td>
     <td colspan="2"><span class="ital">Filza</span>（需要越狱）</td>
-    <td colspan="2"><span class="tbwathet">FileMaster</span></td>
+    <td colspan="2"><span class="wathet">FileMaster</span></td>
     </tr>
 </table>
 <p>当然，如果你自己有上手的工具也可以使用<span class="Note">（不要用什么备忘录、记事本！）</span>。<span class="Note">[3]</span></p>
@@ -229,8 +217,8 @@ body table {
 </p>
 <p><span class="tinydivtitle">4.客户端和服务端的区别？</span><br />
 </p>
-<p><span class="bold">客户端</span>，指的是某种数据接收终端，比如手机、电脑，将服务端提供的数据转化为供游玩的图像，负责游戏渲染；<span class="bold">服务端</span>，指的是某种数据处理中心，比如服务器，将玩家所进行的操作进行运算、处理、储存，负责游戏运算。具体可自行搜索。</p>
-<p>附加包中有一部分内容是在服务端定义的（如行为包），另一部分内容是在客户端定义的（如资源包和脚本包），后文中将会讲解。</p>
+<p><span class="bold">客户端</span>，指的是某种数据接收终端，比如手机、电脑，将服务端提供的数据转化为供游玩的图像，负责游戏渲染；<span class="bold">服务端</span>，指的是某种数据处理中心，比如服务器，将玩家所进行的操作进行运算、处理、储存，负责游戏运算。具体可自行搜索。<br />
+  附加包中有一部分内容是在服务端定义的（如行为包），另一部分内容是在客户端定义的（如资源包和脚本包），后文中将会讲解。</p>
 <p>&nbsp;</p>
 <p class="tinydivtitle">5.网易版有Add-ons吗？</p>
 <p>有，而且比原版更加全面，但是与原版Add-ons<span class="wathet">大多并不适配</span>，并且本教程<span class="wathet">不会</span>讲解相关内容。如果你想开发网易版Add-ons并且上传自己的作品，必须先加入<span class="wathet">开发者计划</span>。由于网易设计了自己的接口（ModSDK），请参考<a href="http://mc.163.com/mcstudio/index.html" target="new" class="wathet">我的世界开发者工具</a>。<br />
@@ -243,72 +231,70 @@ body table {
 </p>
   <p>“|-”表示文件的储存结构，即一个文件夹的内部。 </p>
   <p class="mediumdivtitle">行为包</p>
-  <p>
-    <label for="textarea"></label>
-    <textarea name="textarea" cols="90" rows="16" readonly class="AutoAdapt" id="textarea">(名称) 
-|-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）
-|-biomes //生物群系主定义
-|-blocks //方块主定义
-|-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）
-|-feature_rules //特性规则定义
-|-features //特性定义
-|-functions //（命令）函数定义
-|-items //物品特性定义
-|-loot_tables //掉落物定义
-|-recipes //合成表定义
-|-spawn_rules //实体生成规则定义
-|-trading //交易定义
-|-contents.json //内容文件
-|-manifest.json //清单文件
-|-pack_icon.png //附加包图标</textarea>
-  </p>
+  <div class="AutoAdapt">(名称) 
+    <br>
+    |-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）<br>
+    |-biomes //生物群系主定义<br>
+    |-blocks //方块主定义<br>
+    |-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）<br>
+    |-feature_rules //特性规则定义<br>
+    |-features //特性定义<br>
+    |-functions //（命令）函数定义<br>
+    |-items //物品特性定义<br>
+    |-loot_tables //掉落物定义<br>
+    |-recipes //合成表定义<br>
+    |-spawn_rules //实体生成规则定义<br>
+    |-trading //交易定义<br>
+    |-contents.json //内容文件<br>
+    |-manifest.json //清单文件<br>
+    |-pack_icon.png //附加包图标
+    </textarea>
+  </div>
   <p class="mediumdivtitle">资源包</p>
-  <p class="bigfont">
-    <label for="textarea2"></label>
-    <textarea name="textarea2" cols="90" rows="25" readonly class="AutoAdapt" id="textarea2">（名称）
-|-animation_controllers //动画触发条件定义
-|-animations //动画定义
-|-entity //实体客户端定义（请与行为包里的实体服务端定义相区分）
-|-font //字体定义，不建议修改
-|-fogs //雾定义（1.16.200新增内容）
-|-items //物品外观定义
-|-materials //光照算法及纹理定义
-|-models //实体几何及基本图元定义
-|-particles //颗粒定义
-|-render_controllers //渲染定义
-|-sounds //声音定义
-|-texts //语言定义
-|-textures //材质定义
-|-ui //内置UI（HUD）定义
-|-biomes_client.json //生物群系与水相关定义
-|-blocks.json //方块材质总定义文件
-|-bug_pack_icon.png //出错包图标，无必要修改
-|-contents.json //内容文件
-|-items_offsets_client.json //VR偏移定义
-|-loading_messages.json //游戏加载定义文件
-|-manifest.json //清单文件
-|-pack_icon.png //附加包运动
-|-sounds.json //声音定义文件
-|-splashes.json //闪烁标语定义，不建议修改</textarea>
-  </p>
-  <p class="mediumdivtitle">脚本包</p>
+  <div class="AutoAdapt">（名称）<br>
+    |-animation_controllers //动画触发条件定义<br>
+    |-animations //动画定义<br>
+    |-entity //实体客户端定义（请与行为包里的实体服务端定义相区分<br>
+|-font //字体定义，不建议修改<br>
+|-fogs //雾定义（1.16.200新增内容）<br>
+|-items //物品外观定义<br>
+|-materials //光照算法及纹理定义<br>
+|-models //实体几何及基本图元定义<br>
+|-particles //颗粒定义<br>
+|-render_controllers //渲染定义<br>
+|-sounds //声音定义<br>
+|-texts //语言定义<br>
+|-textures //材质定义<br>
+|-ui //内置UI（HUD）定义<br>
+|-biomes_client.json //生物群系与水相关定义<br>
+|-blocks.json //方块材质总定义文件<br>
+|-bug_pack_icon.png //出错包图标，无必要修改<br>
+|-contents.json //内容文件<br>
+|-items_offsets_client.json //VR偏移定义<br>
+|-loading_messages.json //游戏加载定义文件<br>
+|-manifest.json //清单文件<br>
+|-pack_icon.png //附加包运动<br>
+|-sounds.json //声音定义文件<br>
+|-splashes.json //闪烁标语定义，不建议修改
+</div>
+<p class="mediumdivtitle">脚本包</p>
 <p>除了行为包的结构，另加一个scripts文件夹（内含client和server文件夹，两个文件夹内各有(name).js文件）</p>
 <p class="mediumdivtitle">皮肤包</p>
 <div class="AutoAdapt">（名称）<br />
-  |-geometry.json //几何定义<br />
-  |-manifest.json //清单文件<br />
-  |-skins.json //皮肤定义<br />
-  |-(名称）.png //皮肤展开图</div>
+|-geometry.json //几何定义<br />
+|-manifest.json //清单文件<br />
+|-skins.json //皮肤定义<br />
+|-(名称）.png //皮肤展开图</div>
 <p class="mediumdivtitle">世界模板包</p>
 <div class="AutoAdapt">（名称）<br />
-  |-db //Mojang的游戏数据储存区<br />
-  |-contents.json //内容文件<br />
-  |-level.dat //世界规则储存文件<br />
-  |-level.dat_old //旧版本世界规则储存文件<br />
-  |-levelname.txt //世界名<br />
-  |-manifest.json //清单文件<br />
-  |-world_icon.jpeg //世界&amp;世界模板包图标<br />
-  |-（...） //世界内应用的附加包</div>
+|-db //Mojang的游戏数据储存区<br />
+|-contents.json //内容文件<br />
+|-level.dat //世界规则储存文件<br />
+|-level.dat_old //旧版本世界规则储存文件<br />
+|-levelname.txt //世界名<br />
+|-manifest.json //清单文件<br />
+|-world_icon.jpeg //世界&amp;世界模板包图标<br />
+|-（...） //世界内应用的附加包</div>
 <p>实际上，世界模板包只需要将你的世界提取出来，加上清单文件即可。</p>
 </div>
 <p>&nbsp;</p>
@@ -328,7 +314,7 @@ body table {
     <td colspan="2"><a href="#contents" target="_self">内容文件</a></td>
   </tr>
   <tr>
-    <td colspan="2"><a href="#datres" target="_self" class="tbbold">行为包、资源包专题</a></td>
+    <td colspan="2"><a href="#datres" target="_self" class="bold">行为包、资源包专题</a></td>
   </tr>
   <tr>
     <td width="81"><a href="#datres_recipes" target="_self">配方</a></td>
@@ -344,19 +330,19 @@ body table {
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" class="tbbold">脚本包专题</td>
+    <td colspan="2" class="bold">脚本包专题</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" class="tbbold">皮肤包专题</td>
+    <td colspan="2" class="bold">皮肤包专题</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" class="tbbold">世界模板包专题</td>
+    <td colspan="2" class="bold">世界模板包专题</td>
   </tr>
   <tr>
     <td colspan="2">&nbsp;</td>
@@ -372,17 +358,17 @@ body table {
     <p>（以下仅限手机，windows 10用户请看<a href="https://www.mcbbs.net/thread-829760-1-1.html">SPG贴</a>）<br />
     如果存储方式为“<span class="bold">外部</span>”，那么游戏的数据储存于<code>/sdcard/games/com.mojang/</code>；如果存储方式为&quot;<span class="bold">内部存储</span>&quot;，那么游戏的数据储存于<code>/私有储存/com.mojang/&quot;</code>。各类包的存储路径见下表。</p>
     <table width="100%" border="1">
-      <tr class="tbbold">
-        <td width="25%" class="tbbold">行为包/脚本包</td>
+      <tr class="bold">
+        <td width="25%" class="bold">行为包/脚本包</td>
         <td width="25%">资源包</td>
         <td width="25%">皮肤包</td>
         <td width="25%">世界模板包</td>
       </tr>
       <tr>
-        <td>../com.mojang/behavior_packs</td>
-        <td>../com.mojang/resouce_packs</td>
-        <td>../com.mojang/skin_packs</td>
-        <td>../com.mojang/world_templates</td>
+        <td><code>../com.mojang/behavior_packs</code></td>
+        <td><code>../com.mojang/resouce_packs</code></td>
+        <td><code>../com.mojang/skin_packs</code></td>
+        <td><code>../com.mojang/world_templates</code></td>
       </tr>
     </table>
     <p><code>../com.mojang/development_(name)_packs</code>储存着正在开发的(name)包。为了便于日后查找，一般选择在外部建立一个文件夹，待调试时再将对应的(name)包放入<code>../com.mojang/development_(name)_packs</code>中。Mojang 建议文件名采用英文小写字母+下划线分割单词，总长度控制在 10 个字符以内。<br />
@@ -480,7 +466,7 @@ MC也支持。*/
 </p>
 <p class="bigfont"><a name="datres_recipes" id="datres_recipes"></a><span class="smalldivtitle">配方</span></p>
 <table width="100%" border="1">
-  <tr class="tbbold">
+  <tr class="bold">
     <td colspan="2">类型</td>
     <td>英文</td>
     <td>简述</td>
