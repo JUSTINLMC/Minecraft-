@@ -232,49 +232,49 @@ table.wathet {
   <p>“|-”表示文件的储存结构，即一个文件夹的内部。 </p>
   <p class="mediumdivtitle">行为包</p>
   <div class="AutoAdapt">(名称) 
-    <br>
-    |-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）<br>
-    |-biomes //生物群系主定义<br>
-    |-blocks //方块主定义<br>
-    |-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）<br>
-    |-feature_rules //特性规则定义<br>
-    |-features //特性定义<br>
-    |-functions //（命令）函数定义<br>
-    |-items //物品特性定义<br>
-    |-loot_tables //掉落物定义<br>
-    |-recipes //合成表定义<br>
-    |-spawn_rules //实体生成规则定义<br>
-    |-trading //交易定义<br>
-    |-contents.json //内容文件<br>
-    |-manifest.json //清单文件<br>
+    <br />
+    |-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）<br />
+    |-biomes //生物群系主定义<br />
+    |-blocks //方块主定义<br />
+    |-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）<br />
+    |-feature_rules //特性规则定义<br />
+    |-features //特性定义<br />
+    |-functions //（命令）函数定义<br />
+    |-items //物品特性定义<br />
+    |-loot_tables //掉落物定义<br />
+    |-recipes //合成表定义<br />
+    |-spawn_rules //实体生成规则定义<br />
+    |-trading //交易定义<br />
+    |-contents.json //内容文件<br />
+    |-manifest.json //清单文件<br />
     |-pack_icon.png //附加包图标
     </textarea>
   </div>
   <p class="mediumdivtitle">资源包</p>
-  <div class="AutoAdapt">（名称）<br>
-    |-animation_controllers //动画触发条件定义<br>
-    |-animations //动画定义<br>
-    |-entity //实体客户端定义（请与行为包里的实体服务端定义相区分<br>
-|-font //字体定义，不建议修改<br>
-|-fogs //雾定义（1.16.200新增内容）<br>
-|-items //物品外观定义<br>
-|-materials //光照算法及纹理定义<br>
-|-models //实体几何及基本图元定义<br>
-|-particles //颗粒定义<br>
-|-render_controllers //渲染定义<br>
-|-sounds //声音定义<br>
-|-texts //语言定义<br>
-|-textures //材质定义<br>
-|-ui //内置UI（HUD）定义<br>
-|-biomes_client.json //生物群系与水相关定义<br>
-|-blocks.json //方块材质总定义文件<br>
-|-bug_pack_icon.png //出错包图标，无必要修改<br>
-|-contents.json //内容文件<br>
-|-items_offsets_client.json //VR偏移定义<br>
-|-loading_messages.json //游戏加载定义文件<br>
-|-manifest.json //清单文件<br>
-|-pack_icon.png //附加包运动<br>
-|-sounds.json //声音定义文件<br>
+  <div class="AutoAdapt">（名称）<br />
+    |-animation_controllers //动画触发条件定义<br />
+    |-animations //动画定义<br />
+    |-entity //实体客户端定义（请与行为包里的实体服务端定义相区分<br />
+|-font //字体定义，不建议修改<br />
+|-fogs //雾定义（1.16.200新增内容）<br />
+|-items //物品外观定义<br />
+|-materials //光照算法及纹理定义<br />
+|-models //实体几何及基本图元定义<br />
+|-particles //颗粒定义<br />
+|-render_controllers //渲染定义<br />
+|-sounds //声音定义<br />
+|-texts //语言定义<br />
+|-textures //材质定义<br />
+|-ui //内置UI（HUD）定义<br />
+|-biomes_client.json //生物群系与水相关定义<br />
+|-blocks.json //方块材质总定义文件<br />
+|-bug_pack_icon.png //出错包图标，无必要修改<br />
+|-contents.json //内容文件<br />
+|-items_offsets_client.json //VR偏移定义<br />
+|-loading_messages.json //游戏加载定义文件<br />
+|-manifest.json //清单文件<br />
+|-pack_icon.png //附加包运动<br />
+|-sounds.json //声音定义文件<br />
 |-splashes.json //闪烁标语定义，不建议修改
 </div>
 <p class="mediumdivtitle">脚本包</p>
@@ -772,8 +772,8 @@ slide_away_duration Int
 minecraft:fuel {                          //可作燃料类物品
 duration Float                            //（浮点精确：小数点后1位精度）可烧炼时长，单位为1.0s，如6.5为6.5秒
 },
-minecraft:frame_count String,             //未知含义，可能为动画完成需要的总帧数
-minecraft:animates_in_toolbar Boolean,    //未知含义，可能为快捷栏是否展示动画，true为是
+minecraft:frame_count String,             //可能[3]为动画完成需要的总帧数
+minecraft:animates_in_toolbar Boolean,    //可能为快捷栏是否展示动画，true为是，默认为true
 minecraft:shooter": {                     //可发射物品类物品，如弓
 ammunition": [                            //装填物
 {
@@ -799,7 +799,7 @@ scale_power_by_draw_duration Boolean      //威力是否由使用（长按）时
 },
 minecraft:enchantable {                   //可附魔类物品
 slot String,                              //可被附魔的附魔类型，可选： all,bow,carrot_stick,armor_feet,armor_torso（胸甲类）,armor_head,armor_legs,shovel,sword,elytra（鞘翅）,axe,hoe,pickaxe,shears 
-value Int                                 //附魔能力[3]
+value Int                                 //附魔能力[4]
 },
 minecraft:can_destroy_in_creative Boolean,//是否能在创造模式中破坏方块
 minecraft:durability {                    //耐久
@@ -872,7 +872,8 @@ minecraft:armor
 </p>
 <p><span class="Note">[1]纲要的概念为MOJANG特色（不一定是原创）。<br />
   [2]参阅<a href="https://minecraft-zh.gamepedia.com/%E9%A3%9F%E7%89%A9">wiki</a>获取更多信息。</span><br />
-  <span class="Note">[3]数值越高得到高等级附魔的概率越低，参见<a href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E9%99%84%E9%AD%94%E6%9C%BA%E5%88%B6">wiki</a>获取更多信息。</span><br />
+  <span class="Note">[3]“可能”表示修改原版物品测试无效果。</span><br />
+  <span class="Note">[4]数值越高得到高等级附魔的概率越低，参见<a href="https://minecraft-zh.gamepedia.com/%E6%95%99%E7%A8%8B/%E9%99%84%E9%AD%94%E6%9C%BA%E5%88%B6">wiki</a>获取更多信息。</span><br />
 </p>
 <p>资源包的物品定义放在<code>&lt;资源包&gt;/items</code>里，材质定义放在<code>&lt;资源包&gt;/textures/items</code>里。</p>
 <p>
