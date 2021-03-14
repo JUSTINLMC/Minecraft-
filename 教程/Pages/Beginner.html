@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../../CSS/basic.css" rel="stylesheet" type="text/css">
+<link href="../../CSS/divtitle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<span class="divtitle">初学</span>
+<p class="tinydivtitle">1.附加包需要的基础？</p>
+<p><span class="bold">JSON</span>。<br />
+  【Windows 10玩家请注意：如果你愿意研究Scripting Engine（SE，脚本引擎），那么你还需要了解Javascript，不过脚本引擎目前只在win10版本支持<span class="Note">（有小道消息称手机版本会采用JSON作为脚本“语言”，姑且当个笑话听）</span>】<br />
+  引用自百度百科：</p>
+<div class="AutoAdapt">JSON（JavaScriptObject Notation，JS 对象简谱）是一种轻量级的数据交换格式。它基于ECMAScript(欧洲计算机协会制定的js规范)的一个子集，采用完全独立于编程语言的文本格式来存储和表示数据。简洁和清晰的层次结构使得 JSON 成为理想的数据交换语言。 易于人阅读和编写，同时也易于机器解析和生成，并有效地提升网络传输效率。 </div>
+<p>简单来说，就是一种<code>{A:c,B:d}</code>的格式，非专业人士不必深入研究。<br />
+  JSON的格式可以参考<a href="https://www.mcbbs.net/thread-829760-1-1.html" target="new">SPG帖子</a>或者<a href="https://www.json.org/json-zh.html">JSON的官方网站</a>的介绍，前者目前是国内最详细的行为包讲解教程之一。<br />
+  将<a href="https://c.runoob.com/front-end/53">JSON格式化</a>的网站。<br />
+  此外，<span class="bold">命令</span>也是必须掌握的基础。<a href="https://github.com/midnightfreddie/McpeTool" target="new" class="bold">存档构造</a>后续略有涉及，可不必深究。</p>
+<p>&nbsp;</p>
+<p class="tinydivtitle">2.附加包很难吗？</p>
+<p><span class="wathet">确实</span>。<br />
+  附加包每一项内容几乎都非常丰富，比如实体就是一个重头戏。学习前应当做好心理准备。<br />
+  推荐新手去找一位师傅学习（不是我，学业太忙没空）。<br />
+</p>
+<p>&nbsp;</p>
+<p class="tinydivtitle">3.附加包研究时需要的工具？</p>
+<p>以下工具均值得信赖（大多数是IDE<span class="Note">[1]</span>）：【<span class="ital">斜体</span>为文本编辑器，<span class="wathet">蓝色</span>为文件管理器，两者均至少需要一个<span class="Note">[2]</span>】</p>
+<table width="100%" border="1">
+  <tr>
+    <td width="9%" class="bold">Windows 10</td>
+    <td colspan="2"><span class="ital">VSCode</span>（轻量级）</td>
+    <td colspan="3"><span class="ital">VSCommunity</span>（重量级，功能丰富）</td>
+    <td class="ital">Eclipse</td>
+    <td><span class="wathet">Windows自带</span></td>
+  </tr>
+  <tr>
+    <td width="9%" class="bold">Android</td>
+    <td colspan="2"><span class="wathet">ES文件管理器</span>（低配慎用）</td>
+    <td width="9%"><span class="wathet ital">MT管理器</span></td>
+    <td width="8%" class="ital">QuickEdit</td>
+    <td width="21%">Acode（JSON不支持注释）</td>
+    <td width="12%"><span class="wathet">部分手机自带</span></td>
+    <td width="20%">VHEditer（安卓版VScode）</td>
+  </tr>
+  <tr>
+    <td width="9%" height="25" class="bold">IOS</td>
+    <td width="12%" class="ital">TextcodeViewer</td>
+    <td colspan="2"><span class="ital">iFile</span>（需要越狱） </td>
+    <td colspan="2"><span class="ital">Filza</span>（需要越狱）</td>
+    <td colspan="2"><span class="wathet">FileMaster</span></td>
+  </tr>
+</table>
+<p>当然，如果你自己有上手的工具也可以使用<span class="Note">（不要用什么备忘录、记事本！）</span>。<span class="Note">[3]</span></p>
+<p class="Note">[1]<span class="Note ital">摘自搜狗百科：</span>集成开发环境（IDE，Integrated Development Environment ）是用于提供程序开发环境的应用程序，一般包括代码编辑器、编译器、调试器和图形用户界面等工具。集成了代码编写功能、分析功能、编译功能、调试功能等一体化的开发软件服务套。所有具备这一特性的软件或者软件套（组）都可以叫集成开发环境。如微软的Visual Studio系列，Borland的C++ Builder、Delphi系列等。该程序可以独立运行，也可以和其它程序并用。IDE多被用于开发HTML应用软件。例如，许多人在设计网站时使用IDE（如HomeSite、DreamWeaver等），因为很多项任务会自动生成。<br />
+  [2]画图、建模软件将在后续教程中推荐。<br />
+  [3]表格中列出的软件，其用途均不仅限于附加包制作，如果感兴趣可以自行搜索。</p>
+<p class="Note"><br />
+</p>
+<p><span class="tinydivtitle">4.客户端和服务端的区别？</span><br />
+</p>
+<p><span class="bold">客户端</span>，指的是某种数据接收终端，比如手机、电脑，将服务端提供的数据转化为供游玩的图像，负责游戏渲染；<span class="bold">服务端</span>，指的是某种数据处理中心，比如服务器，将玩家所进行的操作进行运算、处理、储存，负责游戏运算。具体可自行搜索。<br />
+  附加包中有一部分内容是在服务端定义的（如行为包），另一部分内容是在客户端定义的（如资源包和脚本包），后文中将会讲解。</p>
+<p>&nbsp;</p>
+<p class="tinydivtitle">5.网易版有Add-ons吗？</p>
+<p>有，而且比原版更加全面，但是与原版Add-ons<span class="wathet">大多并不适配</span>，并且本教程<span class="wathet">不会</span>讲解相关内容。如果你想开发网易版Add-ons并且上传自己的作品，必须先加入<span class="wathet">开发者计划</span>。由于网易设计了自己的接口（ModSDK），请参考<a href="http://mc.163.com/mcstudio/index.html" target="new" class="wathet">我的世界开发者工具</a>。<br />
+  在网易的资源中心里能找到丰富的网易版Add-ons。 </p>
+</body>
+</html>

@@ -1,4 +1,37 @@
 @charset "utf-8";
+code {
+	font-size: 85%;
+	border-radius: 3px;
+	font-family: monospace, monospace;
+	color: #666666;
+	background-color: #F6F6F6;
+	padding-top: 0.2em;
+	padding-right: 0.3em;
+	padding-bottom: 0.2em;
+	padding-left: 0.3em;
+}
+body p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+body table {
+	border-collapse: collapse;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+}
+table.bold {
+	font-weight: bold;
+	text-align: center;
+	width: auto;
+}
+table.wathet {
+	color: #0099FF;
+}
+.Instrution {
+	font-size: small;
+	font-weight: bold;
+}
 .ital {
 	font-style: italic;
 }
@@ -24,7 +57,6 @@
 	font-size: small;
 	font-family: "黑体";
 }
-
 .wathet {
 	color: #09F;
 }

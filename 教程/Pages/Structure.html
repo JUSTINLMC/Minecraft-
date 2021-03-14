@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="../../CSS/basic.css" rel="stylesheet" type="text/css">
+<link href="../../CSS/divtitle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p class="divtitle">结构</p>
+<p>“|-”表示文件的储存结构，即一个文件夹的内部。 </p>
+<p class="mediumdivtitle">行为包</p>
+<div class="AutoAdapt">(名称) <br />
+  |-(行为包里可能有animation_controllers和animations，这一点会在之后的教程中体现）<br />
+  |-biomes //生物群系主定义<br />
+  |-blocks //方块主定义<br />
+  |-entitles //实体服务端定义（请与资源包里的实体客户端定义相区分）<br />
+  |-feature_rules //特性规则定义<br />
+  |-features //特性定义<br />
+  |-functions //（命令）函数定义<br />
+  |-items //物品特性定义<br />
+  |-loot_tables //掉落物定义<br />
+  |-recipes //合成表定义<br />
+  |-spawn_rules //实体生成规则定义<br />
+  |-trading //交易定义<br />
+  |-contents.json //内容文件<br />
+  |-manifest.json //清单文件<br />
+  |-pack_icon.png //附加包图标
+  </textarea>
+</div>
+<p class="mediumdivtitle">资源包</p>
+<div class="AutoAdapt">（名称）<br />
+  |-animation_controllers //动画触发条件定义<br />
+  |-animations //动画定义<br />
+  |-entity //实体客户端定义（请与行为包里的实体服务端定义相区分<br />
+  |-font //字体定义，不建议修改<br />
+  |-fogs //雾定义（1.16.200新增内容）<br />
+  |-items //物品外观定义<br />
+  |-materials //光照算法及纹理定义<br />
+  |-models //实体几何及基本图元定义<br />
+  |-particles //颗粒定义<br />
+  |-render_controllers //渲染定义<br />
+  |-sounds //声音定义<br />
+  |-texts //语言定义<br />
+  |-textures //材质定义<br />
+  |-ui //内置UI（HUD）定义<br />
+  |-biomes_client.json //生物群系与水相关定义<br />
+  |-blocks.json //方块材质总定义文件<br />
+  |-bug_pack_icon.png //出错包图标，无必要修改<br />
+  |-contents.json //内容文件<br />
+  |-items_offsets_client.json //VR偏移定义<br />
+  |-loading_messages.json //游戏加载定义文件<br />
+  |-manifest.json //清单文件<br />
+  |-pack_icon.png //附加包运动<br />
+  |-sounds.json //声音定义文件<br />
+  |-splashes.json //闪烁标语定义，不建议修改 </div>
+<p class="mediumdivtitle">脚本包</p>
+<p>除了行为包的结构，另加一个scripts文件夹（内含client和server文件夹，两个文件夹内各有(name).js文件）</p>
+<p class="mediumdivtitle">皮肤包</p>
+<div class="AutoAdapt">（名称）<br />
+  |-geometry.json //几何定义<br />
+  |-manifest.json //清单文件<br />
+  |-skins.json //皮肤定义<br />
+  |-(名称）.png //皮肤展开图</div>
+<p class="mediumdivtitle">世界模板包</p>
+<div class="AutoAdapt">（名称）<br />
+  |-db //Mojang的游戏数据储存区<br />
+  |-contents.json //内容文件<br />
+  |-level.dat //世界规则储存文件<br />
+  |-level.dat_old //旧版本世界规则储存文件<br />
+  |-levelname.txt //世界名<br />
+  |-manifest.json //清单文件<br />
+  |-world_icon.jpeg //世界&amp;世界模板包图标<br />
+  |-（...） //世界内应用的附加包</div>
+<p>实际上，世界模板包只需要将你的世界提取出来，加上清单文件即可。</p>
+</body>
+</html>
