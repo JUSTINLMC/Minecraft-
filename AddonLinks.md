@@ -12,29 +12,29 @@ Gametest框架：
 [Bilibili-乾山瑶-【综述&教程】基于GameTest框架编写模组](https://www.bilibili.com/read/cv11904231)  
 
 其他教程：  
-[Bilibili-Yangzii_](https://www.bilibili.com/video/BV1Lt411c7QC)  
+[Bilibili-Yangzii_](https://www.bilibili.com/video/BV1Lt411c7QC)   
 [Bilibili-方法放寒假](https://www.bilibili.com/read/readlist/rl121791)  
 [Bilibili-椎名琴璃](https://www.bilibili.com/video/BV1KW411p75D)  
-[Bilibili-xz_seer](https://www.bilibili.com/video/BV1nw411o7sh)   
+[Bilibili-xz_seer](https://www.bilibili.com/video/BV1nw411o7sh)  
 [Bilibili-一只乱窜的小辉](https://space.bilibili.com/441929890/article)  
 
-特别教程：
-[Bilibili-xz_seer-基岩版动态物品序列帧！！！正片](https://www.bilibili.com/video/BV1kX4y1V7hy)
+特别教程：  
+[Bilibili-xz_seer-基岩版动态物品序列帧！！！正片](https://www.bilibili.com/video/BV1kX4y1V7hy)  
 
-特别人士：
-[Bilibili-碧月狐DADA](https://space.bilibili.com/293767574/video)
-[Bilibili-小波_xiaobo](https://space.bilibili.com/402641129)
-[Bilibili-DEC-LiLeyi](https://space.bilibili.com/253673675)
-[Bilibili-喰-喰](https://space.bilibili.com/16567020/video)
-[Bilibili-黄逗沙](https://space.bilibili.com/487270210/video)
+特别人士：  
+[Bilibili-碧月狐DADA](https://space.bilibili.com/293767574/video)  
+[Bilibili-小波_xiaobo](https://space.bilibili.com/402641129)  
+[Bilibili-DEC-LiLeyi](https://space.bilibili.com/253673675)  
+[Bilibili-喰-喰](https://space.bilibili.com/16567020/video)  
+[Bilibili-黄逗沙](https://space.bilibili.com/487270210/video)  
 
-附加包下载网站：
+附加包下载网站：  
 [MCPEDL](https://mcpedl.com/)
 [1](#1)  
-国际版下载网站：
-[苦力怕论坛](klpbbs.com)
+国际版下载网站：  
+[苦力怕论坛](klpbbs.com)  
 
-灵感网站：
+灵感网站：  
 http://minecraft-mods.org/tag/minecraft-1-7-10-mods/
 http://www.9minecraft.net/
 https://www.curseforge.com/minecraft/
