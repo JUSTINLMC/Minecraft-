@@ -25,7 +25,8 @@ Gametest框架：
 [Bilibili-碧月狐DADA](https://space.bilibili.com/293767574/video)
 [Bilibili-小波_xiaobo](https://space.bilibili.com/402641129)
 [Bilibili-DEC-LiLeyi](https://space.bilibili.com/253673675)
-[bilibili-喰-喰](https://space.bilibili.com/16567020/video)
+[Bilibili-喰-喰](https://space.bilibili.com/16567020/video)
+[Bilibili-黄逗沙](https://space.bilibili.com/487270210/video)
 
 附加包下载网站：
 [MCPEDL](https://mcpedl.com/)
