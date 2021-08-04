@@ -28,11 +28,9 @@ Gametest框架：
 [Bilibili-喰-喰](https://space.bilibili.com/16567020/video)  
 [Bilibili-黄逗沙](https://space.bilibili.com/487270210/video)  
 
-附加包下载网站：  
-[MCPEDL](https://mcpedl.com/)
-[1](#1)  
-国际版下载网站：  
-[苦力怕论坛](klpbbs.com)  
+附加包下载网站：[MCPEDL](https://mcpedl.com/)<sup>[^1]</sup>  
+
+国际版下载网站：[苦力怕论坛](klpbbs.com)  
 
 灵感网站：  
 http://minecraft-mods.org/tag/minecraft-1-7-10-mods/
@@ -73,4 +71,4 @@ http://24hminecraft.com/
 http://shadersmods.com/
 http://www.liteloader.com/mods
 
-<p id="1">MCPEDL是一个用于下载玩家创建的各类组件的网站，包括附加包。</p>
+[^1]:MCPEDL是一个用于下载玩家创建的各类组件的网站，包括附加包。
