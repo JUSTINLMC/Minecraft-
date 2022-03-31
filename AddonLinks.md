@@ -12,10 +12,10 @@
 行为包制作：  
 [MCBBS-SPGoding-【1.14.0】行为包入门教程](https://www.mcbbs.net/thread-829760-1-1.html)  
 [Minecraft中文wiki-教程-制作行为包](https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E5%88%B6%E4%BD%9C%E8%A1%8C%E4%B8%BA%E5%8C%85)  
-[Bilibili-Lintha暮辰-基岩版行为包制作教学](https://www.bilibili.com/video/BV1Lq4y1u7SA)
+[Bilibili-Lintha暮辰-基岩版行为包制作教学](https://www.bilibili.com/video/BV1Lq4y1u7SA)  
 资源包制作：  
 [Bilibili-方法放寒假](https://www.bilibili.com/read/readlist/rl121791)  
-附加包制作：
+附加包制作：  
 [Bilibili-小波_xiaobo-addon教程](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
 
 Gametest框架：  
