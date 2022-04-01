@@ -1,43 +1,46 @@
 **重要提醒**:  
 (a)本文件可能侵犯了您的著作权，如果这样则本人将会删除相应内容。  
 (b)本文件中提及的部分视频标题有删改。  
+备注：未提及来源时，默认为Bilibili。
 
 附加包主界面： 
 [Microsoft附加包文档](https://docs.microsoft.com/en-us/minecraft/creator/)  
 [Minecraft中文wiki-附加包](https://minecraft.fandom.com/zh/wiki/%E9%99%84%E5%8A%A0%E5%8C%85)  
 [Minecraft官网附加包界面](https://www.minecraft.net/zh-hans/addons)  
 
-附加包相关概念：  [乾山瑶-基岩版数据驱动到底是什么意思？](https://www.bilibili.com/video/BV1FP4y1a72c)
+附加包相关概念：  
+[乾山瑶-基岩版数据驱动到底是什么意思？](https://www.bilibili.com/video/BV1FP4y1a72c)  
 
-行为包制作：  
+行为包：  
 [MCBBS-SPGoding-【1.14.0】行为包入门教程](https://www.mcbbs.net/thread-829760-1-1.html)  
 [Minecraft中文wiki-教程-制作行为包](https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E5%88%B6%E4%BD%9C%E8%A1%8C%E4%B8%BA%E5%8C%85)  
-[Bilibili-Lintha暮辰-基岩版行为包制作教学](https://www.bilibili.com/video/BV1Lq4y1u7SA)  
-资源包制作：  
-[Bilibili-方法放寒假](https://www.bilibili.com/read/readlist/rl121791)  
-附加包制作：  
-[Bilibili-小波_xiaobo-addon教程](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
-
+[Lintha暮辰-基岩版行为包制作教学](https://www.bilibili.com/video/BV1Lq4y1u7SA)  
+资源包：  
+[方法放寒假](https://www.bilibili.com/read/readlist/rl121791)  
+附加包：  
+[Yangzii_-Addons入门](https://www.bilibili.com/video/BV1Lt411c7QC)
+[小波_xiaobo-addon教程](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
+jsonUI：  
+[Minecraft_spruce-UI入门教程](https://b23.tv/WAUJJcO)  
 Gametest框架：  
-[Bilibili-乾山瑶-【简单介绍】用GameTest框架写模组](https://www.bilibili.com/video/BV1864y1t7Rw)  
-[Bilibili-乾山瑶-【综述&教程】基于GameTest框架编写模组](https://www.bilibili.com/read/cv11904231)  
+[乾山瑶-【简单介绍】用GameTest框架写模组](https://www.bilibili.com/video/BV1864y1t7Rw)  
+[乾山瑶-【综述&教程】基于GameTest框架编写模组](https://www.bilibili.com/read/cv11904231)  
 
-其他教程：  
+零散教程：  
 <table>
     <tr>
-        <td><a href="https://www.bilibili.com/video/BV1Lt411c7QC">Bilibili-Yangzii_</a></td>
-        <td><a href="https://www.bilibili.com/video/BV1KW411p75D">Bilibili-椎名琴璃</a></td>
+        <td><a href="https://www.bilibili.com/video/BV1Lt411c7QC">Yangzii_-Addons入门</a></td>
+        <td><a href="https://www.bilibili.com/video/BV1KW411p75D">椎名琴璃</a></td>
     </tr>
     <tr>
-        <td><a href="https://www.bilibili.com/video/BV1nw411o7sh">Bilibili-xz_seer</a></td>
-        <td><a href="https://space.bilibili.com/441929890/article">Bilibili-一只乱窜的小辉</a></td>
+        <td><a href="https://www.bilibili.com/video/BV1nw411o7sh">xz_seer</a></td>
+        <td><a href="https://space.bilibili.com/441929890/article">一只乱窜的小辉</a></td>
+    </tr>
+        <td><a href="https://www.bilibili.com/video/BV1kX4y1V7hy">xz_seer-基岩版动态物品序列帧</a></td>
     </tr>
 </table> 
 
-特别教程：  
-[Bilibili-xz_seer-基岩版动态物品序列帧！！！正片](https://www.bilibili.com/video/BV1kX4y1V7hy)  
-
-友情人士：  
+相关人物：  
 <table>
     <tr>
         <td><a href="https://space.bilibili.com/293767574/video">Bilibili-碧月狐DADA</a></td>
