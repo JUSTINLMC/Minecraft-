@@ -18,12 +18,12 @@
 资源包：  
 [方法放寒假](https://www.bilibili.com/read/readlist/rl121791)  
 附加包：  
-[Yangzii_-Addons入门](https://www.bilibili.com/video/BV1Lt411c7QC)
+[Yangzii_-Addons入门](https://www.bilibili.com/video/BV1Lt411c7QC)  
 [小波_xiaobo-Addon教程](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
 jsonUI：  
 [Minecraft_spruce-UI入门](https://b23.tv/WAUJJcO)  
 Gametest框架：  
-[Microsoft的Gametest参考文档](https://docs.microsoft.com/en-gb/minecraft/creator/scriptapi/)
+[Microsoft的Gametest参考文档](https://docs.microsoft.com/en-gb/minecraft/creator/scriptapi/)  
 [乾山瑶-【简单介绍】用GameTest框架写模组](https://www.bilibili.com/video/BV1864y1t7Rw)  
 [乾山瑶-【综述&教程】基于GameTest框架编写模组](https://www.bilibili.com/read/cv11904231)  
 
