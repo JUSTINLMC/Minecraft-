@@ -30,7 +30,7 @@ Gametest框架：
 零散教程：  
 [xz_seer-动态物品序列帧](https://www.bilibili.com/video/BV1kX4y1V7hy)  
 [xz_seer-实体渲染](https://www.bilibili.com/video/BV1nw411o7sh)  
-[晓吐斗-Blockbench模型](https://m.bilibili.com/video/BV15f4y1K7nT)
+[晓吐斗-Blockbench模型](https://m.bilibili.com/video/BV15f4y1K7nT)  
 [椎名琴璃-行为包](https://www.bilibili.com/video/BV1KW411p75D)  
 [咕咕洛白-附加包](https://space.bilibili.com/441929890/article)  
 
