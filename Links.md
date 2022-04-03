@@ -6,20 +6,24 @@
 附加包主界面：  
 [Microsoft附加包文档](https://docs.microsoft.com/en-us/minecraft/creator/)  
 [Minecraft中文wiki-附加包](https://minecraft.fandom.com/zh/wiki/%E9%99%84%E5%8A%A0%E5%8C%85)  
+[网易开发者文档](https://mc.163.com/m/dev/list.html)  
 [Minecraft官网附加包界面](https://www.minecraft.net/zh-hans/addons)  
+[Minecraft模板包官方文档](bedrock.dev)<sup>[^1]</sup>  
 
 附加包相关概念：  
 [乾山瑶-基岩版数据驱动到底是什么意思？](https://www.bilibili.com/video/BV1FP4y1a72c)  
 
+附加包：  
+[Bedrock Wiki](wiki.bedrock.dev)
+[碧月狐DADA](https://addonwiki.gitee.io/)
+[Yangzii_](https://www.bilibili.com/video/BV1Lt411c7QC)  
+[小波_xiaobo](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
 行为包：  
 [MCBBS-SPGoding-【1.14.0】行为包入门教程](https://www.mcbbs.net/thread-829760-1-1.html)  
 [Minecraft中文wiki-制作行为包](https://minecraft.fandom.com/zh/wiki/%E6%95%99%E7%A8%8B/%E5%88%B6%E4%BD%9C%E8%A1%8C%E4%B8%BA%E5%8C%85)  
 [Lintha暮辰-行为包制作](https://www.bilibili.com/video/BV1Lq4y1u7SA)  
 资源包：  
 [方法放寒假](https://www.bilibili.com/read/readlist/rl121791)  
-附加包：  
-[Yangzii_-Addons入门](https://www.bilibili.com/video/BV1Lt411c7QC)  
-[小波_xiaobo-Addon教程](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
 jsonUI：  
 [Minecraft_spruce-UI入门](https://b23.tv/WAUJJcO)  
 Gametest框架：  
@@ -53,7 +57,7 @@ Gametest框架：
     </tr>
 </table> 
 
-附加包下载网站：[MCPEDL](https://mcpedl.com/)<sup>[^1]</sup>  
+附加包下载网站：[MCPEDL](https://mcpedl.com/)<sup>[^2]</sup>  
 
 友情链接：[苦力怕论坛](klpbbs.com)  
 
@@ -96,4 +100,5 @@ http://24hminecraft.com/
 http://shadersmods.com/
 http://www.liteloader.com/mods
 
-[^1]:MCPEDL是一个用于下载玩家创建的各类组件的网站，包括附加包。
+[^1]:本网站为非官方网站，可以在线查阅官方模板包中的document（官方文档）。
+[^2]:MCPEDL是一个用于下载玩家创建的各类组件的网站，包括附加包。
