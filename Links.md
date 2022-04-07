@@ -1,7 +1,7 @@
 **重要提醒**:  
 (a)本文件可能侵犯了您的著作权，如果这样则本人将会删除相应内容。  
 (b)本文件中提及的部分视频标题有删改。  
-备注：未提及来源时，默认为Bilibili。
+备注：未提及来源时，默认为Bilibili。  
 
 附加包主界面：  
 [Microsoft附加包文档](https://docs.microsoft.com/en-us/minecraft/creator/)  
@@ -14,8 +14,9 @@
 [乾山瑶-基岩版数据驱动到底是什么意思？](https://www.bilibili.com/video/BV1FP4y1a72c)  
 
 附加包：  
-[Bedrock Wiki](wiki.bedrock.dev)
-[碧月狐DADA](https://addonwiki.gitee.io/)
+[Bedrock Wiki](wiki.bedrock.dev)  
+[Lintha暮辰-基础教程](https://www.bilibili.com/video/BV1Sa411z772) [FTM948794狂-进阶教程](https://www.bilibili.com/video/BV183411Y73N)  
+[碧月狐DADA](https://addonwiki.gitee.io/)  
 [Yangzii_](https://www.bilibili.com/video/BV1Lt411c7QC)  
 [小波_xiaobo](https://space.bilibili.com/402641129/favlist?fid=1284152029&ftype=create)  
 行为包：  
