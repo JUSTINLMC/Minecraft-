@@ -1,4 +1,4 @@
-**重要提醒**:  
+﻿**重要提醒**:  
 (a)本文件可能侵犯了您的著作权，如果这样则本人将会删除相应内容。  
 (b)本文件中提及的部分视频标题有删改。  
 备注：未提及来源时，默认为Bilibili。  
@@ -32,6 +32,9 @@ Gametest框架：
 [乾山瑶-【简单介绍】用GameTest框架写模组](https://www.bilibili.com/video/BV1864y1t7Rw)  
 [乾山瑶-【综述&教程】基于GameTest框架编写模组](https://www.bilibili.com/read/cv11904231)  
 
+重要工具：  
+[bridge.](https://github.com/bridge-core/editor)<sup>[^2]</sup>  
+
 零散教程：  
 [xz_seer-动态物品序列帧](https://www.bilibili.com/video/BV1kX4y1V7hy)  
 [xz_seer-实体渲染](https://www.bilibili.com/video/BV1nw411o7sh)  
@@ -58,7 +61,7 @@ Gametest框架：
     </tr>
 </table> 
 
-附加包下载网站：[MCPEDL](https://mcpedl.com/)<sup>[^2]</sup>  
+附加包下载网站：[MCPEDL](https://mcpedl.com/)<sup>[^3]</sup>  
 
 友情链接：[苦力怕论坛](klpbbs.com)  
 
@@ -102,4 +105,5 @@ http://shadersmods.com/
 http://www.liteloader.com/mods
 
 [^1]:本网站为非官方网站，可以在线查阅官方模板包中的document（官方文档）。
-[^2]:MCPEDL是一个用于下载玩家创建的各类组件的网站，包括附加包。
+[^2]:bridge.是一个帮助开发者制作附加包的软件，v2版需要在浏览器上运行，推荐使用电脑端的Chrome或Edge浏览器。  
+[^3]:MCPEDL是一个用于下载由创作者创建的各类组件的网站，包括附加包。
